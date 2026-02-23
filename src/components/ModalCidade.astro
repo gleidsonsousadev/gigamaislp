@@ -166,7 +166,7 @@
   }
 
   function atualizarCards(cidade: Cidade) {
-    const { precos, condicao } = cidade;
+    const { precos, condicao, label } = cidade;
     const mapa: Record<string, number> = {
       p400: precos.p400, p600: precos.p600, p800: precos.p800, p1gb: precos.p1gb
     };
@@ -176,6 +176,21 @@
       const ec = cardCondicoes[key];
       if (ec) ec.textContent = condicao;
     }
+
+    // Atualiza os links "Contratar Online" com cidade e preço dinâmicos
+    const btnsContratar = document.querySelectorAll<HTMLAnchorElement>('[data-plano][data-chave]');
+    btnsContratar.forEach(btn => {
+      const chave = btn.dataset.chave as keyof typeof mapa;
+      const plano = btn.dataset.plano as string;
+      const preco = formatarPreco(mapa[chave]);
+      const params = new URLSearchParams({
+        plano,
+        cidade: label,
+        preco,
+        condicao,
+      });
+      btn.href = '/contratar?' + params.toString();
+    });
   }
 
   // ── Autocomplete ──────────────────────────────────────────────────────────────

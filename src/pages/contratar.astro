@@ -1,0 +1,499 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+---
+
+<Layout title="Contratar | Giga+ Fibra" description="Contrate seu plano de internet fibra óptica da Giga+ em poucos passos.">
+
+  <Header />
+
+  <!-- Fundo gradiente igual ao Figma -->
+  <main style="
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(105.833deg, #F3FFF7 5.05%, #C5D1DF 100.3%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 160px 32px 80px;
+  ">
+
+    <!-- Card principal: 800px, bg white, radius 24px -->
+    <div style="
+      width: 100%;
+      max-width: 800px;
+      background: #fff;
+      border-radius: 24px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    ">
+
+      <!-- ── Bloco superior: Plano + Stepper + Título + Form ── -->
+      <div style="display: flex; flex-direction: column; gap: 32px;">
+
+        <!-- Card do Plano Selecionado -->
+        <div style="
+          background: #0939CF;
+          border-radius: 24px;
+          padding: 24px;
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+        ">
+
+          <!-- Linha: "Plano Selecionado" + Cidade -->
+          <div style="display: flex; align-items: flex-start; justify-content: space-between;">
+            <p id="label-plano-sel" style="font-size: 24px; font-weight: 500; color: #fff; margin: 0; line-height: 1.33;">Plano Selecionado</p>
+            <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 2px;">
+              <span style="font-size: 12px; font-weight: 600; color: #00EF52; letter-spacing: 1.56px; line-height: normal;">CIDADE</span>
+              <span id="plano-cidade" style="font-size: 18px; font-weight: 500; color: #fff; line-height: normal;"></span>
+            </div>
+          </div>
+
+          <!-- Divisória -->
+          <div style="height: 1px; background: rgba(255,255,255,0.2); width: 100%;"></div>
+
+          <!-- Linha: velocidade + features + preço -->
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+
+            <!-- Velocidade + features -->
+            <div style="display: flex; gap: 8px; align-items: center;">
+              <span id="plano-mega" style="font-size: 54px; font-weight: 600; color: #00EF52; line-height: 1.05; white-space: pre-line; word-break: break-word; max-width: 140px;"></span>
+              <div style="display: flex; flex-direction: column; gap: 6px;">
+                <div style="display: flex; gap: 6px; align-items: center;">
+                  <img src="/images/icon-hbomax.png" alt="HBO Max" width="28" height="28" style="display: block; flex-shrink: 0;" />
+                  <span style="font-size: 13px; font-weight: 400; color: #fff; line-height: normal;">Incluso HBO Max</span>
+                </div>
+                <div style="display: flex; gap: 6px; align-items: center;">
+                  <img src="/images/icon-wifi.svg" alt="" width="22" height="22" style="display: block; flex-shrink: 0;" />
+                  <span style="font-size: 13px; font-weight: 400; color: #fff; line-height: normal;">Wi-Fi 6</span>
+                </div>
+                <div style="display: flex; gap: 6px; align-items: center;">
+                  <img src="/images/icon-check.svg" alt="" width="22" height="22" style="display: block; flex-shrink: 0;" />
+                  <span style="font-size: 13px; font-weight: 400; color: #fff; line-height: normal;">Internet 100% Fibra Óptica</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Preço -->
+            <div style="display: flex; flex-direction: column; gap: 8px; align-items: flex-end;">
+              <div style="display: flex; align-items: baseline; gap: 0;">
+                <span id="plano-preco" style="font-size: 46px; font-weight: 600; color: #00EF52; line-height: normal;"></span>
+                <span style="font-size: 24px; font-weight: 400; color: #fff; line-height: normal;">/mês</span>
+              </div>
+              <p id="plano-condicao" style="font-size: 18px; font-weight: 400; color: #fff; margin: 0; line-height: normal;"></p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── Stepper ── -->
+        <div style="position: relative; display: flex; flex-direction: column; gap: 4px;">
+
+          <!-- Linha dos steps -->
+          <div style="display: flex; align-items: center; gap: 0; width: 100%; padding: 0 2px;">
+
+            <!-- Step 1 (ativo) -->
+            <div style="
+              width: 40px; height: 40px; flex-shrink: 0;
+              border: 2px solid #0939CF;
+              border-radius: 20px;
+              display: flex; align-items: center; justify-content: center;
+            ">
+              <span style="font-size: 18px; font-weight: 500; color: #0939CF; line-height: 1;">1</span>
+            </div>
+
+            <!-- Linha -->
+            <div style="flex: 1; height: 2px; background: #E6E6E6;"></div>
+
+            <!-- Step 2 (inativo) -->
+            <div style="
+              width: 40px; height: 40px; flex-shrink: 0;
+              background: #E6E6E6;
+              border-radius: 20px;
+              display: flex; align-items: center; justify-content: center;
+            ">
+              <span style="font-size: 18px; font-weight: 500; color: #fff; line-height: 1;">2</span>
+            </div>
+
+            <!-- Linha -->
+            <div style="flex: 1; height: 2px; background: #E6E6E6;"></div>
+
+            <!-- Step 3 (inativo) -->
+            <div style="
+              width: 40px; height: 40px; flex-shrink: 0;
+              background: #E6E6E6;
+              border-radius: 20px;
+              display: flex; align-items: center; justify-content: center;
+            ">
+              <span style="font-size: 18px; font-weight: 500; color: #fff; line-height: 1;">3</span>
+            </div>
+
+          </div>
+
+          <!-- Labels dos steps -->
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; padding: 0 2px;">
+            <span style="font-size: 14px; font-weight: 500; color: #0D0B26; line-height: 20px; width: 40px; text-align: center;">Dados Pessoais</span>
+            <span style="font-size: 14px; font-weight: 500; color: #E6E6E6; line-height: 20px; width: 40px; text-align: center;">Endereço</span>
+            <span style="font-size: 14px; font-weight: 500; color: #E6E6E6; line-height: 20px; width: 40px; text-align: center;">Pagamento</span>
+          </div>
+
+        </div>
+
+        <!-- Título da etapa -->
+        <p style="font-size: 32px; font-weight: 600; color: #010180; margin: 0; line-height: 1.33;">Informações Pessoais</p>
+
+        <!-- Formulário: campos -->
+        <form id="form-etapa1" style="display: flex; flex-direction: column; gap: 8px;" novalidate>
+
+          <!-- Campo: Nome completo -->
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <label for="nome" style="font-size: 18px; font-weight: 500; color: #010180; line-height: 1.77;">Nome completo</label>
+            <input
+              id="nome"
+              name="nome"
+              type="text"
+              placeholder="Digite seu nome completo"
+              required
+              style="
+                height: 64px;
+                width: 100%;
+                border: 1px solid #010180;
+                border-radius: 8px;
+                padding: 0 16px;
+                font-size: 16px;
+                font-weight: 400;
+                color: #0D0B26;
+                font-family: inherit;
+                outline: none;
+                background: #fff;
+                box-sizing: border-box;
+              "
+            />
+          </div>
+
+          <!-- Campo: Telefone principal -->
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <label for="telefone" style="font-size: 18px; font-weight: 500; color: #010180; line-height: 1.77;">Telefone principal (com whatsapp)</label>
+            <input
+              id="telefone"
+              name="telefone"
+              type="tel"
+              placeholder="(DD)  00000-0000"
+              required
+              maxlength="16"
+              style="
+                height: 64px;
+                width: 100%;
+                border: 1px solid #010180;
+                border-radius: 8px;
+                padding: 0 16px;
+                font-size: 16px;
+                font-weight: 400;
+                color: #0D0B26;
+                font-family: inherit;
+                outline: none;
+                background: #fff;
+                box-sizing: border-box;
+              "
+            />
+          </div>
+
+          <!-- Campo: CPF -->
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <label for="cpf" style="font-size: 18px; font-weight: 500; color: #010180; line-height: 1.77;">CPF</label>
+            <input
+              id="cpf"
+              name="cpf"
+              type="text"
+              placeholder="000.000.000-00"
+              required
+              maxlength="14"
+              style="
+                height: 64px;
+                width: 100%;
+                border: 1px solid #010180;
+                border-radius: 8px;
+                padding: 0 16px;
+                font-size: 16px;
+                font-weight: 400;
+                color: #0D0B26;
+                font-family: inherit;
+                outline: none;
+                background: #fff;
+                box-sizing: border-box;
+              "
+            />
+          </div>
+
+          <!-- Campo: E-mail -->
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <label for="email" style="font-size: 18px; font-weight: 500; color: #010180; line-height: 1.77;">E-mail</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="nome@email.com"
+              required
+              style="
+                height: 64px;
+                width: 100%;
+                border: 1px solid #010180;
+                border-radius: 8px;
+                padding: 0 16px;
+                font-size: 16px;
+                font-weight: 400;
+                color: #0D0B26;
+                font-family: inherit;
+                outline: none;
+                background: #fff;
+                box-sizing: border-box;
+              "
+            />
+          </div>
+
+          <!-- Campo: Data de nascimento -->
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <label for="nascimento" style="font-size: 18px; font-weight: 500; color: #010180; line-height: 1.77;">Data de nascimento</label>
+            <input
+              id="nascimento"
+              name="nascimento"
+              type="text"
+              placeholder="00/00/0000"
+              required
+              maxlength="10"
+              style="
+                height: 64px;
+                width: 100%;
+                border: 1px solid #010180;
+                border-radius: 8px;
+                padding: 0 16px;
+                font-size: 16px;
+                font-weight: 400;
+                color: #0D0B26;
+                font-family: inherit;
+                outline: none;
+                background: #fff;
+                box-sizing: border-box;
+              "
+            />
+          </div>
+
+          <!-- Campo: Nome da mãe -->
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <label for="nome-mae" style="font-size: 18px; font-weight: 500; color: #010180; line-height: 1.77;">Nome da mãe</label>
+            <input
+              id="nome-mae"
+              name="nomeMae"
+              type="text"
+              placeholder="Digite o nome completo da mãe"
+              required
+              style="
+                height: 64px;
+                width: 100%;
+                border: 1px solid #010180;
+                border-radius: 8px;
+                padding: 0 16px;
+                font-size: 16px;
+                font-weight: 400;
+                color: #0D0B26;
+                font-family: inherit;
+                outline: none;
+                background: #fff;
+                box-sizing: border-box;
+              "
+            />
+          </div>
+
+          <!-- Campo: Telefone adicional (opcional) -->
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <label for="telefone2" style="font-size: 18px; font-weight: 500; color: #010180; line-height: 1.77;">Telefone adicional (opcional)</label>
+            <input
+              id="telefone2"
+              name="telefone2"
+              type="tel"
+              placeholder="(DD) 00000-0000"
+              maxlength="16"
+              style="
+                height: 64px;
+                width: 100%;
+                border: 1px solid #010180;
+                border-radius: 8px;
+                padding: 0 16px;
+                font-size: 16px;
+                font-weight: 400;
+                color: #0D0B26;
+                font-family: inherit;
+                outline: none;
+                background: #fff;
+                box-sizing: border-box;
+              "
+            />
+          </div>
+
+        </form>
+
+      </div>
+
+      <!-- ── Botões: Voltar + Avançar ── -->
+      <div style="display: flex; align-items: center; justify-content: space-between;">
+
+        <!-- Voltar -->
+        <a href="/#planos" style="
+          display: inline-flex;
+          align-items: center;
+          gap: 16px;
+          padding: 12px 24px;
+          border: 2px solid #010180;
+          border-radius: 37px;
+          background: transparent;
+          color: #010180;
+          font-size: 24px;
+          font-weight: 600;
+          text-decoration: none;
+          cursor: pointer;
+          white-space: nowrap;
+        ">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 8L12 16L20 24" stroke="#010180" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Voltar
+        </a>
+
+        <!-- Avançar -->
+        <button id="btn-avancar" type="button" style="
+          display: inline-flex;
+          align-items: center;
+          gap: 16px;
+          padding: 12px 24px;
+          border: none;
+          border-radius: 37px;
+          background: #010180;
+          color: #00EF52;
+          font-size: 24px;
+          font-weight: 600;
+          cursor: pointer;
+          white-space: nowrap;
+          font-family: inherit;
+        ">
+          Avançar
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 8L20 16L12 24" stroke="#00EF52" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+      </div>
+
+    </div>
+  </main>
+
+  <Footer />
+
+</Layout>
+
+<style is:global>
+  /* Placeholder dos inputs */
+  input::placeholder {
+    color: #C2C2C2;
+  }
+  /* Focus ring nos inputs */
+  input:focus {
+    border-color: #0939CF !important;
+    box-shadow: 0 0 0 3px rgba(9, 57, 207, 0.15);
+  }
+  /* Hover nos botões de nav da página de contratação */
+  #btn-avancar:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+  }
+</style>
+
+<script is:inline>
+  // ── Preenche o banner do plano a partir dos query params da URL ──
+  ;(function () {
+    var p = new URLSearchParams(window.location.search)
+    var plano    = p.get('plano')    || '600 Mega'
+    var cidade   = p.get('cidade')   || 'Santo André-SP'
+    var preco    = p.get('preco')    || 'R$99,89'
+    var condicao = p.get('condicao') || 'Após 3 meses, aumenta R$20'
+
+    // Quebra "400 Mega" → "400\nMega" para exibir em duas linhas
+    var planoFormatado = plano.replace(/\s+/, '\n')
+    document.getElementById('plano-mega').textContent    = planoFormatado
+    document.getElementById('plano-cidade').textContent  = cidade
+    document.getElementById('plano-preco').textContent   = preco
+    document.getElementById('plano-condicao').textContent = condicao
+  })()
+
+  // ── Máscaras de input ──────────────────────────────────────────
+  function maskPhone(e) {
+    let v = e.target.value.replace(/\D/g, '').slice(0, 11)
+    if (v.length > 10) {
+      v = v.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3')
+    } else if (v.length > 6) {
+      v = v.replace(/^(\d{2})(\d{4})(\d*)$/, '($1) $2-$3')
+    } else if (v.length > 2) {
+      v = v.replace(/^(\d{2})(\d*)$/, '($1) $2')
+    } else if (v.length > 0) {
+      v = '(' + v
+    }
+    e.target.value = v
+  }
+
+  function maskCPF(e) {
+    let v = e.target.value.replace(/\D/g, '').slice(0, 11)
+    v = v.replace(/(\d{3})(\d)/, '$1.$2')
+    v = v.replace(/(\d{3})(\d)/, '$1.$2')
+    v = v.replace(/(\d{3})(\d{1,2})$/, '$1-$2')
+    e.target.value = v
+  }
+
+  function maskDate(e) {
+    let v = e.target.value.replace(/\D/g, '').slice(0, 8)
+    v = v.replace(/(\d{2})(\d)/, '$1/$2')
+    v = v.replace(/(\d{2})(\d)/, '$1/$2')
+    e.target.value = v
+  }
+
+  document.getElementById('telefone').addEventListener('input', maskPhone)
+  document.getElementById('telefone2').addEventListener('input', maskPhone)
+  document.getElementById('cpf').addEventListener('input', maskCPF)
+  document.getElementById('nascimento').addEventListener('input', maskDate)
+
+  // ── Avançar: validação básica ──────────────────────────────────
+  document.getElementById('btn-avancar').addEventListener('click', function () {
+    const form = document.getElementById('form-etapa1')
+    const inputs = form.querySelectorAll('input[required]')
+    let valid = true
+
+    inputs.forEach(function (input) {
+      if (!input.value.trim()) {
+        input.style.borderColor = '#EF0000'
+        valid = false
+      } else {
+        input.style.borderColor = '#010180'
+      }
+    })
+
+    if (!valid) return
+
+    // Salva dados na sessionStorage e vai para etapa 2
+    const data = {
+      nome: form.nome.value,
+      telefone: form.telefone.value,
+      cpf: form.cpf.value,
+      email: form.email.value,
+      nascimento: form.nascimento.value,
+      nomeMae: form.nomeMae.value,
+      telefone2: form.telefone2.value,
+    }
+    sessionStorage.setItem('giga_etapa1', JSON.stringify(data))
+
+    // Preserva query params do plano ao avançar
+    const params = new URLSearchParams(window.location.search)
+    window.location.href = '/contratar/endereco?' + params.toString()
+  })
+</script>

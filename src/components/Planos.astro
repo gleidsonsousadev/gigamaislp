@@ -75,7 +75,7 @@
             <span style="font-size: 18px; font-weight: 400; color: #fff; line-height: normal;">Internet 100% Fibra Óptica</span>
           </div>
         </div>
-        <a href="#contratar" style="display: flex; align-items: center; justify-content: center; background: #00EF52; color: #010180; font-size: 18px; font-weight: 600; padding: 12px 36px; border-radius: 999px; text-decoration: none; white-space: nowrap; height: 48px;">
+        <a id="btn-contratar-400" data-plano="400 Mega" data-chave="p400" href="/contratar?plano=400+Mega&cidade=Santo+Andr%C3%A9-SP&preco=R%24102%2C89&condicao=Ap%C3%B3s+3+meses+aumenta+R%2420%2C00" style="display: flex; align-items: center; justify-content: center; background: #00EF52; color: #010180; font-size: 18px; font-weight: 600; padding: 12px 36px; border-radius: 999px; text-decoration: none; white-space: nowrap; height: 48px;">
           Contratar Online
         </a>
       </div>
@@ -110,7 +110,7 @@
               <span style="font-size: 18px; font-weight: 400; color: #fff; line-height: normal;">Internet 100% Fibra Óptica</span>
             </div>
           </div>
-          <a href="#contratar" style="display: flex; align-items: center; justify-content: center; background: #00EF52; color: #010180; font-size: 18px; font-weight: 600; padding: 12px 36px; border-radius: 999px; text-decoration: none; white-space: nowrap; height: 48px;">
+          <a id="btn-contratar-600" data-plano="600 Mega" data-chave="p600" href="/contratar?plano=600+Mega&cidade=Santo+Andr%C3%A9-SP&preco=R%2499%2C89&condicao=Ap%C3%B3s+3+meses+aumenta+R%2420%2C00" style="display: flex; align-items: center; justify-content: center; background: #00EF52; color: #010180; font-size: 18px; font-weight: 600; padding: 12px 36px; border-radius: 999px; text-decoration: none; white-space: nowrap; height: 48px;">
             Contratar Online
           </a>
         </div>
@@ -141,7 +141,7 @@
             <span style="font-size: 18px; font-weight: 400; color: #fff; line-height: normal;">Internet 100% Fibra Óptica</span>
           </div>
         </div>
-        <a href="#contratar" style="display: flex; align-items: center; justify-content: center; background: #00EF52; color: #010180; font-size: 18px; font-weight: 600; padding: 12px 36px; border-radius: 999px; text-decoration: none; white-space: nowrap; height: 48px;">
+        <a id="btn-contratar-800" data-plano="800 Mega" data-chave="p800" href="/contratar?plano=800+Mega&cidade=Santo+Andr%C3%A9-SP&preco=R%24119%2C89&condicao=Ap%C3%B3s+3+meses+aumenta+R%2420%2C00" style="display: flex; align-items: center; justify-content: center; background: #00EF52; color: #010180; font-size: 18px; font-weight: 600; padding: 12px 36px; border-radius: 999px; text-decoration: none; white-space: nowrap; height: 48px;">
           Contratar Online
         </a>
       </div>
@@ -171,7 +171,7 @@
             <span style="font-size: 18px; font-weight: 400; color: #fff; line-height: normal;">Internet 100% Fibra Óptica</span>
           </div>
         </div>
-        <a href="#contratar" style="display: flex; align-items: center; justify-content: center; background: #00EF52; color: #010180; font-size: 18px; font-weight: 600; padding: 12px 36px; border-radius: 999px; text-decoration: none; white-space: nowrap; height: 48px;">
+        <a id="btn-contratar-1gb" data-plano="1 GIGA" data-chave="p1gb" href="/contratar?plano=1+GIGA&cidade=Santo+Andr%C3%A9-SP&preco=R%24139%2C89&condicao=Ap%C3%B3s+3+meses+aumenta+R%2420%2C00" style="display: flex; align-items: center; justify-content: center; background: #00EF52; color: #010180; font-size: 18px; font-weight: 600; padding: 12px 36px; border-radius: 999px; text-decoration: none; white-space: nowrap; height: 48px;">
           Contratar Online
         </a>
       </div>
@@ -180,3 +180,31 @@
   </div>
 
 </section>
+
+<script>
+  // Ao clicar em "Contratar Online", monta a URL lendo os valores atuais do DOM
+  document.querySelectorAll<HTMLAnchorElement>('[data-plano][data-chave]').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault()
+
+      const chave = btn.dataset.chave!   // p400, p600, p800, p1gb
+      const plano = btn.dataset.plano!   // "400 Mega", "600 Mega", etc.
+
+      // Mapeia chave para o sufixo do ID do elemento
+      const sufixo: Record<string, string> = { p400: '400', p600: '600', p800: '800', p1gb: '1gb' }
+      const id = sufixo[chave] || chave.replace('p', '')
+
+      // Lê preço e condição atuais do DOM (já atualizados pelo switcher de cidade)
+      const precoEl = document.getElementById('card-preco-' + id)
+      const condicaoEl = document.getElementById('card-condicao-' + id)
+      const cidadeEl = document.getElementById('cidade-label')
+
+      const preco = precoEl?.textContent?.trim() || ''
+      const condicao = condicaoEl?.textContent?.trim() || ''
+      const cidade = cidadeEl?.textContent?.trim() || 'Santo André-SP'
+
+      const params = new URLSearchParams({ plano, cidade, preco, condicao })
+      window.location.href = '/contratar?' + params.toString()
+    })
+  })
+</script>
