@@ -17,76 +17,82 @@
   role="dialog"
   aria-labelledby="modal-cidade-titulo"
 >
-  <!-- Caixa do modal: 630x200px aprox conforme Figma -->
   <div style="
     position: relative;
     background: #fff;
     border-radius: 24px;
     width: 630px;
     max-width: calc(100vw - 48px);
-    padding: 48px 50px 48px;
-    overflow: hidden;
+    padding: 48px 50px;
+    box-sizing: border-box;
   ">
 
     <!-- Botão fechar -->
     <button
       id="modal-cidade-close"
       aria-label="Fechar"
-      style="
-        position: absolute;
-        top: 24px;
-        right: 24px;
-        width: 32px;
-        height: 32px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      "
+      style="position: absolute; top: 24px; right: 24px; width: 32px; height: 32px; background: none; border: none; cursor: pointer; padding: 0; display: flex; align-items: center; justify-content: center;"
     >
-      <!-- Ícone X inline -->
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M8 8L24 24M24 8L8 24" stroke="#010180" stroke-width="2.5" stroke-linecap="round"/>
       </svg>
     </button>
 
-    <!-- Conteúdo centralizado verticalmente -->
     <div style="display: flex; flex-direction: column; gap: 21px; align-items: center;">
 
-      <p id="modal-cidade-titulo" style="
-        font-size: 32px;
-        font-weight: 500;
-        color: #010180;
-        line-height: 1.0;
-        margin: 0;
-        align-self: flex-start;
-        width: 100%;
-      ">Escolha a sua cidade</p>
+      <p id="modal-cidade-titulo" style="font-size: 32px; font-weight: 500; color: #010180; line-height: 1.0; margin: 0; align-self: flex-start; width: 100%;">
+        Escolha a sua cidade
+      </p>
 
-      <!-- Input -->
-      <input
-        type="text"
-        id="modal-cidade-input"
-        placeholder="Digite a cidade"
-        style="
-          width: 100%;
-          border: 2px solid #010180;
-          border-radius: 38px;
-          padding: 16px 32px;
-          font-size: 18px;
-          font-weight: 400;
-          color: #010180;
-          font-family: inherit;
-          outline: none;
-          box-sizing: border-box;
-          background: #fff;
-        "
-      />
+      <!-- Input com autocomplete -->
+      <div style="position: relative; width: 100%;">
+        <input
+          type="text"
+          id="modal-cidade-input"
+          placeholder="Digite a cidade"
+          autocomplete="off"
+          style="
+            width: 100%;
+            border: 2px solid #010180;
+            border-radius: 38px;
+            padding: 16px 32px;
+            font-size: 18px;
+            font-weight: 400;
+            color: #010180;
+            font-family: inherit;
+            outline: none;
+            box-sizing: border-box;
+            background: #fff;
+          "
+        />
+        <!-- Lista de sugestões -->
+        <ul
+          id="modal-cidade-sugestoes"
+          style="
+            display: none;
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            right: 0;
+            background: #fff;
+            border: 2px solid #010180;
+            border-radius: 16px;
+            max-height: 240px;
+            overflow-y: auto;
+            list-style: none;
+            margin: 0;
+            padding: 8px 0;
+            z-index: 10;
+            box-shadow: 0 4px 24px rgba(1,1,128,0.12);
+          "
+        ></ul>
+      </div>
 
-      <!-- Botão confirmar -->
+      <!-- Mensagem cidade não encontrada -->
+      <p id="modal-cidade-nao-encontrada" style="display: none; color: #c0392b; font-size: 15px; margin: 0; align-self: flex-start;">
+        Cidade não encontrada. Verifique o nome e tente novamente.
+      </p>
+
       <button
         id="modal-cidade-confirmar"
         style="
@@ -110,48 +116,161 @@
 </div>
 
 <script>
-  const overlay = document.getElementById('modal-cidade-overlay') as HTMLElement;
-  const closeBtn = document.getElementById('modal-cidade-close') as HTMLButtonElement;
+  // ── Elementos ────────────────────────────────────────────────────────────────
+  const overlay      = document.getElementById('modal-cidade-overlay') as HTMLElement;
+  const closeBtn     = document.getElementById('modal-cidade-close') as HTMLButtonElement;
   const confirmarBtn = document.getElementById('modal-cidade-confirmar') as HTMLButtonElement;
-  const input = document.getElementById('modal-cidade-input') as HTMLInputElement;
-  const cidadeLabel = document.getElementById('cidade-label') as HTMLElement | null;
+  const input        = document.getElementById('modal-cidade-input') as HTMLInputElement;
+  const listaSug     = document.getElementById('modal-cidade-sugestoes') as HTMLUListElement;
+  const msgErro      = document.getElementById('modal-cidade-nao-encontrada') as HTMLElement;
+  const cidadeLabel  = document.getElementById('cidade-label') as HTMLElement | null;
 
+  // ── Elementos dos cards ───────────────────────────────────────────────────────
+  const cardPrecos: Record<string, HTMLElement | null> = {
+    p400: document.getElementById('card-preco-400'),
+    p600: document.getElementById('card-preco-600'),
+    p800: document.getElementById('card-preco-800'),
+    p1gb: document.getElementById('card-preco-1gb'),
+  };
+  const cardCondicoes: Record<string, HTMLElement | null> = {
+    p400: document.getElementById('card-condicao-400'),
+    p600: document.getElementById('card-condicao-600'),
+    p800: document.getElementById('card-condicao-800'),
+    p1gb: document.getElementById('card-condicao-1gb'),
+  };
+
+  // ── Dados ─────────────────────────────────────────────────────────────────────
+  type Cidade = {
+    cidade: string;
+    uf: string;
+    grupo: string;
+    condicao: string;
+    label: string;
+    precos: { p400: number; p600: number; p800: number; p1gb: number };
+  };
+
+  let cidades: Cidade[] = [];
+  let cidadeSelecionada: Cidade | null = null;
+
+  fetch('/data/cidades.json')
+    .then(r => r.json())
+    .then((data: Cidade[]) => { cidades = data; });
+
+  // ── Helpers ───────────────────────────────────────────────────────────────────
+  function formatarPreco(valor: number): string {
+    return 'R$' + valor.toFixed(2).replace('.', ',');
+  }
+
+  function normalizar(str: string): string {
+    return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  }
+
+  function atualizarCards(cidade: Cidade) {
+    const { precos, condicao } = cidade;
+    const mapa: Record<string, number> = {
+      p400: precos.p400, p600: precos.p600, p800: precos.p800, p1gb: precos.p1gb
+    };
+    for (const key of Object.keys(mapa)) {
+      const el = cardPrecos[key];
+      if (el) el.textContent = formatarPreco(mapa[key]);
+      const ec = cardCondicoes[key];
+      if (ec) ec.textContent = condicao;
+    }
+  }
+
+  // ── Autocomplete ──────────────────────────────────────────────────────────────
+  function mostrarSugestoes(termo: string) {
+    listaSug.innerHTML = '';
+    msgErro.style.display = 'none';
+    if (!termo || termo.length < 2) {
+      listaSug.style.display = 'none';
+      return;
+    }
+
+    const termoNorm = normalizar(termo);
+    const matches = cidades
+      .filter(c => normalizar(c.cidade).includes(termoNorm) || normalizar(c.label).includes(termoNorm))
+      .slice(0, 8);
+
+    if (!matches.length) {
+      listaSug.style.display = 'none';
+      return;
+    }
+
+    matches.forEach(c => {
+      const li = document.createElement('li');
+      li.textContent = c.label;
+      li.style.cssText = 'padding: 12px 24px; cursor: pointer; font-size: 16px; color: #010180; font-family: inherit;';
+      li.addEventListener('mouseenter', () => { li.style.background = '#f0f4ff'; });
+      li.addEventListener('mouseleave', () => { li.style.background = ''; });
+      li.addEventListener('mousedown', (e) => {
+        e.preventDefault(); // evita blur no input antes do click
+        selecionarCidade(c);
+      });
+      listaSug.appendChild(li);
+    });
+
+    listaSug.style.display = 'block';
+  }
+
+  function selecionarCidade(c: Cidade) {
+    cidadeSelecionada = c;
+    input.value = c.label;
+    listaSug.style.display = 'none';
+    msgErro.style.display = 'none';
+  }
+
+  input.addEventListener('input', () => {
+    cidadeSelecionada = null;
+    mostrarSugestoes(input.value);
+  });
+
+  input.addEventListener('blur', () => {
+    setTimeout(() => { listaSug.style.display = 'none'; }, 150);
+  });
+
+  // ── Modal open/close ──────────────────────────────────────────────────────────
   function openModal() {
     overlay.style.display = 'flex';
-    input.focus();
+    input.value = '';
+    cidadeSelecionada = null;
+    listaSug.style.display = 'none';
+    msgErro.style.display = 'none';
+    setTimeout(() => input.focus(), 50);
   }
 
   function closeModal() {
     overlay.style.display = 'none';
-    input.value = '';
   }
 
-  // Abre ao clicar no botão Trocar Cidade
   document.getElementById('btn-trocar-cidade')?.addEventListener('click', openModal);
-
-  // Fecha ao clicar no X
   closeBtn.addEventListener('click', closeModal);
-
-  // Fecha ao clicar fora do modal
-  overlay.addEventListener('click', (e) => {
-    if (e.target === overlay) closeModal();
-  });
-
-  // Fecha com Escape
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && overlay.style.display === 'flex') closeModal();
   });
 
-  // Confirma cidade
-  confirmarBtn.addEventListener('click', () => {
-    const cidade = input.value.trim();
-    if (!cidade) return;
-    if (cidadeLabel) cidadeLabel.textContent = cidade;
-    closeModal();
-  });
+  // ── Confirmar ─────────────────────────────────────────────────────────────────
+  function confirmar() {
+    // Se nada foi selecionado via lista, tenta achar exata ou única match
+    if (!cidadeSelecionada) {
+      const termoNorm = normalizar(input.value.trim());
+      const match = cidades.find(c =>
+        normalizar(c.label) === termoNorm || normalizar(c.cidade) === termoNorm
+      );
+      if (match) {
+        cidadeSelecionada = match;
+      } else {
+        msgErro.style.display = 'block';
+        return;
+      }
+    }
 
-  // Também confirma com Enter no input
-  input.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') confirmarBtn.click();
-  });
+    if (cidadeLabel) cidadeLabel.textContent = cidadeSelecionada.label;
+    atualizarCards(cidadeSelecionada);
+    closeModal();
+  }
+
+  confirmarBtn.addEventListener('click', confirmar);
+  input.addEventListener('keydown', (e) => { if (e.key === 'Enter') confirmar(); });
 </script>
