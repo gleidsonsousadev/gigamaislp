@@ -10,15 +10,15 @@
     <!-- Figma: elipse 502x502, x=-44,y=-229 → centro em x=207,y=22 no frame 1920 → no container 1440: centro x=-33,y=22 → left=-284,top=-229 -->
     <div style="
       position: absolute;
-      z-index: 1;
-      left: -284px;
-      top: -229px;
-      width: 502px;
-      height: 502px;
+      z-index: 4;
+      left: -200px;
+      top: -280px;
+      width: 700px;
+      height: 700px;
       border-radius: 50%;
       background: #0939CF;
-      filter: blur(150px);
-      opacity: 1;
+      filter: blur(200px);
+      opacity: 0.55;
       pointer-events: none;
     "></div>
 
@@ -50,7 +50,7 @@
     <div style="position: absolute; right: 0; top: 0; width: 1071px; height: 588px; background: linear-gradient(to right, #000050 0%, rgba(0,0,80,0.6) 25%, transparent 55%); pointer-events: none; z-index: 3;"></div>
 
     <!-- Texto e CTAs: z-index 10 -->
-    <div style="position: absolute; left: 0; top: 190px; width: 598px; display: flex; flex-direction: column; gap: 24px; z-index: 10;">
+    <div style="position: absolute; left: 0; top: 60%; transform: translateY(-60%); width: 598px; display: flex; flex-direction: column; gap: 24px; z-index: 10;">
 
       <h1 style="font-size: 56px; line-height: 64px; font-weight: 500; color: #fff; margin: 0;">
         Sua Internet<br>
@@ -62,10 +62,10 @@
       </p>
 
       <div style="display: flex; align-items: center; gap: 16px;">
-        <a href="#planos" style="display: inline-flex; align-items: center; justify-content: center; border-radius: 24px; border: 1.5px solid #00EF52; color: #00EF52; font-size: 18px; font-weight: 600; padding: 14px 24px; background: transparent; text-decoration: none; white-space: nowrap;">
+        <a href="#planos" style="display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; border: 1.5px solid #00EF52; color: #00EF52; font-size: 18px; font-weight: 600; padding: 14px 24px; background: transparent; text-decoration: none; white-space: nowrap;">
           Ver Planos
         </a>
-        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 8px; border-radius: 24px; background: #00EF52; color: #091540; font-size: 18px; font-weight: 600; padding: 12px 24px; text-decoration: none; white-space: nowrap;">
+        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 8px; border-radius: 999px; background: #00EF52; color: #091540; font-size: 18px; font-weight: 600; padding: 12px 24px; text-decoration: none; white-space: nowrap;">
           <img src="/images/icon-whatsapp.svg" alt="" width="24" height="24" style="display:block; flex-shrink:0;" />
           Contratar pelo WhatsApp
         </a>
@@ -75,7 +75,7 @@
 
     <!-- Badges com glassmorphism -->
     <!-- Melhor Provedor: Figma x=1009, y=184 → no container 1440: x=1009-((1920-1440)/2)=769, y=184 -->
-    <div class="badge-glass" style="position: absolute; z-index: 20; left: 740px; top: 130px;">
+    <div class="badge-glass badge-float-1" style="position: absolute; z-index: 20; left: 740px; top: 130px;">
       <img src="/images/icon-melhor-provedor.svg" alt="" width="22" height="22" style="display:block;" />
       <div style="text-align: center; font-size: 12.6px; line-height: 1.4; font-weight: 500; white-space: nowrap;">
         <p style="color: #fff; margin: 0;">Melhor</p>
@@ -83,8 +83,8 @@
       </div>
     </div>
 
-    <!-- Melhor Velocidade: Figma x=980, y=409 → container: x=740, y=409 -->
-    <div class="badge-glass" style="position: absolute; z-index: 20; left: 710px; top: 355px;">
+    <!-- Melhor Velocidade -->
+    <div class="badge-glass badge-float-2" style="position: absolute; z-index: 20; left: 710px; top: 355px;">
       <img src="/images/icon-melhor-velocidade.svg" alt="" width="22" height="22" style="display:block;" />
       <div style="text-align: center; font-size: 12.6px; line-height: 1.4; font-weight: 500; white-space: nowrap;">
         <p style="color: #fff; margin: 0;">Melhor</p>
@@ -92,8 +92,8 @@
       </div>
     </div>
 
-    <!-- 4.9 No Google: Figma x=1445, y=304 → container: x=1205, y=304 -->
-    <div class="badge-glass" style="position: absolute; z-index: 20; left: 1175px; top: 250px;">
+    <!-- 4.9 No Google -->
+    <div class="badge-glass badge-float-3" style="position: absolute; z-index: 20; left: 1175px; top: 250px;">
       <img src="/images/icon-avaliacao-google.svg" alt="" width="22" height="22" style="display:block;" />
       <div style="text-align: center; font-size: 12.6px; line-height: 1.4; font-weight: 500; white-space: nowrap;">
         <p style="color: #fff; margin: 0;">4.9</p>
@@ -102,7 +102,7 @@
     </div>
 
     <!-- Melhor Estabilidade: Figma x=1312, y=466 → container: x=1072, y=466 -->
-    <div class="badge-glass" style="position: absolute; z-index: 20; left: 1042px; top: 412px;">
+    <div class="badge-glass badge-float-4" style="position: absolute; z-index: 20; left: 1042px; top: 412px;">
       <img src="/images/icon-melhor-estabilidade.svg" alt="" width="22" height="22" style="display:block;" />
       <div style="text-align: center; font-size: 12.6px; line-height: 1.4; font-weight: 500; white-space: nowrap;">
         <p style="color: #fff; margin: 0;">Melhor</p>
@@ -126,5 +126,37 @@
     background: linear-gradient(to bottom, rgba(255,255,255,0.16), rgba(255,255,255,0.02));
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+    animation: float 4s ease-in-out infinite;
+  }
+
+  /* Cada badge com animação própria — direção, amplitude e duração distintas */
+  .badge-float-1 { animation: float1 4.2s ease-in-out infinite; }
+  .badge-float-2 { animation: float2 5.8s ease-in-out infinite; }
+  .badge-float-3 { animation: float3 3.7s ease-in-out infinite; }
+  .badge-float-4 { animation: float4 6.3s ease-in-out infinite; }
+
+  /* Badge 1: sobe levemente */
+  @keyframes float1 {
+    0%   { transform: translateY(0px); }
+    55%  { transform: translateY(-7px); }
+    100% { transform: translateY(0px); }
+  }
+  /* Badge 2: desce e sobe mais lentamente */
+  @keyframes float2 {
+    0%   { transform: translateY(0px); }
+    40%  { transform: translateY(5px); }
+    100% { transform: translateY(0px); }
+  }
+  /* Badge 3: movimento diagonal sutil */
+  @keyframes float3 {
+    0%   { transform: translate(0px, 0px); }
+    50%  { transform: translate(3px, -6px); }
+    100% { transform: translate(0px, 0px); }
+  }
+  /* Badge 4: amplitude menor, mais lento */
+  @keyframes float4 {
+    0%   { transform: translateY(0px); }
+    60%  { transform: translateY(-4px); }
+    100% { transform: translateY(0px); }
   }
 </style>
