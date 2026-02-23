@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Clash Grotesk Variable';
+  src: url('/fonts/ClashGrotesk-Variable.woff2') format('woff2');
+  font-weight: 100 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: 'Clash Grotesk Variable', sans-serif;
+
+  --color-blue:        #010180;
+  --color-blue-light:  #0939CF;
+  --color-green:       #00EF52;
+  --color-gray-card:   #ECEEEC;
+  --color-white:       #FFFFFF;
+  --color-gray-text:   #4B465C;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  -webkit-font-smoothing: antialiased;
+}
