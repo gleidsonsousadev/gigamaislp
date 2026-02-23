@@ -1,0 +1,157 @@
+---
+---
+
+<!-- Overlay do modal -->
+<div
+  id="modal-cidade-overlay"
+  style="
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+  "
+  aria-modal="true"
+  role="dialog"
+  aria-labelledby="modal-cidade-titulo"
+>
+  <!-- Caixa do modal: 630x200px aprox conforme Figma -->
+  <div style="
+    position: relative;
+    background: #fff;
+    border-radius: 24px;
+    width: 630px;
+    max-width: calc(100vw - 48px);
+    padding: 48px 50px 48px;
+    overflow: hidden;
+  ">
+
+    <!-- Botão fechar -->
+    <button
+      id="modal-cidade-close"
+      aria-label="Fechar"
+      style="
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        width: 32px;
+        height: 32px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <!-- Ícone X inline -->
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 8L24 24M24 8L8 24" stroke="#010180" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <!-- Conteúdo centralizado verticalmente -->
+    <div style="display: flex; flex-direction: column; gap: 21px; align-items: center;">
+
+      <p id="modal-cidade-titulo" style="
+        font-size: 32px;
+        font-weight: 500;
+        color: #010180;
+        line-height: 1.0;
+        margin: 0;
+        align-self: flex-start;
+        width: 100%;
+      ">Escolha a sua cidade</p>
+
+      <!-- Input -->
+      <input
+        type="text"
+        id="modal-cidade-input"
+        placeholder="Digite a cidade"
+        style="
+          width: 100%;
+          border: 2px solid #010180;
+          border-radius: 38px;
+          padding: 16px 32px;
+          font-size: 18px;
+          font-weight: 400;
+          color: #010180;
+          font-family: inherit;
+          outline: none;
+          box-sizing: border-box;
+          background: #fff;
+        "
+      />
+
+      <!-- Botão confirmar -->
+      <button
+        id="modal-cidade-confirmar"
+        style="
+          background: #010180;
+          color: #00EF52;
+          font-size: 18px;
+          font-weight: 600;
+          font-family: inherit;
+          padding: 12px 24px;
+          border-radius: 24px;
+          border: none;
+          cursor: pointer;
+          white-space: nowrap;
+        "
+      >
+        Confirmar Cidade
+      </button>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  const overlay = document.getElementById('modal-cidade-overlay') as HTMLElement;
+  const closeBtn = document.getElementById('modal-cidade-close') as HTMLButtonElement;
+  const confirmarBtn = document.getElementById('modal-cidade-confirmar') as HTMLButtonElement;
+  const input = document.getElementById('modal-cidade-input') as HTMLInputElement;
+  const cidadeLabel = document.getElementById('cidade-label') as HTMLElement | null;
+
+  function openModal() {
+    overlay.style.display = 'flex';
+    input.focus();
+  }
+
+  function closeModal() {
+    overlay.style.display = 'none';
+    input.value = '';
+  }
+
+  // Abre ao clicar no botão Trocar Cidade
+  document.getElementById('btn-trocar-cidade')?.addEventListener('click', openModal);
+
+  // Fecha ao clicar no X
+  closeBtn.addEventListener('click', closeModal);
+
+  // Fecha ao clicar fora do modal
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closeModal();
+  });
+
+  // Fecha com Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && overlay.style.display === 'flex') closeModal();
+  });
+
+  // Confirma cidade
+  confirmarBtn.addEventListener('click', () => {
+    const cidade = input.value.trim();
+    if (!cidade) return;
+    if (cidadeLabel) cidadeLabel.textContent = cidade;
+    closeModal();
+  });
+
+  // Também confirma com Enter no input
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') confirmarBtn.click();
+  });
+</script>
