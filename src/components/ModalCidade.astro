@@ -283,9 +283,29 @@
 
     if (cidadeLabel) cidadeLabel.textContent = cidadeSelecionada.label;
     atualizarCards(cidadeSelecionada);
+    // Persiste a cidade selecionada para sobreviver à navegação
+    sessionStorage.setItem('giga_cidade', JSON.stringify(cidadeSelecionada));
     closeModal();
   }
 
   confirmarBtn.addEventListener('click', confirmar);
   input.addEventListener('keydown', (e) => { if (e.key === 'Enter') confirmar(); });
+
+  // ── Restaura cidade salva ao carregar a página ─────────────────────────────
+  const cidadeSalva = sessionStorage.getItem('giga_cidade');
+  if (cidadeSalva) {
+    try {
+      const c: Cidade = JSON.parse(cidadeSalva);
+      cidadeSelecionada = c;
+      if (cidadeLabel) cidadeLabel.textContent = c.label;
+      // Aguarda o fetch de cidades terminar para atualizar os preços
+      fetch('/data/cidades.json')
+        .then(r => r.json())
+        .then((data: Cidade[]) => {
+          cidades = data;
+          const match = cidades.find(x => x.label === c.label);
+          if (match) atualizarCards(match);
+        });
+    } catch (_) {}
+  }
 </script>
