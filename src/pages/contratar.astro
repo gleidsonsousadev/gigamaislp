@@ -428,6 +428,23 @@ import Footer from '../components/Footer.astro'
     document.getElementById('plano-condicao').textContent = condicao
   })()
 
+  // ── Restaura dados da etapa 1 ao voltar da etapa 2 ────────────
+  ;(function () {
+    var saved = sessionStorage.getItem('giga_etapa1')
+    if (!saved) return
+    try {
+      var d = JSON.parse(saved)
+      var f = document.getElementById('form-etapa1')
+      if (d.nome)       f.nome.value       = d.nome
+      if (d.telefone)   f.telefone.value   = d.telefone
+      if (d.cpf)        f.cpf.value        = d.cpf
+      if (d.email)      f.email.value      = d.email
+      if (d.nascimento) f.nascimento.value = d.nascimento
+      if (d.nomeMae)    f.nomeMae.value    = d.nomeMae
+      if (d.telefone2)  f.telefone2.value  = d.telefone2
+    } catch (_) {}
+  })()
+
   // ── Máscaras de input ──────────────────────────────────────────
   function maskPhone(e) {
     let v = e.target.value.replace(/\D/g, '').slice(0, 11)
