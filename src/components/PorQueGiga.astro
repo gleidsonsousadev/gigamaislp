@@ -1,0 +1,129 @@
+---
+---
+
+<section style="position: relative; width: 100%; background: #000026; border-bottom: 2px solid #000050; overflow: hidden; height: 824px;">
+
+  <!-- Container 1440px centralizado — base de posicionamento -->
+  <div style="position: absolute; inset: 0; display: flex; justify-content: center;">
+    <div style="position: relative; width: 100%; max-width: 1440px;">
+
+      <!-- Imagem da mão: sem máscara, com fade nas bordas -->
+      <img
+        src="/images/bg-mao-porque-ser-giga.png"
+        alt=""
+        style="
+          position: absolute;
+          left: -85px;
+          top: 77px;
+          width: 1200px;
+          height: 670px;
+          display: block;
+          object-fit: cover;
+        "
+      />
+      <!-- Fade top -->
+      <div style="
+        position: absolute;
+        left: -85px;
+        top: 77px;
+        width: 1200px;
+        height: 140px;
+        background: linear-gradient(to bottom, #000026, transparent);
+        pointer-events: none;
+        z-index: 2;
+      "></div>
+      <!-- Fade bottom -->
+      <div style="
+        position: absolute;
+        left: -85px;
+        top: calc(77px + 670px - 140px);
+        width: 1200px;
+        height: 140px;
+        background: linear-gradient(to top, #000026, transparent);
+        pointer-events: none;
+        z-index: 2;
+      "></div>
+      <!-- Fade right -->
+      <div style="
+        position: absolute;
+        left: calc(-85px + 850px);
+        top: 77px;
+        width: 350px;
+        height: 670px;
+        background: linear-gradient(to right, transparent, #000026);
+        pointer-events: none;
+        z-index: 2;
+      "></div>
+
+
+      <!-- Conteúdo direito: x=1114-240=874, y=111, w=469, h=603 -->
+      <div style="
+        position: absolute;
+        left: 874px;
+        top: 111px;
+        width: 469px;
+        height: 603px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 10;
+      ">
+
+        <!-- Título -->
+        <h2 style="font-size: 40px; font-weight: 500; line-height: 48px; margin: 0; color: #00EF52; width: 469px;">
+          Por que ser <span style="color: #fff;">Giga+</span> é sua melhor escolha?
+        </h2>
+
+        <!-- 3 cards glassmorphism: width=353 -->
+        <div style="display: flex; flex-direction: column; gap: 24px; width: 353px;">
+
+          <!-- Card Wi-Fi 6 -->
+          <div class="card-porque">
+            <img src="/images/icon-wifi.svg" alt="" width="32" height="32" style="display: block; flex-shrink: 0;" />
+            <div style="display: flex; flex-direction: column; gap: 6px;">
+              <p style="font-size: 24px; font-weight: 600; color: #fff; margin: 0; line-height: 28px;">Tecnologia Wi-fi 6</p>
+              <p style="font-size: 16px; font-weight: 400; color: #fff; margin: 0; line-height: 22.75px;">Até 4x mais velocidade sem fios e redução de 40% na latência (Ping baixo para Gamers).</p>
+            </div>
+          </div>
+
+          <!-- Card Rede 100% Fibra -->
+          <div class="card-porque">
+            <img src="/images/icon-rede-fibra.svg" alt="" width="32" height="32" style="display: block; flex-shrink: 0;" />
+            <div style="display: flex; flex-direction: column; gap: 6px;">
+              <p style="font-size: 24px; font-weight: 600; color: #fff; margin: 0; line-height: 28px;">Rede 100% Fibra</p>
+              <p style="font-size: 16px; font-weight: 400; color: #fff; margin: 0; line-height: 22.75px;">Conexão estável do poste até dentro da sua sala.</p>
+            </div>
+          </div>
+
+          <!-- Card Franquia Ilimitada -->
+          <div class="card-porque">
+            <img src="/images/icon-franquia-iliminada.svg" alt="" width="32" height="32" style="display: block; flex-shrink: 0;" />
+            <div style="display: flex; flex-direction: column; gap: 6px;">
+              <p style="font-size: 24px; font-weight: 600; color: #fff; margin: 0; line-height: 28px;">Franquia Ilimitada</p>
+              <p style="font-size: 16px; font-weight: 400; color: #fff; margin: 0; line-height: 22.75px;">Navegue, assista e baixe sem preocupações com limites de dados.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<style>
+  .card-porque {
+    display: flex;
+    flex-direction: column;
+    gap: 5.6px;
+    padding: 16px;
+    border-radius: 7.7px;
+    border: 0.7px solid rgba(255, 255, 255, 0.11);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.16), rgba(255,255,255,0.02));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    width: 100%;
+    box-sizing: border-box;
+  }
+</style>
