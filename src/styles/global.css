@@ -35,3 +35,14 @@ body {
   background-color: var(--color-blue);
   -webkit-font-smoothing: antialiased;
 }
+
+/* Hover sutil em todos os botões */
+a[style*="border-radius"],
+button[style*="border-radius"] {
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+a[style*="border-radius"]:hover,
+button[style*="border-radius"]:hover {
+  transform: scale(1.03);
+}
