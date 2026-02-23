@@ -124,9 +124,9 @@ import Footer from '../../components/Footer.astro'
 
         <!-- Labels -->
         <div style="display: flex; align-items: flex-start; justify-content: space-between; padding: 0 2px;">
-          <span style="font-size: 14px; font-weight: 500; color: #0939CF; line-height: 20px; width: 40px; text-align: center;">Dados Pessoais</span>
-          <span style="font-size: 14px; font-weight: 500; color: #0939CF; line-height: 20px; width: 40px; text-align: center;">Endereço</span>
-          <span style="font-size: 14px; font-weight: 500; color: #E6E6E6; line-height: 20px; width: 40px; text-align: center;">Pagamento</span>
+          <span style="font-size: 14px; font-weight: 500; color: #0939CF; line-height: 20px; width: 80px; margin-left: -20px; text-align: center;">Dados Pessoais</span>
+          <span style="font-size: 14px; font-weight: 500; color: #0939CF; line-height: 20px; width: 80px; margin-left: -20px; text-align: center;">Endereço</span>
+          <span style="font-size: 14px; font-weight: 500; color: #E6E6E6; line-height: 20px; width: 80px; margin-right: -20px; text-align: center;">Pagamento</span>
         </div>
 
       </div>
@@ -425,6 +425,24 @@ import Footer from '../../components/Footer.astro'
     document.getElementById('plano-cidade').textContent   = cidade
     document.getElementById('plano-preco').textContent    = preco
     document.getElementById('plano-condicao').textContent = condicao
+  })()
+
+  // ── Restaura dados da etapa 2 ao voltar da etapa 3 ────────────
+  ;(function () {
+    var saved = sessionStorage.getItem('giga_etapa2')
+    if (!saved) return
+    try {
+      var d = JSON.parse(saved)
+      var f = document.getElementById('form-etapa2')
+      if (d.cep)         f.cep.value         = d.cep
+      if (d.rua)         f.rua.value         = d.rua
+      if (d.complemento) f.complemento.value = d.complemento
+      if (d.numero)      f.numero.value      = d.numero
+      if (d.bairro)      f.bairro.value      = d.bairro
+      if (d.cidadeEnd)   f.cidadeEnd.value   = d.cidadeEnd
+      if (d.estado)      f.estado.value      = d.estado
+      if (d.referencia)  f.referencia.value  = d.referencia
+    } catch (_) {}
   })()
 
   // ── Máscara de CEP + busca ViaCEP ─────────────────────────────

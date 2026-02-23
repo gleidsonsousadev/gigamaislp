@@ -1,0 +1,588 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import Header from '../../components/Header.astro'
+import Footer from '../../components/Footer.astro'
+---
+
+<Layout title="Pagamento | Giga+ Fibra" description="Escolha a forma de pagamento para o seu plano Giga+.">
+
+  <Header />
+
+  <main style="
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(105.833deg, #F3FFF7 5.05%, #C5D1DF 100.3%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 160px 32px 80px;
+  ">
+
+    <div style="
+      width: 100%;
+      max-width: 800px;
+      background: #fff;
+      border-radius: 24px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    ">
+
+      <!-- ── Banner do Plano Selecionado ── -->
+      <div style="
+        background: #0939CF;
+        border-radius: 24px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      ">
+        <div style="display: flex; align-items: flex-start; justify-content: space-between;">
+          <p style="font-size: 24px; font-weight: 500; color: #fff; margin: 0; line-height: 1.33;">Plano Selecionado</p>
+          <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 2px;">
+            <span style="font-size: 12px; font-weight: 600; color: #00EF52; letter-spacing: 1.56px; line-height: normal;">CIDADE</span>
+            <span id="plano-cidade" style="font-size: 18px; font-weight: 500; color: #fff; line-height: normal;"></span>
+          </div>
+        </div>
+
+        <div style="height: 1px; background: rgba(255,255,255,0.2); width: 100%;"></div>
+
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+          <!-- Velocidade + features -->
+          <div style="display: flex; gap: 8px; align-items: center;">
+            <span id="plano-mega" style="font-size: 54px; font-weight: 600; color: #00EF52; line-height: 1.05; white-space: pre-line; word-break: break-word; max-width: 140px;"></span>
+            <div style="display: flex; flex-direction: column; gap: 6px;">
+              <div style="display: flex; gap: 6px; align-items: center;">
+                <img src="/images/icon-hbomax.png" alt="HBO Max" width="28" height="28" style="display: block; flex-shrink: 0;" />
+                <span style="font-size: 13px; font-weight: 400; color: #fff; line-height: normal;">Incluso HBO Max</span>
+              </div>
+              <div style="display: flex; gap: 6px; align-items: center;">
+                <img src="/images/icon-wifi.svg" alt="" width="22" height="22" style="display: block; flex-shrink: 0;" />
+                <span style="font-size: 13px; font-weight: 400; color: #fff; line-height: normal;">Wi-Fi 6</span>
+              </div>
+              <div style="display: flex; gap: 6px; align-items: center;">
+                <img src="/images/icon-check.svg" alt="" width="22" height="22" style="display: block; flex-shrink: 0;" />
+                <span style="font-size: 13px; font-weight: 400; color: #fff; line-height: normal;">Internet 100% Fibra Óptica</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Preço -->
+          <div style="display: flex; flex-direction: column; gap: 8px; align-items: flex-end;">
+            <div style="display: flex; align-items: baseline; gap: 0;">
+              <span id="plano-preco" style="font-size: 46px; font-weight: 600; color: #00EF52; line-height: normal;"></span>
+              <span style="font-size: 24px; font-weight: 400; color: #fff; line-height: normal;">/mês</span>
+            </div>
+            <p id="plano-condicao" style="font-size: 18px; font-weight: 400; color: #fff; margin: 0; line-height: normal;"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Stepper ── -->
+      <div style="display: flex; flex-direction: column; gap: 4px;">
+        <div style="display: flex; align-items: center; gap: 0; width: 100%; padding: 0 2px;">
+
+          <!-- Step 1 (concluído) -->
+          <div style="
+            width: 40px; height: 40px; flex-shrink: 0;
+            background: #0939CF;
+            border-radius: 20px;
+            display: flex; align-items: center; justify-content: center;
+          ">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12L10 17L19 8" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <!-- Linha (azul) -->
+          <div style="flex: 1; height: 2px; background: #0939CF;"></div>
+
+          <!-- Step 2 (concluído) -->
+          <div style="
+            width: 40px; height: 40px; flex-shrink: 0;
+            background: #0939CF;
+            border-radius: 20px;
+            display: flex; align-items: center; justify-content: center;
+          ">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12L10 17L19 8" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <!-- Linha (azul) -->
+          <div style="flex: 1; height: 2px; background: #0939CF;"></div>
+
+          <!-- Step 3 (ativo) -->
+          <div style="
+            width: 40px; height: 40px; flex-shrink: 0;
+            border: 2px solid #0939CF;
+            border-radius: 20px;
+            display: flex; align-items: center; justify-content: center;
+          ">
+            <span style="font-size: 18px; font-weight: 500; color: #0939CF; line-height: 1;">3</span>
+          </div>
+
+        </div>
+
+        <!-- Labels -->
+        <div style="display: flex; align-items: flex-start; justify-content: space-between; padding: 0 2px;">
+          <span style="font-size: 14px; font-weight: 500; color: #0939CF; line-height: 20px; width: 80px; margin-left: -20px; text-align: center;">Dados Pessoais</span>
+          <span style="font-size: 14px; font-weight: 500; color: #0939CF; line-height: 20px; width: 80px; margin-left: -20px; text-align: center;">Endereço</span>
+          <span style="font-size: 14px; font-weight: 500; color: #0D0B26; line-height: 20px; width: 80px; margin-right: -20px; text-align: center;">Pagamento</span>
+        </div>
+      </div>
+
+      <!-- Título da etapa -->
+      <p style="font-size: 32px; font-weight: 600; color: #010180; margin: 0; line-height: 1.33;">Dados para Pagamento</p>
+
+      <!-- ── Opções de Pagamento ── -->
+      <div style="display: flex; flex-direction: column; gap: 26px;">
+
+        <!-- Opção: Boleto Bancário -->
+        <div id="opcao-boleto" style="
+          background: #F8F9FA;
+          border-radius: 12px;
+          padding: 0 24px;
+          height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          cursor: pointer;
+        ">
+          <div style="display: flex; gap: 16px; align-items: center;">
+            <!-- Radio button -->
+            <div id="radio-boleto" style="
+              width: 24px; height: 24px; flex-shrink: 0;
+              border: 1.6px solid #C2C2C2;
+              border-radius: 50%;
+              display: flex; align-items: center; justify-content: center;
+            "></div>
+            <span style="font-size: 18px; font-weight: 500; color: #010180; line-height: 1.5;">Boleto Bancário</span>
+          </div>
+          <!-- Ícone de código de barras -->
+          <svg width="47" height="25" viewBox="0 0 47 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="3" height="25" fill="#010180"/>
+            <rect x="5" y="0" width="1.5" height="25" fill="#010180"/>
+            <rect x="8" y="0" width="3" height="25" fill="#010180"/>
+            <rect x="13" y="0" width="1.5" height="25" fill="#010180"/>
+            <rect x="16" y="0" width="4" height="25" fill="#010180"/>
+            <rect x="22" y="0" width="1.5" height="25" fill="#010180"/>
+            <rect x="25" y="0" width="3" height="25" fill="#010180"/>
+            <rect x="30" y="0" width="1.5" height="25" fill="#010180"/>
+            <rect x="33" y="0" width="4" height="25" fill="#010180"/>
+            <rect x="39" y="0" width="1.5" height="25" fill="#010180"/>
+            <rect x="42" y="0" width="3" height="25" fill="#010180"/>
+            <rect x="46" y="0" width="1" height="25" fill="#010180"/>
+          </svg>
+        </div>
+
+        <!-- Opção: Cartão de Crédito (expandível) -->
+        <div id="opcao-cartao" style="
+          background: #F8F9FA;
+          border-radius: 12px;
+          overflow: hidden;
+        ">
+          <!-- Cabeçalho -->
+          <div style="
+            padding: 0 24px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+          ">
+            <div style="display: flex; gap: 16px; align-items: center;">
+              <!-- Radio button (selecionado por padrão) -->
+              <div id="radio-cartao" style="
+                width: 24px; height: 24px; flex-shrink: 0;
+                border: 1.6px solid #0939CF;
+                border-radius: 50%;
+                display: flex; align-items: center; justify-content: center;
+              ">
+                <div style="width: 12px; height: 12px; background: #0939CF; border-radius: 50%;"></div>
+              </div>
+              <span style="font-size: 18px; font-weight: 500; color: #010180; line-height: 1.5;">Cartão de Crédito</span>
+            </div>
+            <!-- Bandeiras -->
+            <div style="display: flex; gap: 6px; align-items: center;">
+              <!-- Visa -->
+              <div style="width: 35px; height: 24px; background: #fff; border: 1px solid #D9D9D9; border-radius: 4px; display: flex; align-items: center; justify-content: center; padding: 4px 5px; box-sizing: border-box;">
+                <svg viewBox="0 0 38 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+                  <path d="M14.5 11.5H11.7L13.5 0.5H16.3L14.5 11.5Z" fill="#00579F"/>
+                  <path d="M24.3 0.8C23.7 0.5 22.8 0.3 21.7 0.3C19 0.3 17.1 1.7 17.1 3.7C17.1 5.2 18.5 6 19.6 6.5C20.7 7 21.1 7.3 21.1 7.8C21.1 8.5 20.2 8.8 19.4 8.8C18.3 8.8 17.7 8.6 16.8 8.2L16.4 8L16 10.3C16.7 10.6 18 10.9 19.3 10.9C22.2 10.9 24 9.5 24 7.4C24 6.2 23.2 5.3 21.5 4.6C20.5 4.1 19.9 3.8 19.9 3.3C19.9 2.8 20.5 2.4 21.5 2.4C22.4 2.4 23 2.6 23.5 2.8L23.8 3L24.3 0.8Z" fill="#00579F"/>
+                  <path d="M28 7.5L29.1 4.3C29.1 4.3 29.4 3.4 29.5 2.9L29.7 4.2C29.7 4.2 30.3 7 30.4 7.5H28ZM31.6 0.5H29.4C28.7 0.5 28.2 0.7 27.9 1.4L23.9 11.5H26.8L27.4 9.8H30.8L31.1 11.5H33.7L31.6 0.5Z" fill="#00579F"/>
+                  <path d="M9.2 0.5L6.5 8L6.2 6.5C5.7 4.8 4.1 3 2.3 2.1L4.8 11.5H7.7L12.1 0.5H9.2Z" fill="#00579F"/>
+                  <path d="M3.9 0.5H0L0 0.7C3 1.4 5 3.1 5.9 5.2L4.9 1.4C4.7 0.7 4.3 0.5 3.9 0.5Z" fill="#FAA61A"/>
+                </svg>
+              </div>
+              <!-- Mastercard -->
+              <div style="width: 35px; height: 24px; background: #fff; border: 1px solid #D9D9D9; border-radius: 4px; display: flex; align-items: center; justify-content: center; padding: 3px 4px; box-sizing: border-box;">
+                <svg viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+                  <circle cx="12" cy="10" r="10" fill="#EB001B"/>
+                  <circle cx="20" cy="10" r="10" fill="#F79E1B"/>
+                  <path d="M16 3.5C17.9 4.9 19.2 7.3 19.2 10C19.2 12.7 17.9 15.1 16 16.5C14.1 15.1 12.8 12.7 12.8 10C12.8 7.3 14.1 4.9 16 3.5Z" fill="#FF5F00"/>
+                </svg>
+              </div>
+              <!-- Amex -->
+              <div style="width: 35px; height: 24px; background: #1F72CD; border: 1px solid #D9D9D9; border-radius: 4px; display: flex; align-items: center; justify-content: center; padding: 5px 3px; box-sizing: border-box;">
+                <svg viewBox="0 0 30 11" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+                  <path d="M0 0H4L5.5 3.5L7 0H11L8 5.5L11 11H7L5.5 7.5L4 11H0L3 5.5L0 0Z" fill="white"/>
+                  <path d="M12 0H20V2H15V4H20V6H15V9H20V11H12V0Z" fill="white"/>
+                  <path d="M21 0H29L30 1.5L29 3H25V4H30V7H25V8H30L29 9.5L30 11H21V0Z" fill="white"/>
+                </svg>
+              </div>
+              <!-- Elo -->
+              <div style="width: 35px; height: 24px; background: #fff; border: 1px solid #D9D9D9; border-radius: 4px; display: flex; align-items: center; justify-content: center; padding: 5px 4px; box-sizing: border-box;">
+                <svg viewBox="0 0 40 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+                  <text x="0" y="11" font-family="Arial" font-size="12" font-weight="bold" fill="#FDB913">e</text>
+                  <text x="10" y="11" font-family="Arial" font-size="12" font-weight="bold" fill="#231F20">l</text>
+                  <text x="16" y="11" font-family="Arial" font-size="12" font-weight="bold" fill="#00A4E0">o</text>
+                </svg>
+              </div>
+              <!-- Hipercard -->
+              <div style="width: 35px; height: 24px; background: #B82126; border: 1px solid #D9D9D9; border-radius: 4px; display: flex; align-items: center; justify-content: center; padding: 4px 3px; box-sizing: border-box;">
+                <svg viewBox="0 0 30 10" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+                  <text x="1" y="9" font-family="Arial" font-size="7" font-weight="bold" fill="white">hiper</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulário de cartão (expandido) -->
+          <div id="form-cartao" style="
+            border-top: 1px solid #E0E0E0;
+            padding: 16px 24px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          ">
+            <p style="font-size: 14px; font-weight: 400; color: #666; margin: 0; line-height: 1.5;">
+              Pague com segurança usando Visa, Mastercard, American Express, Elo ou Hipercard.
+            </p>
+
+            <!-- Número do cartão -->
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              <label for="num-cartao" style="font-size: 16px; font-weight: 500; color: #010180; line-height: 1.5;">Número do Cartão</label>
+              <input
+                id="num-cartao"
+                name="numCartao"
+                type="text"
+                placeholder="1234 1234 1234 1234"
+                maxlength="19"
+                style="
+                  height: 56px;
+                  width: 100%;
+                  border: 0.8px solid #010180;
+                  border-radius: 8px;
+                  padding: 0 16px;
+                  font-size: 16px;
+                  font-weight: 400;
+                  color: #0D0B26;
+                  font-family: inherit;
+                  outline: none;
+                  background: #fff;
+                  box-sizing: border-box;
+                "
+              />
+            </div>
+
+            <!-- Nome + Validade + CVV -->
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+
+              <!-- Nome no cartão -->
+              <div style="display: flex; flex-direction: column; gap: 4px; flex: 1;">
+                <label for="nome-cartao" style="font-size: 16px; font-weight: 500; color: #010180; line-height: 1.5;">Nome no Cartão</label>
+                <input
+                  id="nome-cartao"
+                  name="nomeCartao"
+                  type="text"
+                  placeholder="Nome completo"
+                  style="
+                    height: 56px;
+                    width: 100%;
+                    border: 0.8px solid #010180;
+                    border-radius: 8px;
+                    padding: 0 16px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #0D0B26;
+                    font-family: inherit;
+                    outline: none;
+                    background: #fff;
+                    box-sizing: border-box;
+                  "
+                />
+              </div>
+
+              <!-- Validade -->
+              <div style="display: flex; flex-direction: column; gap: 4px; width: 140px; flex-shrink: 0;">
+                <label for="validade" style="font-size: 16px; font-weight: 500; color: #010180; line-height: 1.5;">Validade</label>
+                <input
+                  id="validade"
+                  name="validade"
+                  type="text"
+                  placeholder="MM / AA"
+                  maxlength="7"
+                  style="
+                    height: 56px;
+                    width: 100%;
+                    border: 0.8px solid #010180;
+                    border-radius: 8px;
+                    padding: 0 16px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #0D0B26;
+                    font-family: inherit;
+                    outline: none;
+                    background: #fff;
+                    box-sizing: border-box;
+                  "
+                />
+              </div>
+
+              <!-- CVV -->
+              <div style="display: flex; flex-direction: column; gap: 4px; width: 100px; flex-shrink: 0;">
+                <label for="cvv" style="font-size: 16px; font-weight: 500; color: #010180; line-height: 1.5;">CVV</label>
+                <input
+                  id="cvv"
+                  name="cvv"
+                  type="text"
+                  placeholder="123"
+                  maxlength="4"
+                  style="
+                    height: 56px;
+                    width: 100%;
+                    border: 0.8px solid #010180;
+                    border-radius: 8px;
+                    padding: 0 16px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #0D0B26;
+                    font-family: inherit;
+                    outline: none;
+                    background: #fff;
+                    box-sizing: border-box;
+                  "
+                />
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Opção: Débito em Conta -->
+        <div id="opcao-debito" style="
+          background: #F8F9FA;
+          border-radius: 12px;
+          padding: 0 24px;
+          height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          cursor: pointer;
+        ">
+          <div style="display: flex; gap: 16px; align-items: center;">
+            <div id="radio-debito" style="
+              width: 24px; height: 24px; flex-shrink: 0;
+              border: 1.6px solid #C2C2C2;
+              border-radius: 50%;
+              display: flex; align-items: center; justify-content: center;
+            "></div>
+            <span style="font-size: 18px; font-weight: 500; color: #010180; line-height: 1.5;">Débito em Conta</span>
+          </div>
+          <!-- Ícone banco/Pix -->
+          <div style="width: 40px; height: 40px; background: #fff; border: 1px solid #D9D9D9; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 9L12 3L21 9V10H3V9Z" fill="#EF4444"/>
+              <rect x="5" y="11" width="2" height="7" fill="#EF4444"/>
+              <rect x="9" y="11" width="2" height="7" fill="#EF4444"/>
+              <rect x="13" y="11" width="2" height="7" fill="#EF4444"/>
+              <rect x="17" y="11" width="2" height="7" fill="#EF4444"/>
+              <rect x="3" y="19" width="18" height="2" fill="#EF4444"/>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ── Botões: Voltar + Confirmar Pagamento ── -->
+      <div style="display: flex; align-items: center; justify-content: space-between;">
+
+        <!-- Voltar -->
+        <button id="btn-voltar" type="button" style="
+          display: inline-flex;
+          align-items: center;
+          gap: 16px;
+          padding: 12px 24px;
+          border: 2px solid #010180;
+          border-radius: 37px;
+          background: transparent;
+          color: #010180;
+          font-size: 24px;
+          font-weight: 600;
+          cursor: pointer;
+          white-space: nowrap;
+          font-family: inherit;
+        ">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 8L12 16L20 24" stroke="#010180" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Voltar
+        </button>
+
+        <!-- Confirmar Pagamento -->
+        <button id="btn-confirmar" type="button" style="
+          display: inline-flex;
+          align-items: center;
+          gap: 16px;
+          padding: 12px 24px;
+          border: none;
+          border-radius: 37px;
+          background: #010180;
+          color: #00EF52;
+          font-size: 24px;
+          font-weight: 600;
+          cursor: pointer;
+          white-space: nowrap;
+          font-family: inherit;
+        ">
+          Confirmar Pagamento
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 16L13 23L26 9" stroke="#00EF52" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+      </div>
+
+    </div>
+  </main>
+
+  <Footer />
+
+</Layout>
+
+<style is:global>
+  input::placeholder {
+    color: #C2C2C2;
+  }
+  input:focus {
+    border-color: #0939CF !important;
+    box-shadow: 0 0 0 3px rgba(9, 57, 207, 0.15);
+  }
+  #btn-confirmar:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+  }
+  #btn-voltar:hover {
+    background: #f0f4ff;
+  }
+</style>
+
+<script is:inline>
+  // ── Preenche o banner do plano a partir dos query params ──
+  ;(function () {
+    var p = new URLSearchParams(window.location.search)
+    var plano    = p.get('plano')    || '600 Mega'
+    var cidade   = p.get('cidade')   || 'Santo André-SP'
+    var preco    = p.get('preco')    || 'R$99,89'
+    var condicao = p.get('condicao') || 'Após 3 meses, aumenta R$20'
+
+    var planoFormatado = plano.replace(/\s+/, '\n')
+    document.getElementById('plano-mega').textContent     = planoFormatado
+    document.getElementById('plano-cidade').textContent   = cidade
+    document.getElementById('plano-preco').textContent    = preco
+    document.getElementById('plano-condicao').textContent = condicao
+  })()
+
+  // ── Seleção de método de pagamento ────────────────────────
+  var metodoPagamento = 'cartao'
+
+  var opcaoBoleto  = document.getElementById('opcao-boleto')
+  var opcaoCartao  = document.getElementById('opcao-cartao')
+  var opcaoDebito  = document.getElementById('opcao-debito')
+  var radioBoleto  = document.getElementById('radio-boleto')
+  var radioCartao  = document.getElementById('radio-cartao')
+  var radioDebito  = document.getElementById('radio-debito')
+  var formCartao   = document.getElementById('form-cartao')
+
+  function selecionarMetodo(metodo) {
+    metodoPagamento = metodo
+
+    // Reset todos
+    radioBoleto.innerHTML  = ''
+    radioBoleto.style.borderColor = '#C2C2C2'
+    radioDebito.innerHTML  = ''
+    radioDebito.style.borderColor = '#C2C2C2'
+    radioCartao.innerHTML  = ''
+    radioCartao.style.borderColor = '#C2C2C2'
+
+    if (metodo === 'boleto') {
+      radioBoleto.style.borderColor = '#0939CF'
+      radioBoleto.innerHTML = '<div style="width:12px;height:12px;background:#0939CF;border-radius:50%;"></div>'
+      formCartao.style.display = 'none'
+    } else if (metodo === 'cartao') {
+      radioCartao.style.borderColor = '#0939CF'
+      radioCartao.innerHTML = '<div style="width:12px;height:12px;background:#0939CF;border-radius:50%;"></div>'
+      formCartao.style.display = 'flex'
+    } else if (metodo === 'debito') {
+      radioDebito.style.borderColor = '#0939CF'
+      radioDebito.innerHTML = '<div style="width:12px;height:12px;background:#0939CF;border-radius:50%;"></div>'
+      formCartao.style.display = 'none'
+    }
+  }
+
+  opcaoBoleto.addEventListener('click', function () { selecionarMetodo('boleto') })
+  opcaoCartao.addEventListener('click', function () { selecionarMetodo('cartao') })
+  opcaoDebito.addEventListener('click', function () { selecionarMetodo('debito') })
+
+  // ── Máscaras ───────────────────────────────────────────────
+  document.getElementById('num-cartao').addEventListener('input', function (e) {
+    var v = e.target.value.replace(/\D/g, '').slice(0, 16)
+    v = v.replace(/(\d{4})(?=\d)/g, '$1 ')
+    e.target.value = v
+  })
+
+  document.getElementById('validade').addEventListener('input', function (e) {
+    var v = e.target.value.replace(/\D/g, '').slice(0, 4)
+    if (v.length > 2) v = v.slice(0, 2) + ' / ' + v.slice(2)
+    e.target.value = v
+  })
+
+  document.getElementById('cvv').addEventListener('input', function (e) {
+    e.target.value = e.target.value.replace(/\D/g, '').slice(0, 4)
+  })
+
+  // ── Voltar ─────────────────────────────────────────────────
+  document.getElementById('btn-voltar').addEventListener('click', function () {
+    var params = new URLSearchParams(window.location.search)
+    window.location.href = '/contratar/endereco?' + params.toString()
+  })
+
+  // ── Confirmar Pagamento ────────────────────────────────────
+  document.getElementById('btn-confirmar').addEventListener('click', function () {
+    if (metodoPagamento === 'cartao') {
+      var numCartao   = document.getElementById('num-cartao')
+      var nomeCartao  = document.getElementById('nome-cartao')
+      var validade    = document.getElementById('validade')
+      var cvv         = document.getElementById('cvv')
+      var campos = [numCartao, nomeCartao, validade, cvv]
+      var valid = true
+
+      campos.forEach(function (c) {
+        if (!c.value.trim()) {
+          c.style.borderColor = '#EF0000'
+          valid = false
+        } else {
+          c.style.borderColor = '#010180'
+        }
+      })
+
+      if (!valid) return
+    }
+
+    // Aqui entraria a integração de pagamento
+    // Por ora apenas exibe alerta de sucesso
+    alert('Pedido confirmado! Em breve nossa equipe entrará em contato.')
+  })
+</script>
