@@ -206,46 +206,11 @@ import Footer from '../../components/Footer.astro'
             </div>
             <!-- Bandeiras -->
             <div style="display: flex; gap: 6px; align-items: center;">
-              <!-- Visa -->
-              <div style="width: 35px; height: 24px; background: #fff; border: 1px solid #D9D9D9; border-radius: 4px; display: flex; align-items: center; justify-content: center; padding: 4px 5px; box-sizing: border-box;">
-                <svg viewBox="0 0 38 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
-                  <path d="M14.5 11.5H11.7L13.5 0.5H16.3L14.5 11.5Z" fill="#00579F"/>
-                  <path d="M24.3 0.8C23.7 0.5 22.8 0.3 21.7 0.3C19 0.3 17.1 1.7 17.1 3.7C17.1 5.2 18.5 6 19.6 6.5C20.7 7 21.1 7.3 21.1 7.8C21.1 8.5 20.2 8.8 19.4 8.8C18.3 8.8 17.7 8.6 16.8 8.2L16.4 8L16 10.3C16.7 10.6 18 10.9 19.3 10.9C22.2 10.9 24 9.5 24 7.4C24 6.2 23.2 5.3 21.5 4.6C20.5 4.1 19.9 3.8 19.9 3.3C19.9 2.8 20.5 2.4 21.5 2.4C22.4 2.4 23 2.6 23.5 2.8L23.8 3L24.3 0.8Z" fill="#00579F"/>
-                  <path d="M28 7.5L29.1 4.3C29.1 4.3 29.4 3.4 29.5 2.9L29.7 4.2C29.7 4.2 30.3 7 30.4 7.5H28ZM31.6 0.5H29.4C28.7 0.5 28.2 0.7 27.9 1.4L23.9 11.5H26.8L27.4 9.8H30.8L31.1 11.5H33.7L31.6 0.5Z" fill="#00579F"/>
-                  <path d="M9.2 0.5L6.5 8L6.2 6.5C5.7 4.8 4.1 3 2.3 2.1L4.8 11.5H7.7L12.1 0.5H9.2Z" fill="#00579F"/>
-                  <path d="M3.9 0.5H0L0 0.7C3 1.4 5 3.1 5.9 5.2L4.9 1.4C4.7 0.7 4.3 0.5 3.9 0.5Z" fill="#FAA61A"/>
-                </svg>
-              </div>
-              <!-- Mastercard -->
-              <div style="width: 35px; height: 24px; background: #fff; border: 1px solid #D9D9D9; border-radius: 4px; display: flex; align-items: center; justify-content: center; padding: 3px 4px; box-sizing: border-box;">
-                <svg viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
-                  <circle cx="12" cy="10" r="10" fill="#EB001B"/>
-                  <circle cx="20" cy="10" r="10" fill="#F79E1B"/>
-                  <path d="M16 3.5C17.9 4.9 19.2 7.3 19.2 10C19.2 12.7 17.9 15.1 16 16.5C14.1 15.1 12.8 12.7 12.8 10C12.8 7.3 14.1 4.9 16 3.5Z" fill="#FF5F00"/>
-                </svg>
-              </div>
-              <!-- Amex -->
-              <div style="width: 35px; height: 24px; background: #1F72CD; border: 1px solid #D9D9D9; border-radius: 4px; display: flex; align-items: center; justify-content: center; padding: 5px 3px; box-sizing: border-box;">
-                <svg viewBox="0 0 30 11" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
-                  <path d="M0 0H4L5.5 3.5L7 0H11L8 5.5L11 11H7L5.5 7.5L4 11H0L3 5.5L0 0Z" fill="white"/>
-                  <path d="M12 0H20V2H15V4H20V6H15V9H20V11H12V0Z" fill="white"/>
-                  <path d="M21 0H29L30 1.5L29 3H25V4H30V7H25V8H30L29 9.5L30 11H21V0Z" fill="white"/>
-                </svg>
-              </div>
-              <!-- Elo -->
-              <div style="width: 35px; height: 24px; background: #fff; border: 1px solid #D9D9D9; border-radius: 4px; display: flex; align-items: center; justify-content: center; padding: 5px 4px; box-sizing: border-box;">
-                <svg viewBox="0 0 40 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
-                  <text x="0" y="11" font-family="Arial" font-size="12" font-weight="bold" fill="#FDB913">e</text>
-                  <text x="10" y="11" font-family="Arial" font-size="12" font-weight="bold" fill="#231F20">l</text>
-                  <text x="16" y="11" font-family="Arial" font-size="12" font-weight="bold" fill="#00A4E0">o</text>
-                </svg>
-              </div>
-              <!-- Hipercard -->
-              <div style="width: 35px; height: 24px; background: #B82126; border: 1px solid #D9D9D9; border-radius: 4px; display: flex; align-items: center; justify-content: center; padding: 4px 3px; box-sizing: border-box;">
-                <svg viewBox="0 0 30 10" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
-                  <text x="1" y="9" font-family="Arial" font-size="7" font-weight="bold" fill="white">hiper</text>
-                </svg>
-              </div>
+              <img src="/images/icon-visa.svg" alt="Visa" style="height: 24px; width: auto; display: block;" />
+              <img src="/images/icon-mastercard.svg" alt="Mastercard" style="height: 24px; width: auto; display: block;" />
+              <img src="/images/icon-amex.svg" alt="American Express" style="height: 24px; width: auto; display: block;" />
+              <img src="/images/icon-elo.svg" alt="Elo" style="height: 24px; width: auto; display: block;" />
+              <img src="/images/icon-hipercard.svg" alt="Hipercard" style="height: 24px; width: auto; display: block;" />
             </div>
           </div>
 
