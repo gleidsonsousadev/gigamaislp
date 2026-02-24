@@ -1,7 +1,7 @@
 ---
 ---
 
-<section style="width: 100%; background: #fff; padding: 80px 32px;">
+<section class="qualidade-section" style="width: 100%; background: #fff; padding: 80px 32px;">
 
   <div style="max-width: 1440px; margin: 0 auto; display: flex; flex-direction: column; gap: 64px; align-items: center;">
 
@@ -13,7 +13,7 @@
       </h2>
 
       <!-- Badges de premiações -->
-      <div style="display: flex; gap: 24px; align-items: center; justify-content: center; flex-wrap: wrap; width: 100%;">
+      <div class="qualidade-badges" style="display: flex; gap: 24px; align-items: center; justify-content: center; flex-wrap: wrap; width: 100%;">
 
         <div class="badge-premio">
           <img src="/images/icon-premiada.svg" alt="" width="38" height="38" style="display: block; flex-shrink: 0;" />
@@ -75,7 +75,7 @@
     </div>
 
     <!-- Números / estatísticas -->
-    <div style="display: flex; gap: 26px; align-items: center; justify-content: center; text-align: center; color: #010180;">
+    <div class="qualidade-stats" style="display: flex; gap: 26px; align-items: center; justify-content: center; text-align: center; color: #010180;">
 
       <div style="display: flex; flex-direction: column; gap: 5.6px; align-items: center;">
         <span style="font-size: 54px; font-weight: 500; color: #010180; line-height: normal;">+280</span>
@@ -106,5 +106,35 @@
     padding: 12px;
     background: rgba(1, 1, 128, 0.05);
     border-radius: 11px;
+  }
+
+  @media (max-width: 768px) {
+    .qualidade-section {
+      padding: 48px 24px !important;
+    }
+
+    .qualidade-badges {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      gap: 12px !important;
+      justify-items: stretch;
+    }
+
+    .badge-premio {
+      width: 100%;
+    }
+
+    .qualidade-stats {
+      flex-direction: column !important;
+      gap: 32px !important;
+    }
+
+    .qualidade-stats span[style*="54px"] {
+      font-size: 40px !important;
+    }
+
+    .qualidade-stats span[style*="24px"] {
+      font-size: 18px !important;
+    }
   }
 </style>

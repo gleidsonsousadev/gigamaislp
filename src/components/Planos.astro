@@ -1,12 +1,12 @@
 ---
 ---
 
-<section id="planos" style="width: 100%; background: linear-gradient(123.24deg, #F3FFF7 5.05%, #C5D1DF 100.3%); padding: 80px 32px;">
+<section id="planos" class="planos-section" style="width: 100%; background: linear-gradient(123.24deg, #F3FFF7 5.05%, #C5D1DF 100.3%); padding: 80px 32px;">
 
-  <div style="max-width: 1440px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px;">
+  <div class="planos-inner" style="max-width: 1440px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px;">
 
     <!-- Header da seção: título + seletor de cidade -->
-    <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+    <div class="planos-header" style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
 
       <!-- Título -->
       <div style="display: flex; flex-direction: column; gap: 11px; max-width: 617px;">
@@ -20,7 +20,7 @@
       </div>
 
       <!-- Seletor: cidade + radio buttons -->
-      <div style="display: flex; gap: 5.6px; align-items: center; justify-content: center; padding: 16px; background: rgba(1,1,128,0.1); border-radius: 24px; flex-shrink: 0;">
+      <div class="planos-seletor" style="display: flex; gap: 5.6px; align-items: center; justify-content: center; padding: 16px; background: rgba(1,1,128,0.1); border-radius: 24px; flex-shrink: 0;">
 
         <!-- Cidade + Trocar Cidade -->
         <div style="display: flex; gap: 16px; align-items: center; padding: 6px 6px 6px 17px; border-radius: 32px;">
@@ -51,7 +51,7 @@
 
     <!-- Cards de planos -->
     <!-- Wrapper com padding-top para acomodar o badge do card 600 Mega -->
-    <div style="display: flex; gap: 24px; align-items: center; width: 100%; padding-top: 28px;">
+    <div class="planos-cards" style="display: flex; gap: 24px; align-items: center; width: 100%; padding-top: 28px;">
 
       <!-- Card 400 Mega -->
       <div style="flex: 0 0 calc(25% - 18px); display: flex; flex-direction: column; gap: 24px; padding: 32px 24px; border-radius: 24px; background: linear-gradient(214.15deg, #010180 9.8%, #0939CF 99.2%);">
@@ -180,6 +180,112 @@
   </div>
 
 </section>
+
+<style>
+  @media (max-width: 768px) {
+    /* Seção: padding 64px vertical, 24px lateral */
+    .planos-section {
+      padding: 64px 24px !important;
+    }
+
+    /* Inner container: sem max-width fixo, gap menor */
+    .planos-inner {
+      gap: 24px !important;
+    }
+
+    /* Header: coluna, centralizado */
+    .planos-header {
+      flex-direction: column !important;
+      align-items: center !important;
+      text-align: center !important;
+      gap: 16px !important;
+    }
+
+    /* Bloco título + subtítulo */
+    .planos-header > div {
+      gap: 16px !important;
+      max-width: 100% !important;
+      align-items: center !important;
+    }
+
+    /* Título h2: 28px, line-height 32px */
+    .planos-header h2 {
+      font-size: 28px !important;
+      line-height: 32px !important;
+    }
+
+    /* Subtítulo p: 16px, line-height 20px */
+    .planos-header p {
+      font-size: 16px !important;
+      line-height: 20px !important;
+    }
+
+    /* Seletor: coluna, full width, centralizado */
+    .planos-seletor {
+      flex-direction: column !important;
+      width: 100% !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 16px !important;
+      gap: 5.6px !important;
+      border-radius: 24px !important;
+    }
+
+    /* Bloco cidade + botão: coluna, centralizado */
+    .planos-seletor > div:first-child {
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 16px !important;
+      padding: 0 !important;
+      width: 100% !important;
+    }
+
+    /* Bloco CIDADE + nome da cidade: texto centralizado */
+    .planos-seletor > div:first-child > div:first-child {
+      flex-direction: column !important;
+      align-items: center !important;
+      text-align: center !important;
+    }
+
+    /* Botão Trocar Cidade: centralizado, font-size 16px */
+    #btn-trocar-cidade {
+      font-size: 16px !important;
+      border-radius: 24px !important;
+      padding: 12px 24px !important;
+    }
+
+    /* Radio buttons: linha, centralizado, gap 16px */
+    .planos-seletor > div:last-child {
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 8px 16px !important;
+      gap: 16px !important;
+    }
+
+    /* Cards: coluna, gap 24px, com padding-top para o badge do 600 Mega */
+    .planos-cards {
+      flex-direction: column !important;
+      gap: 24px !important;
+      padding-top: 24px !important;
+      align-items: stretch !important;
+    }
+
+    /* Todos os cards: largura total */
+    .planos-cards > div {
+      flex: none !important;
+      width: 100% !important;
+    }
+
+    /* Botão Contratar Online: full width */
+    .planos-cards a[style*="border-radius: 999px"] {
+      width: 100% !important;
+      box-sizing: border-box !important;
+      height: 48px !important;
+    }
+  }
+</style>
 
 <script>
   // Ao clicar em "Contratar Online", monta a URL lendo os valores atuais do DOM

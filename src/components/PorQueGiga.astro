@@ -1,7 +1,7 @@
 ---
 ---
 
-<section style="position: relative; width: 100%; background: #000026; border-bottom: 2px solid #000050; overflow: hidden; height: 824px;">
+<section class="porque-section" style="position: relative; width: 100%; background: #000026; border-bottom: 2px solid #000050; overflow: hidden; height: 824px;">
 
   <!-- Container 1440px centralizado — base de posicionamento -->
   <div style="position: absolute; inset: 0; display: flex; justify-content: center;">
@@ -11,6 +11,7 @@
       <img
         src="/images/bg-mao-porque-ser-giga.png"
         alt=""
+        class="porque-img"
         style="
           position: absolute;
           left: -85px;
@@ -57,7 +58,7 @@
 
 
       <!-- Conteúdo direito: x=1114-240=874, y=111, w=469, h=603 -->
-      <div style="
+      <div class="porque-content" style="
         position: absolute;
         left: 874px;
         top: 111px;
@@ -75,7 +76,7 @@
         </h2>
 
         <!-- 3 cards glassmorphism: width=353 -->
-        <div style="display: flex; flex-direction: column; gap: 24px; width: 353px;">
+        <div class="porque-cards" style="display: flex; flex-direction: column; gap: 24px; width: 353px;">
 
           <!-- Card Wi-Fi 6 -->
           <div class="card-porque">
@@ -125,5 +126,46 @@
     -webkit-backdrop-filter: blur(8px);
     width: 100%;
     box-sizing: border-box;
+  }
+
+  @media (max-width: 768px) {
+    .porque-section {
+      height: auto !important;
+      padding: 48px 0 0;
+    }
+
+    /* Imagem oculta no mobile - o Figma mobile não mostra */
+    .porque-img,
+    .porque-section div[style*="fade"] {
+      display: none !important;
+    }
+
+    .porque-content {
+      position: relative !important;
+      left: auto !important;
+      top: auto !important;
+      width: 100% !important;
+      height: auto !important;
+      padding: 0 24px 48px;
+      box-sizing: border-box;
+      justify-content: flex-start !important;
+      gap: 32px !important;
+    }
+
+    .porque-content h2 {
+      font-size: 28px !important;
+      line-height: 36px !important;
+      width: 100% !important;
+    }
+
+    .porque-cards {
+      width: 100% !important;
+    }
+
+    .card-porque {
+      flex-direction: row !important;
+      align-items: flex-start !important;
+      gap: 16px !important;
+    }
   }
 </style>

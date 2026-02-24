@@ -2,7 +2,7 @@
 ---
 
 <div style="width: 100%; height: 2px; background: linear-gradient(to right, #000050, #00EF52 50%, #000050);"></div>
-<section style="position: relative; width: 100%; background: #000026; height: 713px; overflow: hidden;">
+<section class="entret-section" style="position: relative; width: 100%; background: #000026; height: 713px; overflow: hidden;">
 
   <!-- Imagem de fundo full-width com mix-blend-mode lighten -->
   <img
@@ -22,8 +22,8 @@
   />
 
   <!-- Card glassmorphism centralizado -->
-  <div style="position: absolute; inset: 0; display: flex; justify-content: center; align-items: flex-end; padding-bottom: calc(713px - 394px - 238px);">
-    <div style="
+  <div class="entret-card-wrapper" style="position: absolute; inset: 0; display: flex; justify-content: center; align-items: flex-end; padding-bottom: calc(713px - 394px - 238px);">
+    <div class="entret-card" style="
       width: 733px;
       display: flex;
       flex-direction: column;
@@ -37,11 +37,11 @@
       box-sizing: border-box;
     ">
 
-      <p style="font-size: 40px; font-weight: 500; line-height: 48px; margin: 0; color: #00EF52;">
+      <p class="entret-title" style="font-size: 40px; font-weight: 500; line-height: 48px; margin: 0; color: #00EF52;">
         Sua Internet <span style="color: #fff;">Giga+</span> é o passaporte para o melhor do <span style="color: #fff;">entretenimento.</span>
       </p>
 
-      <a href="#contratar" style="
+      <a href="#contratar" class="entret-btn" style="
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -62,3 +62,35 @@
   </div>
 
 </section>
+
+<style>
+  @media (max-width: 768px) {
+    .entret-section {
+      height: auto !important;
+      min-height: 516px;
+    }
+
+    .entret-card-wrapper {
+      position: relative !important;
+      inset: auto !important;
+      padding-bottom: 0 !important;
+      align-items: flex-end !important;
+      padding: 0 24px 40px !important;
+    }
+
+    .entret-card {
+      width: 100% !important;
+      gap: 24px !important;
+      padding: 24px !important;
+    }
+
+    .entret-title {
+      font-size: 26px !important;
+      line-height: 34px !important;
+    }
+
+    .entret-btn {
+      width: 100% !important;
+    }
+  }
+</style>

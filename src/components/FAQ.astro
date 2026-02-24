@@ -1,12 +1,12 @@
 ---
 ---
 
-<section id="duvidas" style="width: 100%; background: linear-gradient(114.25deg, #F3FFF7 5.05%, #C5D1DF 100.3%); padding: 136px 32px;">
+<section id="duvidas" class="faq-section" style="width: 100%; background: linear-gradient(114.25deg, #F3FFF7 5.05%, #C5D1DF 100.3%); padding: 136px 32px;">
 
   <div style="max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px;">
 
     <!-- Título -->
-    <h2 style="font-size: 40px; font-weight: 500; line-height: 36px; color: #010180; text-align: center; margin: 0;">
+    <h2 class="faq-titulo" style="font-size: 40px; font-weight: 500; line-height: 36px; color: #010180; text-align: center; margin: 0;">
       Perguntas Frequentes
     </h2>
 
@@ -210,6 +210,30 @@
     color: #5a5a5a;
     line-height: 24px;
     margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .faq-section {
+      padding: 64px 24px !important;
+    }
+
+    .faq-titulo {
+      font-size: 28px !important;
+      line-height: 32px !important;
+    }
+
+    .faq-summary {
+      font-size: 16px !important;
+      padding: 16px !important;
+    }
+
+    .faq-body {
+      padding: 12px 16px 16px !important;
+    }
+
+    .faq-body p {
+      font-size: 14px !important;
+    }
   }
 </style>
 

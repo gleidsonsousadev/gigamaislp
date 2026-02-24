@@ -1,14 +1,14 @@
 ---
 ---
 
-<section id="inicio" style="position: relative; width: 100%; height: 588px; background: #000050; overflow: hidden;">
+<section id="inicio" class="hero-section" style="position: relative; width: 100%; height: 588px; background: #000050; overflow: hidden;">
 
   <!-- Container de 1440px centralizado -->
   <div style="position: relative; max-width: 1440px; margin: 0 auto; height: 100%;">
 
     <!-- Degradê azul: canto superior esquerdo atrás do H1 -->
     <!-- Figma: elipse 502x502, x=-44,y=-229 → centro em x=207,y=22 no frame 1920 → no container 1440: centro x=-33,y=22 → left=-284,top=-229 -->
-    <div style="
+    <div class="hero-degrade-azul" style="
       position: absolute;
       z-index: 4;
       left: -200px;
@@ -24,7 +24,7 @@
 
     <!-- Degradê verde: parte inferior, sobre a mão da mulher -->
     <!-- Figma: x=729,y=526 no frame 1920 → container 1440: left=489,top=526 -->
-    <div style="
+    <div class="hero-degrade-verde" style="
       position: absolute;
       z-index: 5;
       left: 489px;
@@ -39,33 +39,37 @@
     "></div>
 
     <!-- Imagem da mulher: z-index 2, sobre o degradê azul -->
-    <img
-      src="/images/bg-woman-hero.png"
-      alt=""
-      fetchpriority="high"
-      style="position: absolute; right: 0; top: 0; width: 1071px; height: 588px; display: block; object-fit: cover; z-index: 2;"
-    />
+    <picture class="hero-woman-picture" style="position: absolute; right: 0; top: 0; width: 1071px; height: 588px; z-index: 2; display: block;">
+      <source srcset="/images/bg-woman-hero-mobile.png" media="(max-width: 768px)" />
+      <img
+        src="/images/bg-woman-hero.png"
+        alt=""
+        fetchpriority="high"
+        class="hero-woman-img"
+        style="width: 100%; height: 100%; display: block; object-fit: cover;"
+      />
+    </picture>
 
     <!-- Fade da esquerda sobre a imagem para fundir com o fundo -->
-    <div style="position: absolute; right: 0; top: 0; width: 1071px; height: 588px; background: linear-gradient(to right, #000050 0%, rgba(0,0,80,0.6) 25%, transparent 55%); pointer-events: none; z-index: 3;"></div>
+    <div class="hero-fade-left" style="position: absolute; right: 0; top: 0; width: 1071px; height: 588px; background: linear-gradient(to right, #000050 0%, rgba(0,0,80,0.6) 25%, transparent 55%); pointer-events: none; z-index: 3;"></div>
 
     <!-- Texto e CTAs: z-index 10 -->
-    <div style="position: absolute; left: 0; top: 60%; transform: translateY(-60%); width: 598px; display: flex; flex-direction: column; gap: 24px; z-index: 10;">
+    <div class="hero-content" style="position: absolute; left: 0; top: 60%; transform: translateY(-60%); width: 598px; display: flex; flex-direction: column; gap: 24px; z-index: 10;">
 
       <h1 style="font-size: 56px; line-height: 64px; font-weight: 500; color: #fff; margin: 0;">
         Sua Internet<br>
         <span style="color: #00EF52;">100% Fibra</span> com Estabilidade Premiada
       </h1>
 
-      <p style="font-size: 18px; line-height: 24px; font-weight: 400; color: #fff; margin: 0; width: 526px;">
+      <p class="hero-desc" style="font-size: 18px; line-height: 24px; font-weight: 400; color: #fff; margin: 0; width: 526px;">
         Navegue com ultravelocidade e a menor latência do mercado. Perfeito para gamers, streamers e home office de alta performance.
       </p>
 
-      <div style="display: flex; align-items: center; gap: 16px;">
+      <div class="hero-ctas" style="display: flex; align-items: center; gap: 16px;">
         <a href="#planos" style="display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; border: 1.5px solid #00EF52; color: #00EF52; font-size: 18px; font-weight: 600; padding: 14px 24px; background: transparent; text-decoration: none; white-space: nowrap;">
           Ver Planos
         </a>
-        <a href="https://wa.me/5511936192300" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 8px; border-radius: 999px; background: #00EF52; color: #091540; font-size: 18px; font-weight: 600; padding: 12px 24px; text-decoration: none; white-space: nowrap;">
+        <a href="https://wa.me/5511936192300" target="_blank" rel="noopener noreferrer" class="hero-whatsapp-btn" style="display: inline-flex; align-items: center; gap: 8px; border-radius: 999px; background: #00EF52; color: #091540; font-size: 18px; font-weight: 600; padding: 12px 24px; text-decoration: none; white-space: nowrap;">
           <img src="/images/icon-whatsapp.svg" alt="" width="24" height="24" style="display:block; flex-shrink:0;" />
           Contratar pelo WhatsApp
         </a>
@@ -75,7 +79,7 @@
 
     <!-- Badges com glassmorphism -->
     <!-- Melhor Provedor: Figma x=1009, y=184 → no container 1440: x=1009-((1920-1440)/2)=769, y=184 -->
-    <div class="badge-glass badge-float-1" style="position: absolute; z-index: 20; left: 740px; top: 130px;">
+    <div class="badge-glass badge-float-1 hero-badge" style="position: absolute; z-index: 20; left: 740px; top: 130px;">
       <img src="/images/icon-melhor-provedor.svg" alt="" width="22" height="22" style="display:block;" />
       <div style="text-align: center; font-size: 12.6px; line-height: 1.4; font-weight: 500; white-space: nowrap;">
         <p style="color: #fff; margin: 0;">Melhor</p>
@@ -84,7 +88,7 @@
     </div>
 
     <!-- Melhor Velocidade -->
-    <div class="badge-glass badge-float-2" style="position: absolute; z-index: 20; left: 710px; top: 355px;">
+    <div class="badge-glass badge-float-2 hero-badge" style="position: absolute; z-index: 20; left: 710px; top: 355px;">
       <img src="/images/icon-melhor-velocidade.svg" alt="" width="22" height="22" style="display:block;" />
       <div style="text-align: center; font-size: 12.6px; line-height: 1.4; font-weight: 500; white-space: nowrap;">
         <p style="color: #fff; margin: 0;">Melhor</p>
@@ -93,7 +97,7 @@
     </div>
 
     <!-- 4.9 No Google -->
-    <div class="badge-glass badge-float-3" style="position: absolute; z-index: 20; left: 1175px; top: 250px;">
+    <div class="badge-glass badge-float-3 hero-badge" style="position: absolute; z-index: 20; left: 1175px; top: 250px;">
       <img src="/images/icon-avaliacao-google.svg" alt="" width="22" height="22" style="display:block;" />
       <div style="text-align: center; font-size: 12.6px; line-height: 1.4; font-weight: 500; white-space: nowrap;">
         <p style="color: #fff; margin: 0;">4.9</p>
@@ -102,7 +106,7 @@
     </div>
 
     <!-- Melhor Estabilidade: Figma x=1312, y=466 → container: x=1072, y=466 -->
-    <div class="badge-glass badge-float-4" style="position: absolute; z-index: 20; left: 1042px; top: 412px;">
+    <div class="badge-glass badge-float-4 hero-badge" style="position: absolute; z-index: 20; left: 1042px; top: 412px;">
       <img src="/images/icon-melhor-estabilidade.svg" alt="" width="22" height="22" style="display:block;" />
       <div style="text-align: center; font-size: 12.6px; line-height: 1.4; font-weight: 500; white-space: nowrap;">
         <p style="color: #fff; margin: 0;">Melhor</p>
@@ -158,5 +162,145 @@
     0%   { transform: translateY(0px); }
     60%  { transform: translateY(-4px); }
     100% { transform: translateY(0px); }
+  }
+
+  /* ── MOBILE ── */
+  @media (max-width: 768px) {
+    /* Seção: altura fixa 910px como no Figma, sem padding-top (header é fixed) */
+    .hero-section {
+      height: 910px !important;
+      min-height: unset;
+      padding-top: 0 !important;
+      display: block !important;
+    }
+
+    /* Container interno: posicionamento relativo à seção */
+    .hero-section > div {
+      position: absolute !important;
+      inset: 0 !important;
+      max-width: 100% !important;
+      height: 100% !important;
+      margin: 0 !important;
+    }
+
+    /* Imagem da mulher: posicionamento do picture wrapper */
+    .hero-woman-picture {
+      position: absolute !important;
+      left: 0 !important;
+      right: 0 !important;
+      top: 460px !important;
+      bottom: auto !important;
+      width: 100% !important;
+      height: 450px !important;
+    }
+
+    /* img dentro do picture: preenche o wrapper */
+    .hero-woman-img {
+      position: static !important;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      object-position: center top !important;
+    }
+
+    /* Fade: de cima para suavizar transição texto→imagem */
+    .hero-fade-left {
+      left: 0 !important;
+      right: 0 !important;
+      top: 460px !important;
+      bottom: auto !important;
+      width: 100% !important;
+      height: 160px !important;
+      background: linear-gradient(to bottom, #000050 0%, rgba(0,0,80,0.8) 30%, transparent 100%) !important;
+    }
+
+    /* Conteúdo de texto: posição exata do Figma (left=25, top=88, width=341)
+       top=88 já inclui o header de 56px, então no frame da seção o texto começa em y=88 */
+    .hero-content {
+      position: absolute !important;
+      left: 24px !important;
+      top: 88px !important;
+      transform: none !important;
+      width: 341px !important;
+      gap: 24px !important;
+    }
+
+    /* Título: 40px, line-height 42px */
+    .hero-content h1 {
+      font-size: 40px !important;
+      line-height: 42px !important;
+    }
+
+    /* Parágrafo: 16px */
+    .hero-desc {
+      width: 100% !important;
+      font-size: 16px !important;
+    }
+
+    /* Botões: coluna, full width, border-radius 24px */
+    .hero-ctas {
+      flex-direction: column !important;
+      align-items: stretch !important;
+      gap: 16px !important;
+      width: 341px !important;
+    }
+
+    .hero-ctas a {
+      width: 100% !important;
+      justify-content: center !important;
+      font-size: 18px !important;
+      border-radius: 999px !important;
+      box-sizing: border-box !important;
+    }
+
+    /* Badges: visíveis no mobile com posições do Figma */
+    .hero-badge {
+      display: flex !important;
+    }
+
+    /* Degradê azul mobile: topo esquerdo, atrás do título */
+    .hero-degrade-azul {
+      left: -36px !important;
+      top: -80px !important;
+      width: 236px !important;
+      height: 236px !important;
+      filter: blur(80px) !important;
+      opacity: 0.8 !important;
+    }
+
+    /* Degradê verde mobile: coordenadas diretas do Figma */
+    .hero-degrade-verde {
+      left: 54px !important;
+      top: 817px !important;
+      width: 282px !important;
+      height: 282px !important;
+      filter: blur(100px) !important;
+      opacity: 0.5 !important;
+    }
+
+    /* Posições dos badges: coordenadas diretas do Figma (frame 910px) */
+    .badge-float-1 {
+      /* Melhor Provedor: left=40, top=525 */
+      left: 40px !important;
+      top: 525px !important;
+    }
+
+    .badge-float-2 {
+      /* Melhor Velocidade: left=44, top=781 */
+      left: 44px !important;
+      top: 781px !important;
+    }
+
+    .badge-float-3 {
+      /* 4.9 No Google: left=266, top=573 */
+      left: 266px !important;
+      top: 573px !important;
+    }
+
+    .badge-float-4 {
+      /* Melhor Estabilidade: left=235, top=754 */
+      left: 235px !important;
+      top: 754px !important;
+    }
   }
 </style>

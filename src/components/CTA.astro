@@ -1,7 +1,7 @@
 ---
 ---
 
-<section style="width: 100%; background: #00EF52; height: 425px; display: flex; align-items: center; justify-content: center;">
+<section class="cta-section" style="width: 100%; background: #00EF52; height: 425px; display: flex; align-items: center; justify-content: center;">
 
   <div style="display: flex; flex-direction: column; gap: 33px; align-items: center; text-align: center; width: 100%; max-width: 1392px; padding: 0 32px; box-sizing: border-box;">
 
@@ -16,10 +16,10 @@
     </div>
 
     <!-- Botões -->
-    <div style="display: flex; gap: 16px; align-items: center;">
+    <div class="cta-btns" style="display: flex; gap: 16px; align-items: center;">
 
       <!-- Botão Telefone (outline) -->
-      <a href="tel:08007302200" style="
+      <a href="tel:08007302200" class="cta-btn-tel" style="
         display: inline-flex;
         gap: 8px;
         align-items: center;
@@ -34,12 +34,12 @@
         text-decoration: none;
         white-space: nowrap;
       ">
-        <img src="http://localhost:3845/assets/5e4ea03dc8546150bd46d0df5677b0440a7069a6.svg" alt="" width="24" height="24" style="display: block; flex-shrink: 0;" />
+        <img src="/images/icon-telefone.svg" alt="" width="24" height="24" style="display: block; flex-shrink: 0;" />
         0800 730 2200
       </a>
 
       <!-- Botão WhatsApp (filled) -->
-      <a href="https://wa.me/5511936192300" target="_blank" rel="noopener" style="
+      <a href="https://wa.me/5511936192300" target="_blank" rel="noopener" class="cta-btn-wa" style="
         display: inline-flex;
         gap: 8px;
         align-items: center;
@@ -62,3 +62,25 @@
   </div>
 
 </section>
+
+<style>
+  @media (max-width: 768px) {
+    .cta-section {
+      height: auto !important;
+      padding: 48px 24px !important;
+    }
+
+    .cta-btns {
+      flex-direction: column !important;
+      gap: 12px !important;
+      width: 100%;
+    }
+
+    .cta-btn-tel,
+    .cta-btn-wa {
+      width: 100% !important;
+      justify-content: center;
+      font-size: 16px !important;
+    }
+  }
+</style>
