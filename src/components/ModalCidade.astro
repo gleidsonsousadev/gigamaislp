@@ -115,6 +115,37 @@
   </div>
 </div>
 
+<style>
+  @media (max-width: 768px) {
+    /* Modal: width 342px, padding top maior para dar espaço ao botão X */
+    #modal-cidade-overlay > div {
+      width: 342px !important;
+      max-width: calc(100vw - 32px) !important;
+      padding: 74px 32px 32px !important;
+    }
+
+    /* Botão fechar: fixo no topo direito do modal */
+    #modal-cidade-close {
+      position: absolute !important;
+      top: 24px !important;
+      right: 24px !important;
+    }
+
+    /* Título: 28px, centralizado */
+    #modal-cidade-titulo {
+      font-size: 28px !important;
+      text-align: center !important;
+      align-self: center !important;
+    }
+
+    /* Botão confirmar: totalmente redondo, centralizado */
+    #modal-cidade-confirmar {
+      border-radius: 999px !important;
+      align-self: center !important;
+    }
+  }
+</style>
+
 <script>
   // ── Elementos ────────────────────────────────────────────────────────────────
   const overlay      = document.getElementById('modal-cidade-overlay') as HTMLElement;
