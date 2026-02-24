@@ -1,0 +1,81 @@
+---
+---
+
+<div class="sticky-bar-mobile" style="
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 116px;
+  z-index: 999;
+  box-sizing: border-box;
+  border-bottom: 2px solid rgba(255,255,255,0.11);
+  background: linear-gradient(180deg, rgba(1,1,128,0.80) 0%, #0939CF 100%);
+  backdrop-filter: blur(6.45px);
+  -webkit-backdrop-filter: blur(6.45px);
+  padding: 8px 16px 16px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+">
+
+  <!-- Label -->
+  <p style="font-size: 16px; font-weight: 500; color: #fff; margin: 0; line-height: normal; padding: 8px;">
+    Ligue Grátis e Assine!
+  </p>
+
+  <!-- Botões -->
+  <div style="display: flex; gap: 16px; align-items: center; width: 100%; max-width: 342px;">
+
+    <!-- Botão telefone: outline verde, 280px, height 48px -->
+    <a href="tel:08001035303" style="
+      display: inline-flex;
+      gap: 5px;
+      align-items: center;
+      justify-content: center;
+      width: 280px;
+      height: 48px;
+      flex-shrink: 0;
+      border-radius: 26px;
+      border: 1px solid #00EF52;
+      background: transparent;
+      color: #00EF52;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      white-space: nowrap;
+      box-sizing: border-box;
+    ">
+      <img src="/images/icon-telefone.svg" alt="" width="24" height="24" style="display: block; flex-shrink: 0;" />
+      0800 1035303
+    </a>
+
+    <!-- Botão WhatsApp: círculo verde, 44×44px -->
+    <a href="https://wa.me/5511936192300" target="_blank" rel="noopener" style="
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+      border-radius: 28px;
+      background: #00EF52;
+      text-decoration: none;
+    ">
+      <img src="/images/icon-whatsapp-dark.svg" alt="WhatsApp" width="24" height="24" style="display: block;" />
+    </a>
+
+  </div>
+
+</div>
+
+<style>
+  @media (max-width: 768px) {
+    .sticky-bar-mobile {
+      display: flex !important;
+    }
+  }
+</style>

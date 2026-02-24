@@ -97,8 +97,9 @@
 <style>
   @media (max-width: 768px) {
     /* Container: coluna, centralizado, padding top 71px, gap 27px */
+    /* padding-bottom 116px = altura da sticky bar, para o conteúdo não ficar atrás dela */
     .footer-inner {
-      padding: 71px 24px 48px !important;
+      padding: 71px 24px 132px !important;
       align-items: center !important;
       gap: 27px !important;
     }
@@ -133,24 +134,24 @@
       align-items: stretch !important;
     }
 
-    /* Botão telefone: outline verde, border-radius 21px, full width */
+    /* Botão telefone: outline verde, full width */
     .footer-btn-tel {
       width: 100% !important;
       justify-content: center !important;
       font-size: 18px !important;
-      border-radius: 21px !important;
+      border-radius: 999px !important;
       border: 1px solid #00EF52 !important;
       color: #00EF52 !important;
       background: transparent !important;
       box-sizing: border-box !important;
     }
 
-    /* Botão WhatsApp: filled verde, border-radius 21px, full width */
+    /* Botão WhatsApp: filled verde, full width */
     .footer-btn-wa {
       width: 100% !important;
       justify-content: center !important;
       font-size: 16px !important;
-      border-radius: 21px !important;
+      border-radius: 999px !important;
       background: #00EF52 !important;
       color: #091540 !important;
       box-sizing: border-box !important;
