@@ -109,32 +109,61 @@
   }
 
   @media (max-width: 768px) {
+    /* Seção: padding ajustado para mobile */
     .qualidade-section {
-      padding: 48px 24px !important;
+      padding: 61px 0 80px !important;
     }
 
+    /* Título: 28px, centralizado com padding lateral */
+    .qualidade-section h2 {
+      font-size: 28px !important;
+      padding: 0 24px !important;
+    }
+
+    /* Container superior: gap menor */
+    .qualidade-section > div > div:first-child {
+      gap: 24px !important;
+    }
+
+    /* Badges: slider horizontal com scroll, sem padding lateral (scroll vai até a borda) */
     .qualidade-badges {
-      display: grid !important;
-      grid-template-columns: 1fr 1fr !important;
-      gap: 12px !important;
-      justify-items: stretch;
+      display: flex !important;
+      flex-wrap: nowrap !important;
+      gap: 8px !important;
+      overflow-x: auto !important;
+      overflow-y: hidden !important;
+      justify-content: flex-start !important;
+      padding: 5px 24px !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
     }
 
+    .qualidade-badges::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Cada badge: tamanho fixo, sem quebra de linha, shrink-0 */
     .badge-premio {
-      width: 100%;
+      flex-shrink: 0 !important;
+      width: auto !important;
+      height: 61.8px !important;
+      border-radius: 10.6px !important;
+      padding: 11.6px !important;
+      gap: 8px !important;
+      align-items: center !important;
     }
 
+    .badge-premio span {
+      font-size: 19px !important;
+    }
+
+    /* Stats: coluna, centralizado, gap 26px, fontes originais mantidas */
     .qualidade-stats {
       flex-direction: column !important;
-      gap: 32px !important;
-    }
-
-    .qualidade-stats span[style*="54px"] {
-      font-size: 40px !important;
-    }
-
-    .qualidade-stats span[style*="24px"] {
-      font-size: 18px !important;
+      gap: 26px !important;
+      padding: 0 24px !important;
     }
   }
 </style>
