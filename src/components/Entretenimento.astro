@@ -4,10 +4,11 @@
 <div style="width: 100%; height: 2px; background: linear-gradient(to right, #000050, #00EF52 50%, #000050);"></div>
 <section class="entret-section" style="position: relative; width: 100%; background: #000026; height: 713px; overflow: hidden;">
 
-  <!-- Imagem de fundo full-width com mix-blend-mode lighten -->
+  <!-- Imagem desktop -->
   <img
     src="/images/bg-entretenimento.jpg"
     alt=""
+    class="entret-img-desktop"
     style="
       position: absolute;
       left: 0;
@@ -20,6 +21,17 @@
       pointer-events: none;
     "
   />
+
+  <!-- Imagem mobile: 390x417px, centralizada -->
+  <img
+    src="/images/bg-entretenimento-mobile.jpg"
+    alt=""
+    class="entret-img-mobile"
+    style="display: none; position: absolute; left: 0; top: 0; width: 100%; height: 417px; object-fit: cover; object-position: center top; pointer-events: none;"
+  />
+
+  <!-- Fade mobile: linear-gradient de cima para baixo -->
+  <div class="entret-fade-mobile" style="display: none; position: absolute; left: 0; top: 232px; width: 100%; height: 369px; background: linear-gradient(to bottom, rgba(0,0,38,0) 0%, #000026 48%); pointer-events: none; z-index: 1;"></div>
 
   <!-- Card glassmorphism centralizado -->
   <div class="entret-card-wrapper" style="position: absolute; inset: 0; display: flex; justify-content: center; align-items: flex-end; padding-bottom: calc(713px - 394px - 238px);">
@@ -61,36 +73,62 @@
     </div>
   </div>
 
+
 </section>
 
 <style>
   @media (max-width: 768px) {
+    /* Seção: altura fixa 516px conforme Figma */
     .entret-section {
-      height: auto !important;
-      min-height: 516px;
+      height: 516px !important;
     }
 
+    /* Imagem desktop: oculta */
+    .entret-img-desktop {
+      display: none !important;
+    }
+
+    /* Imagem mobile: visível */
+    .entret-img-mobile {
+      display: block !important;
+    }
+
+    /* Fade mobile: visível */
+    .entret-fade-mobile {
+      display: block !important;
+    }
+
+    /* Card wrapper: posicionamento absoluto, card em top=216px centralizado */
     .entret-card-wrapper {
-      position: relative !important;
-      inset: auto !important;
       padding-bottom: 0 !important;
-      align-items: flex-end !important;
-      padding: 0 24px 40px !important;
+      align-items: flex-start !important;
+      justify-content: center !important;
+      padding-top: 216px !important;
+      z-index: 2 !important;
+      position: absolute !important;
+      inset: 0 !important;
     }
 
+    /* Card: width=342px, padding=24px, gap=44px, border-radius=24px */
     .entret-card {
-      width: 100% !important;
-      gap: 24px !important;
+      width: 342px !important;
       padding: 24px !important;
+      gap: 44px !important;
+      border-radius: 24px !important;
     }
 
+    /* Título: 28px, line-height 32px, centralizado */
     .entret-title {
-      font-size: 26px !important;
-      line-height: 34px !important;
+      font-size: 28px !important;
+      line-height: 32px !important;
+      text-align: center !important;
     }
 
+    /* Botão: centralizado (não full width), border-radius 24px */
     .entret-btn {
-      width: 100% !important;
+      align-self: center !important;
+      border-radius: 24px !important;
+      width: auto !important;
     }
   }
 </style>

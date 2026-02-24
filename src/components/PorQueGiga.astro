@@ -57,6 +57,25 @@
       "></div>
 
 
+      <!-- Degradê azul mobile: topo esquerdo (x=-269, y=-137, 502x502px) -->
+      <div class="porque-degrade-azul-mobile" style="display: none; position: absolute; left: -269px; top: -137px; width: 502px; height: 502px; border-radius: 50%; background: #0939CF; filter: blur(120px); opacity: 0.55; pointer-events: none; z-index: 2;"></div>
+
+      <!-- Título mobile: visível apenas no mobile (top=71, left=24) -->
+      <h2 class="porque-titulo-mobile" style="display: none; margin: 0; font-weight: 500; color: #00EF52; z-index: 10;">
+        Por que ser <span style="color: #fff;">Giga+</span> é sua melhor escolha?
+      </h2>
+
+      <!-- Imagem da mão mobile: visível apenas no mobile -->
+      <img
+        src="/images/bg-mao-porque-ser-giga-mobile.png"
+        alt=""
+        class="porque-img-mobile"
+        style="display: none; z-index: 1;"
+      />
+
+      <!-- Fade suave sobre a imagem mobile (topo) -->
+      <div class="porque-fade-mobile" style="display: none; position: absolute; left: 0; top: 520px; width: 100%; height: 200px; background: linear-gradient(to bottom, #000026 0%, #000026 20%, rgba(0,0,38,0.7) 60%, transparent 100%); pointer-events: none; z-index: 3;"></div>
+
       <!-- Conteúdo direito: x=1114-240=874, y=111, w=469, h=603 -->
       <div class="porque-content" style="
         position: absolute;
@@ -129,43 +148,106 @@
   }
 
   @media (max-width: 768px) {
+    /* Seção: altura fixa 986px, imagem da mão mobile no fundo */
     .porque-section {
-      height: auto !important;
-      padding: 48px 0 0;
+      height: 986px !important;
     }
 
-    /* Imagem oculta no mobile - o Figma mobile não mostra */
-    .porque-img,
-    .porque-section div[style*="fade"] {
+    /* Container principal: ocupa toda a seção */
+    .porque-section > div {
+      position: absolute !important;
+      inset: 0 !important;
+    }
+
+    /* Container interno: também full */
+    .porque-section > div > div {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    /* Imagem desktop: oculta */
+    .porque-img {
       display: none !important;
     }
 
+    /* Fades desktop: ocultos */
+    .porque-section > div > div > div[style*="gradient"] {
+      display: none !important;
+    }
+
+    /* Degradê azul mobile: visível */
+    .porque-degrade-azul-mobile {
+      display: block !important;
+    }
+
+    /* Fade suave sobre a imagem mobile: visível */
+    .porque-fade-mobile {
+      display: block !important;
+    }
+
+    /* Imagem da mão mobile: centralizada na tela, parte inferior */
+    .porque-img-mobile {
+      display: block !important;
+      position: absolute !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+      top: 590px !important;
+      width: 100% !important;
+      height: 396px !important;
+      object-fit: cover !important;
+      object-position: center top !important;
+    }
+
+    /* Conteúdo: centralizado na tela (left=43 com width=304 = centrado em 390px) */
     .porque-content {
-      position: relative !important;
-      left: auto !important;
-      top: auto !important;
-      width: 100% !important;
+      position: absolute !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+      top: 155px !important;
+      width: 304px !important;
       height: auto !important;
-      padding: 0 24px 48px;
-      box-sizing: border-box;
+      gap: 24px !important;
       justify-content: flex-start !important;
-      gap: 32px !important;
+      padding: 0 !important;
+      z-index: 10 !important;
     }
 
-    .porque-content h2 {
+    /* Título: centralizado, 28px/32px */
+    .porque-titulo-mobile {
+      display: block !important;
+      position: absolute !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+      top: 71px !important;
+      width: 342px !important;
       font-size: 28px !important;
-      line-height: 36px !important;
-      width: 100% !important;
+      line-height: 32px !important;
+      text-align: center !important;
     }
 
+    /* Título desktop dentro do content: oculto */
+    .porque-content > h2 {
+      display: none !important;
+    }
+
+    /* Cards: coluna, gap 24px, full width */
     .porque-cards {
       width: 100% !important;
+      gap: 24px !important;
     }
 
+    /* Cada card: coluna, centralizado (ícone + título + texto centralizados) */
     .card-porque {
-      flex-direction: row !important;
-      align-items: flex-start !important;
-      gap: 16px !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 5.6px !important;
+      text-align: center !important;
+    }
+
+    /* Título do card: 20px */
+    .card-porque p[style*="24px"] {
+      font-size: 20px !important;
+      line-height: 28px !important;
     }
   }
 </style>
