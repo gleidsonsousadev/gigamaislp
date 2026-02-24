@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
+import StickyBarMobile from '../components/StickyBarMobile.astro'
 ---
 
 <Layout title="Contratar | Giga+ Fibra" description="Contrate seu plano de internet fibra óptica da Giga+ em poucos passos.">
@@ -9,7 +10,7 @@ import Footer from '../components/Footer.astro'
   <Header />
 
   <!-- Fundo gradiente igual ao Figma -->
-  <main style="
+  <main class="contratar-main" style="
     min-height: 100vh;
     width: 100%;
     background: linear-gradient(105.833deg, #F3FFF7 5.05%, #C5D1DF 100.3%);
@@ -20,7 +21,7 @@ import Footer from '../components/Footer.astro'
   ">
 
     <!-- Card principal: 800px, bg white, radius 24px -->
-    <div style="
+    <div class="contratar-card" style="
       width: 100%;
       max-width: 800px;
       background: #fff;
@@ -35,7 +36,7 @@ import Footer from '../components/Footer.astro'
       <div style="display: flex; flex-direction: column; gap: 32px;">
 
         <!-- Card do Plano Selecionado -->
-        <div style="
+        <div class="plano-banner" style="
           background: #0939CF;
           border-radius: 24px;
           padding: 24px;
@@ -45,44 +46,48 @@ import Footer from '../components/Footer.astro'
         ">
 
           <!-- Linha: "Plano Selecionado" + Cidade -->
-          <div style="display: flex; align-items: flex-start; justify-content: space-between;">
-            <p id="label-plano-sel" style="font-size: 24px; font-weight: 500; color: #fff; margin: 0; line-height: 1.33;">Plano Selecionado</p>
-            <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 2px;">
-              <span style="font-size: 12px; font-weight: 600; color: #00EF52; letter-spacing: 1.56px; line-height: normal;">CIDADE</span>
-              <span id="plano-cidade" style="font-size: 18px; font-weight: 500; color: #fff; line-height: normal;"></span>
+          <div class="plano-banner-header" style="display: flex; align-items: flex-start; justify-content: space-between;">
+            <p id="label-plano-sel" class="plano-label-sel" style="font-size: 24px; font-weight: 500; color: #fff; margin: 0; line-height: 1.33;">Plano Selecionado</p>
+            <div class="plano-cidade-wrap" style="display: flex; flex-direction: column; align-items: flex-end; gap: 2px;">
+              <span class="plano-cidade-label" style="font-size: 12px; font-weight: 600; color: #00EF52; letter-spacing: 1.3px; line-height: normal;">CIDADE</span>
+              <span id="plano-cidade" class="plano-cidade-valor" style="font-size: 18px; font-weight: 500; color: #fff; line-height: normal;"></span>
             </div>
           </div>
 
           <!-- Divisória -->
-          <div style="height: 1px; background: rgba(255,255,255,0.2); width: 100%;"></div>
+          <div class="plano-divisoria" style="height: 1px; background: rgba(255,255,255,0.2); width: 100%;"></div>
 
-          <!-- Linha: velocidade + features + preço -->
-          <div style="display: flex; align-items: center; justify-content: space-between;">
+          <!-- Conteúdo central: velocidade + features + preço -->
+          <div class="plano-banner-body" style="display: flex; align-items: center; justify-content: space-between;">
 
             <!-- Velocidade + features -->
-            <div style="display: flex; gap: 8px; align-items: center;">
-              <span id="plano-mega" style="font-size: 54px; font-weight: 600; color: #00EF52; line-height: 1.05; white-space: pre-line; word-break: break-word; max-width: 140px;"></span>
-              <div style="display: flex; flex-direction: column; gap: 6px;">
+            <div class="plano-mega-wrap" style="display: flex; gap: 8px; align-items: center;">
+              <!-- Velocidade: número + "Mega" em linha -->
+              <div class="plano-velocidade" style="display: flex; gap: 5px; align-items: center; justify-content: center; color: #00EF52; font-weight: 600;">
+                <span id="plano-mega-num" style="font-size: 54px; line-height: 1.05; white-space: nowrap;"></span>
+                <span id="plano-mega-txt" style="font-size: 40px; line-height: 1.05; white-space: nowrap;"></span>
+              </div>
+              <div class="plano-features" style="display: flex; flex-direction: column; gap: 6px;">
                 <div style="display: flex; gap: 6px; align-items: center;">
                   <img src="/images/icon-hbomax.png" alt="HBO Max" width="28" height="28" style="display: block; flex-shrink: 0;" />
-                  <span style="font-size: 13px; font-weight: 400; color: #fff; line-height: normal;">Incluso HBO Max</span>
+                  <span class="plano-feature-txt" style="font-size: 13px; font-weight: 400; color: #fff; line-height: normal;">Incluso HBO Max</span>
                 </div>
                 <div style="display: flex; gap: 6px; align-items: center;">
                   <img src="/images/icon-wifi.svg" alt="" width="22" height="22" style="display: block; flex-shrink: 0;" />
-                  <span style="font-size: 13px; font-weight: 400; color: #fff; line-height: normal;">Wi-Fi 6</span>
+                  <span class="plano-feature-txt" style="font-size: 13px; font-weight: 400; color: #fff; line-height: normal;">Wi-Fi 6</span>
                 </div>
                 <div style="display: flex; gap: 6px; align-items: center;">
                   <img src="/images/icon-check.svg" alt="" width="22" height="22" style="display: block; flex-shrink: 0;" />
-                  <span style="font-size: 13px; font-weight: 400; color: #fff; line-height: normal;">Internet 100% Fibra Óptica</span>
+                  <span class="plano-feature-txt" style="font-size: 13px; font-weight: 400; color: #fff; line-height: normal;">Internet 100% Fibra Óptica</span>
                 </div>
               </div>
             </div>
 
             <!-- Preço -->
-            <div style="display: flex; flex-direction: column; gap: 8px; align-items: flex-end;">
-              <div style="display: flex; align-items: baseline; gap: 0;">
+            <div class="plano-preco-wrap" style="display: flex; flex-direction: column; gap: 8px; align-items: flex-end;">
+              <div class="plano-preco-linha" style="display: flex; align-items: baseline; gap: 0;">
                 <span id="plano-preco" style="font-size: 46px; font-weight: 600; color: #00EF52; line-height: normal;"></span>
-                <span style="font-size: 24px; font-weight: 400; color: #fff; line-height: normal;">/mês</span>
+                <span class="plano-preco-mes" style="font-size: 24px; font-weight: 400; color: #fff; line-height: normal;">/mês</span>
               </div>
               <p id="plano-condicao" style="font-size: 18px; font-weight: 400; color: #fff; margin: 0; line-height: normal;"></p>
             </div>
@@ -144,7 +149,7 @@ import Footer from '../components/Footer.astro'
         </div>
 
         <!-- Título da etapa -->
-        <p style="font-size: 32px; font-weight: 600; color: #010180; margin: 0; line-height: 1.33;">Informações Pessoais</p>
+        <p class="etapa-titulo" style="font-size: 32px; font-weight: 600; color: #010180; margin: 0; line-height: 1.33;">Informações Pessoais</p>
 
         <!-- Formulário: campos -->
         <form id="form-etapa1" style="display: flex; flex-direction: column; gap: 8px;" novalidate>
@@ -339,7 +344,7 @@ import Footer from '../components/Footer.astro'
       </div>
 
       <!-- ── Botões: Voltar + Avançar ── -->
-      <div style="display: flex; align-items: center; justify-content: space-between;">
+      <div class="contratar-nav" style="display: flex; align-items: center; justify-content: space-between;">
 
         <!-- Voltar -->
         <a href="/#planos" style="
@@ -391,6 +396,7 @@ import Footer from '../components/Footer.astro'
   </main>
 
   <Footer />
+  <StickyBarMobile />
 
 </Layout>
 
@@ -409,6 +415,122 @@ import Footer from '../components/Footer.astro'
     opacity: 0.9;
     transform: scale(1.02);
   }
+
+  @media (max-width: 768px) {
+    /* Main: padding menor no mobile */
+    .contratar-main {
+      padding: 100px 16px 40px !important;
+    }
+
+    /* Card principal: sem padding extra */
+    .contratar-card {
+      padding: 16px !important;
+      gap: 24px !important;
+    }
+
+    /* Banner: gap 8px entre seções */
+    .plano-banner {
+      gap: 8px !important;
+    }
+
+    /* Header: "Plano Selecionado" 16px, 2 linhas | Cidade alinhada à direita */
+    .plano-label-sel {
+      font-size: 16px !important;
+      line-height: 16px !important;
+    }
+    .plano-cidade-wrap {
+      align-items: flex-end !important;
+    }
+    .plano-cidade-label {
+      font-size: 10px !important;
+      letter-spacing: 1.3px !important;
+    }
+    .plano-cidade-valor {
+      font-size: 12px !important;
+      text-align: right !important;
+    }
+
+    /* Body: coluna, centralizado, gap 16px */
+    .plano-banner-body {
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 16px !important;
+    }
+
+    /* Velocidade + features: em coluna, centralizado, gap 16px */
+    .plano-mega-wrap {
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 16px !important;
+      width: 100% !important;
+    }
+
+    /* Velocidade: "600 Mega" em linha, centralizados */
+    .plano-velocidade {
+      justify-content: center !important;
+    }
+    #plano-mega-num {
+      font-size: 48px !important;
+      white-space: nowrap !important;
+    }
+    #plano-mega-txt {
+      font-size: 36px !important;
+      white-space: nowrap !important;
+    }
+
+    /* Features: centralizadas, font 12.86px */
+    .plano-features {
+      align-items: center !important;
+    }
+    .plano-feature-txt {
+      font-size: 12.86px !important;
+    }
+
+    /* Preço: linha centralizada (preco + /mês) */
+    .plano-preco-wrap {
+      align-items: center !important;
+      width: 100% !important;
+    }
+    .plano-preco-linha {
+      justify-content: center !important;
+    }
+    #plano-preco {
+      font-size: 34px !important;
+    }
+    .plano-preco-mes {
+      font-size: 24px !important;
+    }
+    #plano-condicao {
+      font-size: 14px !important;
+      text-align: center !important;
+    }
+
+    /* Título da etapa: 24px */
+    .etapa-titulo {
+      font-size: 24px !important;
+    }
+
+    /* Labels dos campos: 16px */
+    .contratar-card label {
+      font-size: 16px !important;
+    }
+
+    /* Botões: coluna, full width, border-radius 999px */
+    .contratar-nav {
+      flex-direction: column-reverse !important;
+      gap: 16px !important;
+    }
+    .contratar-nav a,
+    .contratar-nav button {
+      width: 100% !important;
+      justify-content: center !important;
+      border-radius: 999px !important;
+      font-size: 18px !important;
+      box-sizing: border-box !important;
+    }
+  }
 </style>
 
 <script is:inline>
@@ -420,9 +542,14 @@ import Footer from '../components/Footer.astro'
     var preco    = p.get('preco')    || 'R$99,89'
     var condicao = p.get('condicao') || 'Após 3 meses, aumenta R$20'
 
-    // Quebra "400 Mega" → "400\nMega" para exibir em duas linhas
-    var planoFormatado = plano.replace(/\s+/, '\n')
-    document.getElementById('plano-mega').textContent    = planoFormatado
+    // Separa "600 Mega" → número e texto em spans distintos
+    var partes = plano.split(/\s+/)
+    var megaNum = partes[0] || ''
+    var megaTxt = partes.slice(1).join(' ') || ''
+    var elNum = document.getElementById('plano-mega-num')
+    var elTxt = document.getElementById('plano-mega-txt')
+    if (elNum) elNum.textContent = megaNum
+    if (elTxt) elTxt.textContent = megaTxt
     document.getElementById('plano-cidade').textContent  = cidade
     document.getElementById('plano-preco').textContent   = preco
     document.getElementById('plano-condicao').textContent = condicao
