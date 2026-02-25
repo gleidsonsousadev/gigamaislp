@@ -33,9 +33,9 @@
 
     <!-- Nav: font-size 18px, font-weight 500 (Medium), gap 24px -->
     <nav class="header-nav" style="display: flex; align-items: center; gap: 24px;">
-      <a href="#inicio" style="color: #fff; font-size: 18px; font-weight: 500; text-decoration: none; line-height: normal; white-space: nowrap;">Início</a>
-      <a href="#planos" style="color: #fff; font-size: 18px; font-weight: 500; text-decoration: none; line-height: normal; white-space: nowrap;">Planos</a>
-      <a href="#duvidas" style="color: #fff; font-size: 18px; font-weight: 500; text-decoration: none; line-height: normal; white-space: nowrap;">Dúvidas</a>
+      <a href="/#inicio" style="color: #fff; font-size: 18px; font-weight: 500; text-decoration: none; line-height: normal; white-space: nowrap;">Início</a>
+      <a href="/#planos" style="color: #fff; font-size: 18px; font-weight: 500; text-decoration: none; line-height: normal; white-space: nowrap;">Planos</a>
+      <a href="/#duvidas" style="color: #fff; font-size: 18px; font-weight: 500; text-decoration: none; line-height: normal; white-space: nowrap;">Dúvidas</a>
     </nav>
 
     <!-- CTAs: gap 16px -->
@@ -135,9 +135,9 @@
 
   <!-- Links de navegação -->
   <nav style="display: flex; flex-direction: column; gap: 24px; align-items: center; justify-content: center;">
-    <a href="#inicio" class="menu-mobile-link" style="color: #fff; font-size: 18px; font-weight: 500; text-decoration: none; line-height: normal;">Início</a>
-    <a href="#planos" class="menu-mobile-link" style="color: #fff; font-size: 18px; font-weight: 500; text-decoration: none; line-height: normal;">Planos</a>
-    <a href="#duvidas" class="menu-mobile-link" style="color: #fff; font-size: 18px; font-weight: 500; text-decoration: none; line-height: normal;">Dúvidas</a>
+    <a href="/#inicio" class="menu-mobile-link" style="color: #fff; font-size: 18px; font-weight: 500; text-decoration: none; line-height: normal;">Início</a>
+    <a href="/#planos" class="menu-mobile-link" style="color: #fff; font-size: 18px; font-weight: 500; text-decoration: none; line-height: normal;">Planos</a>
+    <a href="/#duvidas" class="menu-mobile-link" style="color: #fff; font-size: 18px; font-weight: 500; text-decoration: none; line-height: normal;">Dúvidas</a>
   </nav>
 
   <!-- Botões de contato -->
@@ -226,9 +226,32 @@
   menuBtn.addEventListener('click', openMenu);
   closeBtn.addEventListener('click', closeMenu);
 
-  // Fechar ao clicar em qualquer link
+  // Fechar ao clicar em qualquer link e rolar para a seção
   menuLinks.forEach(link => {
-    link.addEventListener('click', closeMenu);
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const href = link.getAttribute('href'); // ex: "/#planos"
+      closeMenu();
+      if (!href) return;
+
+      const isHome = window.location.pathname === '/';
+
+      setTimeout(() => {
+        if (isHome) {
+          // Na home: scroll suave para a seção
+          const hash = href.replace('/', ''); // "#planos"
+          if (hash === '#inicio' || href === '/') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          } else {
+            const target = document.querySelector(hash);
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+          }
+        } else {
+          // Em outra página: navega para home com hash
+          window.location.href = href;
+        }
+      }, 50);
+    });
   });
 
   // Fechar com Escape
