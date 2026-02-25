@@ -9,7 +9,7 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
 
   <Header />
 
-  <main style="
+  <main class="contratar-main" style="
     min-height: 100vh;
     width: 100%;
     background: linear-gradient(105.833deg, #F3FFF7 5.05%, #C5D1DF 100.3%);
@@ -19,7 +19,7 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
     padding: 160px 32px 80px;
   ">
 
-    <div style="
+    <div class="contratar-card" style="
       width: 100%;
       max-width: 800px;
       background: #fff;
@@ -31,7 +31,7 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
     ">
 
       <!-- ── Banner do Plano Selecionado ── -->
-      <div style="
+      <div class="plano-banner" style="
         background: #0939CF;
         border-radius: 24px;
         padding: 24px;
@@ -39,39 +39,42 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
         flex-direction: column;
         gap: 14px;
       ">
-        <div style="display: flex; align-items: flex-start; justify-content: space-between;">
-          <p style="font-size: 24px; font-weight: 500; color: #fff; margin: 0; line-height: 1.33;">Plano Selecionado</p>
-          <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 2px;">
-            <span style="font-size: 12px; font-weight: 600; color: #00EF52; letter-spacing: 1.56px; line-height: normal;">CIDADE</span>
-            <span id="plano-cidade" style="font-size: 18px; font-weight: 500; color: #fff; line-height: normal;"></span>
+        <div class="plano-banner-header" style="display: flex; align-items: flex-start; justify-content: space-between;">
+          <p class="plano-label-sel" style="font-size: 24px; font-weight: 500; color: #fff; margin: 0; line-height: 1.33;">Plano Selecionado</p>
+          <div class="plano-cidade-wrap" style="display: flex; flex-direction: column; align-items: flex-start; gap: 2px;">
+            <span class="plano-cidade-label" style="font-size: 12px; font-weight: 600; color: #00EF52; letter-spacing: 1.56px; line-height: normal;">CIDADE</span>
+            <span id="plano-cidade" class="plano-cidade-valor" style="font-size: 18px; font-weight: 500; color: #fff; line-height: normal;"></span>
           </div>
         </div>
 
-        <div style="height: 1px; background: rgba(255,255,255,0.2); width: 100%;"></div>
+        <div class="plano-divisoria" style="height: 1px; background: rgba(255,255,255,0.2); width: 100%;"></div>
 
-        <div style="display: flex; align-items: center; justify-content: space-between;">
-          <div style="display: flex; gap: 8px; align-items: center;">
-            <span id="plano-mega" style="font-size: 54px; font-weight: 600; color: #00EF52; line-height: 1.05; white-space: pre-line; word-break: break-word; max-width: 140px;"></span>
-            <div style="display: flex; flex-direction: column; gap: 6px;">
+        <div class="plano-banner-body" style="display: flex; align-items: center; justify-content: space-between;">
+          <div class="plano-mega-wrap" style="display: flex; gap: 8px; align-items: center;">
+            <div style="display: flex; gap: 5px; align-items: center;">
+              <span id="plano-mega-num" class="plano-velocidade" style="font-size: 54px; font-weight: 600; color: #00EF52; line-height: 1.05;"></span>
+              <span id="plano-mega-txt" style="font-size: 36px; font-weight: 600; color: #00EF52; line-height: 1.05;">Mega</span>
+            </div>
+            <div class="plano-features" style="display: flex; flex-direction: column; gap: 6px;">
               <div style="display: flex; gap: 6px; align-items: center;">
                 <img src="/images/icon-hbomax.png" alt="HBO Max" width="28" height="28" style="display: block; flex-shrink: 0;" />
-                <span style="font-size: 13px; font-weight: 400; color: #fff; line-height: normal;">Incluso HBO Max</span>
+                <span class="plano-feature-txt" style="font-size: 13px; font-weight: 400; color: #fff; line-height: normal;">Incluso HBO Max</span>
               </div>
               <div style="display: flex; gap: 6px; align-items: center;">
                 <img src="/images/icon-wifi.svg" alt="" width="22" height="22" style="display: block; flex-shrink: 0;" />
-                <span style="font-size: 13px; font-weight: 400; color: #fff; line-height: normal;">Wi-Fi 6</span>
+                <span class="plano-feature-txt" style="font-size: 13px; font-weight: 400; color: #fff; line-height: normal;">Wi-Fi 6</span>
               </div>
               <div style="display: flex; gap: 6px; align-items: center;">
                 <img src="/images/icon-check.svg" alt="" width="22" height="22" style="display: block; flex-shrink: 0;" />
-                <span style="font-size: 13px; font-weight: 400; color: #fff; line-height: normal;">Internet 100% Fibra Óptica</span>
+                <span class="plano-feature-txt" style="font-size: 13px; font-weight: 400; color: #fff; line-height: normal;">Internet 100% Fibra Óptica</span>
               </div>
             </div>
           </div>
 
-          <div style="display: flex; flex-direction: column; gap: 8px; align-items: flex-end;">
-            <div style="display: flex; align-items: baseline; gap: 0;">
+          <div class="plano-preco-wrap" style="display: flex; flex-direction: column; gap: 8px; align-items: flex-end;">
+            <div class="plano-preco-linha" style="display: flex; align-items: baseline; gap: 0;">
               <span id="plano-preco" style="font-size: 46px; font-weight: 600; color: #00EF52; line-height: normal;"></span>
-              <span style="font-size: 24px; font-weight: 400; color: #fff; line-height: normal;">/mês</span>
+              <span class="plano-preco-mes" style="font-size: 24px; font-weight: 400; color: #fff; line-height: normal;">/mês</span>
             </div>
             <p id="plano-condicao" style="font-size: 18px; font-weight: 400; color: #fff; margin: 0; line-height: normal;"></p>
           </div>
@@ -135,7 +138,7 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
       <!-- ── Formulário de Endereço ── -->
       <div style="display: flex; flex-direction: column; gap: 32px;">
 
-        <p style="font-size: 32px; font-weight: 600; color: #010180; margin: 0; line-height: 1.33;">Endereço de Instalação</p>
+        <p class="etapa-titulo" style="font-size: 32px; font-weight: 600; color: #010180; margin: 0; line-height: 1.33;">Endereço de Instalação</p>
 
         <form id="form-etapa2" style="display: flex; flex-direction: column; gap: 8px;" novalidate>
 
@@ -193,7 +196,7 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
           </div>
 
           <!-- Complemento + Número (linha) -->
-          <div style="display: flex; gap: 8px; align-items: flex-end;">
+          <div class="campos-inline" style="display: flex; gap: 8px; align-items: flex-end;">
             <div style="display: flex; flex-direction: column; gap: 4px; flex: 1;">
               <label for="complemento" style="font-size: 18px; font-weight: 500; color: #010180; line-height: 1.77;">Complemento</label>
               <input
@@ -217,7 +220,7 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
                 "
               />
             </div>
-            <div style="display: flex; flex-direction: column; gap: 4px; width: 140px; flex-shrink: 0;">
+            <div class="campo-pequeno" style="display: flex; flex-direction: column; gap: 4px; width: 140px; flex-shrink: 0;">
               <label for="numero" style="font-size: 18px; font-weight: 500; color: #010180; line-height: 1.77;">Número</label>
               <input
                 id="numero"
@@ -271,7 +274,7 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
           </div>
 
           <!-- Cidade + Estado (linha) -->
-          <div style="display: flex; gap: 8px; align-items: flex-end;">
+          <div class="campos-inline" style="display: flex; gap: 8px; align-items: flex-end;">
             <div style="display: flex; flex-direction: column; gap: 4px; flex: 1;">
               <label for="cidade-end" style="font-size: 18px; font-weight: 500; color: #010180; line-height: 1.77;">Cidade</label>
               <input
@@ -296,7 +299,7 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
                 "
               />
             </div>
-            <div style="display: flex; flex-direction: column; gap: 4px; width: 140px; flex-shrink: 0;">
+            <div class="campo-pequeno" style="display: flex; flex-direction: column; gap: 4px; width: 140px; flex-shrink: 0;">
               <label for="estado" style="font-size: 18px; font-weight: 500; color: #010180; line-height: 1.77;">Estado</label>
               <input
                 id="estado"
@@ -354,7 +357,7 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
       </div>
 
       <!-- ── Botões ── -->
-      <div style="display: flex; align-items: center; justify-content: space-between;">
+      <div class="contratar-nav" style="display: flex; align-items: center; justify-content: space-between;">
 
         <button id="btn-voltar" type="button" style="
           display: inline-flex;
@@ -413,6 +416,107 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
   input:focus { border-color: #0939CF !important; box-shadow: 0 0 0 3px rgba(9, 57, 207, 0.15); }
 </style>
 
+<style>
+  @media (max-width: 768px) {
+    /* Main: padding reduzido */
+    .contratar-main {
+      padding: 100px 16px 40px !important;
+    }
+
+    /* Card: padding e gap menores */
+    .contratar-card {
+      padding: 16px !important;
+      gap: 24px !important;
+    }
+
+    /* Banner header */
+    .plano-label-sel {
+      font-size: 16px !important;
+      line-height: 16px !important;
+    }
+    .plano-cidade-label {
+      font-size: 10px !important;
+    }
+    .plano-cidade-valor {
+      font-size: 12px !important;
+    }
+
+    /* Banner body: coluna, centralizado */
+    .plano-banner-body {
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 16px !important;
+    }
+
+    /* Velocidade + features: coluna, centralizado */
+    .plano-mega-wrap {
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 16px !important;
+    }
+
+    /* Número de velocidade */
+    #plano-mega-num {
+      font-size: 48px !important;
+    }
+
+    /* Features: centralizadas */
+    .plano-features {
+      align-items: center !important;
+    }
+
+    /* Preço: centralizado */
+    .plano-preco-wrap {
+      align-items: center !important;
+    }
+    #plano-preco {
+      font-size: 34px !important;
+    }
+    #plano-condicao {
+      font-size: 14px !important;
+      text-align: center !important;
+    }
+
+    /* Título da etapa */
+    .etapa-titulo {
+      font-size: 24px !important;
+    }
+
+    /* Labels dos campos */
+    .contratar-card label {
+      font-size: 16px !important;
+    }
+
+    /* Pares de campos inline: viram coluna, filhos full width */
+    .campos-inline {
+      flex-direction: column !important;
+      align-items: stretch !important;
+    }
+    .campos-inline > div {
+      width: 100% !important;
+      flex-shrink: unset !important;
+    }
+
+    /* Campos de largura fixa: viram full width */
+    .campo-pequeno {
+      width: 100% !important;
+      flex-shrink: unset !important;
+    }
+
+    /* Botões de navegação: coluna invertida, full width */
+    .contratar-nav {
+      flex-direction: column-reverse !important;
+      gap: 16px !important;
+    }
+    .contratar-nav button {
+      width: 100% !important;
+      border-radius: 999px !important;
+      font-size: 18px !important;
+      justify-content: center !important;
+    }
+  }
+</style>
+
 <script is:inline>
   // ── Preenche o banner do plano ─────────────────────────────────
   ;(function () {
@@ -422,8 +526,15 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
     var preco    = p.get('preco')    || 'R$99,89'
     var condicao = p.get('condicao') || 'Após 3 meses, aumenta R$20'
 
-    var planoFormatado = plano.replace(/\s+/, '\n')
-    document.getElementById('plano-mega').textContent     = planoFormatado
+    // Separa número e "Mega" em spans distintos (ex: "600 Mega" → "600" + "Mega")
+    var partes = plano.trim().split(/\s+/)
+    var num = partes[0] || ''
+    var txt = partes.slice(1).join(' ') || 'Mega'
+    var numEl = document.getElementById('plano-mega-num')
+    var txtEl = document.getElementById('plano-mega-txt')
+    if (numEl) numEl.textContent = num
+    if (txtEl) txtEl.textContent = txt
+
     document.getElementById('plano-cidade').textContent   = cidade
     document.getElementById('plano-preco').textContent    = preco
     document.getElementById('plano-condicao').textContent = condicao
