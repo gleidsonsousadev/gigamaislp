@@ -158,13 +158,11 @@
 
   // ── Elementos dos cards ───────────────────────────────────────────────────────
   const cardPrecos: Record<string, HTMLElement | null> = {
-    p400: document.getElementById('card-preco-400'),
     p600: document.getElementById('card-preco-600'),
     p800: document.getElementById('card-preco-800'),
     p1gb: document.getElementById('card-preco-1gb'),
   };
   const cardCondicoes: Record<string, HTMLElement | null> = {
-    p400: document.getElementById('card-condicao-400'),
     p600: document.getElementById('card-condicao-600'),
     p800: document.getElementById('card-condicao-800'),
     p1gb: document.getElementById('card-condicao-1gb'),
@@ -177,7 +175,7 @@
     grupo: string;
     condicao: string;
     label: string;
-    precos: { p400: number; p600: number; p800: number; p1gb: number };
+    precos: { p600: number; p800: number; p1gb: number };
   };
 
   let cidades: Cidade[] = [];
@@ -199,7 +197,7 @@
   function atualizarCards(cidade: Cidade) {
     const { precos, condicao, label } = cidade;
     const mapa: Record<string, number> = {
-      p400: precos.p400, p600: precos.p600, p800: precos.p800, p1gb: precos.p1gb
+      p600: precos.p600, p800: precos.p800, p1gb: precos.p1gb
     };
     for (const key of Object.keys(mapa)) {
       const el = cardPrecos[key];

@@ -41,35 +41,8 @@
     <!-- Wrapper com padding-top para acomodar o badge do card 600 Mega -->
     <div class="planos-cards" style="display: flex; gap: 24px; align-items: center; width: 100%; padding-top: 28px;">
 
-      <!-- Card 400 Mega -->
-      <div style="flex: 0 0 calc(25% - 18px); display: flex; flex-direction: column; gap: 24px; padding: 32px 24px; border-radius: 24px; background: linear-gradient(214.15deg, #010180 9.8%, #0939CF 99.2%);">
-
-        <p style="font-size: 54px; font-weight: 600; color: #00EF52; margin: 0; line-height: normal; white-space: nowrap;">400 Mega</p>
-        <div style="height: 1px; background: rgba(255,255,255,0.25); width: 100%;"></div>
-        <div style="display: flex; flex-direction: column; gap: 8px;">
-          <div style="display: flex; align-items: baseline; gap: 0;">
-            <span id="card-preco-400" style="font-size: 46px; font-weight: 600; color: #00EF52; line-height: normal;">R$94,99</span>
-            <span style="font-size: 24px; font-weight: 400; color: #fff; line-height: normal;">/mês</span>
-          </div>
-          <p id="card-condicao-400" style="font-size: 18px; font-weight: 400; color: #fff; margin: 0; line-height: normal;">Valor fixo por 12 meses.</p>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 8px;">
-          <div style="display: flex; gap: 8px; align-items: center;">
-            <img src="/images/icon-globoplay.png" alt="GloboPlay" width="38" height="38" style="display: block; flex-shrink: 0;" />
-            <span style="font-size: 18px; font-weight: 400; color: #fff; line-height: normal;">GloboPlay incluído</span>
-          </div>
-          <div style="display: flex; gap: 8px; align-items: center;">
-            <img src="/images/icon-check.svg" alt="" width="32" height="32" style="display: block; flex-shrink: 0;" />
-            <span style="font-size: 18px; font-weight: 400; color: #fff; line-height: normal;">Internet 100% Fibra Óptica</span>
-          </div>
-        </div>
-        <a id="btn-contratar-400" data-plano="400 Mega" data-chave="p400" href="/contratar?plano=400+Mega&cidade=Acailandia-MA&preco=R%2494%2C99&condicao=Valor+fixo+por+12+meses." style="display: flex; align-items: center; justify-content: center; background: #00EF52; color: #010180; font-size: 18px; font-weight: 600; padding: 12px 36px; border-radius: 999px; text-decoration: none; white-space: nowrap; height: 48px;">
-          Contratar Online
-        </a>
-      </div>
-
       <!-- Card 600 Mega (destaque: Melhor Valor) -->
-      <div style="flex: 0 0 calc(25% - 18px); position: relative;">
+      <div style="flex: 0 0 calc(33.333% - 16px); position: relative;">
         <!-- Badge Melhor Valor: posicionado acima do card -->
         <div style="position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: #FFDD00; padding: 6px 36px; border-radius: 999px; z-index: 2; white-space: nowrap;">
           <span style="font-size: 16px; font-weight: 600; color: #010180; line-height: normal;">Melhor Valor</span>
@@ -105,7 +78,7 @@
       </div>
 
       <!-- Card 800 Mega -->
-      <div style="flex: 0 0 calc(25% - 18px); display: flex; flex-direction: column; gap: 24px; padding: 32px 24px; border-radius: 24px; background: linear-gradient(216.5deg, #010180 9.8%, #0939CF 99.2%);">
+      <div style="flex: 0 0 calc(33.333% - 16px); display: flex; flex-direction: column; gap: 24px; padding: 32px 24px; border-radius: 24px; background: linear-gradient(216.5deg, #010180 9.8%, #0939CF 99.2%);">
         <p style="font-size: 54px; font-weight: 600; color: #00EF52; margin: 0; line-height: normal; white-space: nowrap;">800 Mega</p>
         <div style="height: 1px; background: rgba(255,255,255,0.25); width: 100%;"></div>
         <div style="display: flex; flex-direction: column; gap: 8px;">
@@ -135,7 +108,7 @@
       </div>
 
       <!-- Card GIGA -->
-      <div style="flex: 0 0 calc(25% - 18px); display: flex; flex-direction: column; gap: 24px; padding: 32px 24px; border-radius: 24px; background: linear-gradient(216.5deg, #010180 9.8%, #0939CF 99.2%);">
+      <div style="flex: 0 0 calc(33.333% - 16px); display: flex; flex-direction: column; gap: 24px; padding: 32px 24px; border-radius: 24px; background: linear-gradient(216.5deg, #010180 9.8%, #0939CF 99.2%);">
         <p style="font-size: 54px; font-weight: 600; color: #00EF52; margin: 0; line-height: normal; white-space: nowrap;">GIGA</p>
         <div style="height: 1px; background: rgba(255,255,255,0.25); width: 100%;"></div>
         <div style="display: flex; flex-direction: column; gap: 8px;">
@@ -281,11 +254,11 @@
     btn.addEventListener('click', function (e) {
       e.preventDefault()
 
-      const chave = btn.dataset.chave!   // p400, p600, p800, p1gb
-      const plano = btn.dataset.plano!   // "400 Mega", "600 Mega", etc.
+      const chave = btn.dataset.chave!   // p600, p800, p1gb
+      const plano = btn.dataset.plano!
 
       // Mapeia chave para o sufixo do ID do elemento
-      const sufixo: Record<string, string> = { p400: '400', p600: '600', p800: '800', p1gb: '1gb' }
+      const sufixo: Record<string, string> = { p600: '600', p800: '800', p1gb: '1gb' }
       const id = sufixo[chave] || chave.replace('p', '')
 
       // Lê preço e condição atuais do DOM (já atualizados pelo switcher de cidade)
