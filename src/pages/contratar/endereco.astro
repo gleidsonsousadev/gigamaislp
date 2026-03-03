@@ -57,8 +57,8 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
             </div>
             <div class="plano-features" style="display: flex; flex-direction: column; gap: 6px;">
               <div style="display: flex; gap: 6px; align-items: center;">
-                <img src="/images/icon-hbomax.png" alt="HBO Max" width="28" height="28" style="display: block; flex-shrink: 0;" />
-                <span class="plano-feature-txt" style="font-size: 13px; font-weight: 400; color: #fff; line-height: normal;">Incluso HBO Max</span>
+                <img src="/images/icon-globoplay.png" alt="GloboPlay" width="28" height="28" style="display: block; flex-shrink: 0;" />
+                <span class="plano-feature-txt" style="font-size: 13px; font-weight: 400; color: #fff; line-height: normal;">GloboPlay incluído</span>
               </div>
               <div style="display: flex; gap: 6px; align-items: center;">
                 <img src="/images/icon-wifi.svg" alt="" width="22" height="22" style="display: block; flex-shrink: 0;" />
@@ -281,7 +281,7 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
                 id="cidade-end"
                 name="cidadeEnd"
                 type="text"
-                placeholder="Santo André"
+                placeholder="Acailandia"
                 required
                 style="
                   height: 64px;
@@ -522,9 +522,9 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
   ;(function () {
     var p = new URLSearchParams(window.location.search)
     var plano    = p.get('plano')    || '600 Mega'
-    var cidade   = p.get('cidade')   || 'Santo André-SP'
+    var cidade   = p.get('cidade')   || 'Acailandia-MA'
     var preco    = p.get('preco')    || 'R$99,89'
-    var condicao = p.get('condicao') || 'Após 3 meses, aumenta R$20'
+    var condicao = p.get('condicao') || 'Valor fixo por 12 meses.'
 
     // Separa número e "Mega" em spans distintos (ex: "600 Mega" → "600" + "Mega")
     var partes = plano.trim().split(/\s+/)

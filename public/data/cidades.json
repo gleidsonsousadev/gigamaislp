@@ -1,611 +1,13 @@
 [
   {
-    "cidade": "Altos",
-    "uf": "PI",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Altos-PI"
-  },
-  {
-    "cidade": "Araripe",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Araripe-CE"
-  },
-  {
-    "cidade": "Arneiroz",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Arneiroz-CE"
-  },
-  {
-    "cidade": "Barbalha",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Barbalha-CE"
-  },
-  {
-    "cidade": "Caucaia",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Caucaia-CE"
-  },
-  {
-    "cidade": "Caxias",
-    "uf": "MA",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Caxias-MA"
-  },
-  {
-    "cidade": "Cedro",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Cedro-CE"
-  },
-  {
-    "cidade": "Cedro de Sao Joao",
-    "uf": "SE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Cedro de Sao Joao-SE"
-  },
-  {
-    "cidade": "Crato",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Crato-CE"
-  },
-  {
-    "cidade": "Divina Pastora",
-    "uf": "SE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Divina Pastora-SE"
-  },
-  {
-    "cidade": "Estreito",
-    "uf": "MA",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Estreito-MA"
-  },
-  {
-    "cidade": "Eusebio",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Eusebio-CE"
-  },
-  {
-    "cidade": "Goiana",
-    "uf": "PE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Goiana-PE"
-  },
-  {
-    "cidade": "Iguatu",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Iguatu-CE"
-  },
-  {
-    "cidade": "Ilha de Itamaraca",
-    "uf": "PE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Ilha de Itamaraca-PE"
-  },
-  {
-    "cidade": "Ipojuca",
-    "uf": "PE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Ipojuca-PE"
-  },
-  {
-    "cidade": "Itapipoca",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Itapipoca-CE"
-  },
-  {
-    "cidade": "Itapissuma",
-    "uf": "PE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Itapissuma-PE"
-  },
-  {
-    "cidade": "Itaporanga D'ajuda",
-    "uf": "SE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Itaporanga D'ajuda-SE"
-  },
-  {
-    "cidade": "Japoata",
-    "uf": "SE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Japoata-SE"
-  },
-  {
-    "cidade": "Jati",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Jati-CE"
-  },
-  {
-    "cidade": "Lagarto",
-    "uf": "SE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Lagarto-SE"
-  },
-  {
-    "cidade": "Maracanau",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Maracanau-CE"
-  },
-  {
-    "cidade": "Maranguape",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Maranguape-CE"
-  },
-  {
-    "cidade": "Nazare da Mata",
-    "uf": "PE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Nazare da Mata-PE"
-  },
-  {
-    "cidade": "Nossa Senhora do Socorro",
-    "uf": "SE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Nossa Senhora do Socorro-SE"
-  },
-  {
-    "cidade": "Olinda",
-    "uf": "PE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Olinda-PE"
-  },
-  {
-    "cidade": "Oros",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Oros-CE"
-  },
-  {
-    "cidade": "Pacajus",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Pacajus-CE"
-  },
-  {
-    "cidade": "Pacatuba",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Pacatuba-CE"
-  },
-  {
-    "cidade": "Pacatuba",
-    "uf": "SE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Pacatuba-SE"
-  },
-  {
-    "cidade": "Paracuru",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Paracuru-CE"
-  },
-  {
-    "cidade": "Paraipaba",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Paraipaba-CE"
-  },
-  {
-    "cidade": "Parambu",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Parambu-CE"
-  },
-  {
-    "cidade": "Paulista",
-    "uf": "PE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Paulista-PE"
-  },
-  {
-    "cidade": "Pentecoste",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Pentecoste-CE"
-  },
-  {
-    "cidade": "Pindoretama",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Pindoretama-CE"
-  },
-  {
-    "cidade": "Salgueiro",
-    "uf": "PE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Salgueiro-PE"
-  },
-  {
-    "cidade": "Santa Cruz do Capibaribe",
-    "uf": "PE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Santa Cruz do Capibaribe-PE"
-  },
-  {
-    "cidade": "Santa Ines",
-    "uf": "MA",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Santa Ines-MA"
-  },
-  {
-    "cidade": "Serra Talhada",
-    "uf": "PE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Serra Talhada-PE"
-  },
-  {
-    "cidade": "Sobral",
-    "uf": "CE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Sobral-CE"
-  },
-  {
-    "cidade": "Telha",
-    "uf": "SE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Telha-SE"
-  },
-  {
-    "cidade": "Timbauba",
-    "uf": "PE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Timbauba-PE"
-  },
-  {
-    "cidade": "Timon",
-    "uf": "MA",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Timon-MA"
-  },
-  {
-    "cidade": "Toritama",
-    "uf": "PE",
-    "grupo": "G1",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Toritama-PE"
-  },
-  {
     "cidade": "Acailandia",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Acailandia-MA"
@@ -613,12 +15,12 @@
   {
     "cidade": "Acarau",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Acarau-CE"
@@ -626,12 +28,12 @@
   {
     "cidade": "Acopiara",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Acopiara-CE"
@@ -640,10 +42,10 @@
     "cidade": "Aguanil",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -652,12 +54,12 @@
   {
     "cidade": "Aiuaba",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Aiuaba-CE"
@@ -666,10 +68,10 @@
     "cidade": "Alem Paraiba",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -679,10 +81,10 @@
     "cidade": "Alpinopolis",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -692,62 +94,75 @@
     "cidade": "Altinopolis",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Altinopolis-SP"
   },
   {
-    "cidade": "Alto Alegre do Pindare",
+    "cidade": "Alto Alegre Do Pindare",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
-    "label": "Alto Alegre do Pindare-MA"
+    "label": "Alto Alegre Do Pindare-MA"
+  },
+  {
+    "cidade": "Altos",
+    "uf": "PI",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Altos-PI"
   },
   {
     "cidade": "Anchieta",
     "uf": "ES",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Anchieta-ES"
   },
   {
-    "cidade": "Antonina do Norte",
+    "cidade": "Antonina Do Norte",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
-    "label": "Antonina do Norte-CE"
+    "label": "Antonina Do Norte-CE"
   },
   {
     "cidade": "Aperibe",
     "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -757,10 +172,10 @@
     "cidade": "Apucarana",
     "uf": "PR",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -769,12 +184,12 @@
   {
     "cidade": "Aquiraz",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Aquiraz-CE"
@@ -782,12 +197,12 @@
   {
     "cidade": "Aracaju",
     "uf": "SE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Aracaju-SE"
@@ -796,10 +211,10 @@
     "cidade": "Aramina",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -809,10 +224,10 @@
     "cidade": "Arapongas",
     "uf": "PR",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -821,25 +236,38 @@
   {
     "cidade": "Arari",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Arari-MA"
   },
   {
+    "cidade": "Araripe",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Araripe-CE"
+  },
+  {
     "cidade": "Araruama",
     "uf": "RJ",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Araruama-RJ"
@@ -848,37 +276,76 @@
     "cidade": "Araruna",
     "uf": "PR",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Araruna-PR"
   },
   {
-    "cidade": "Arraial do Cabo",
-    "uf": "RJ",
+    "cidade": "Araxa",
+    "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Arraial do Cabo-RJ"
+    "label": "Araxa-MG"
+  },
+  {
+    "cidade": "Armacao Dos Buzios",
+    "uf": "RJ",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
+      "p1gb": 139.99
+    },
+    "label": "Armacao Dos Buzios-RJ"
+  },
+  {
+    "cidade": "Arneiroz",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Arneiroz-CE"
+  },
+  {
+    "cidade": "Arraial Do Cabo",
+    "uf": "RJ",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
+      "p1gb": 139.99
+    },
+    "label": "Arraial Do Cabo-RJ"
   },
   {
     "cidade": "Assare",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Assare-CE"
@@ -886,12 +353,12 @@
   {
     "cidade": "Bacabal",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Bacabal-MA"
@@ -899,51 +366,77 @@
   {
     "cidade": "Balsas",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Balsas-MA"
   },
   {
-    "cidade": "Barra do Corda",
-    "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "cidade": "Barbalha",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
-    "label": "Barra do Corda-MA"
+    "label": "Barbalha-CE"
   },
   {
-    "cidade": "Barra dos Coqueiros",
-    "uf": "SE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "cidade": "Barra Do Corda",
+    "uf": "MA",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
-    "label": "Barra dos Coqueiros-SE"
+    "label": "Barra Do Corda-MA"
+  },
+  {
+    "cidade": "Barra Do Pirai",
+    "uf": "RJ",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
+      "p1gb": 139.99
+    },
+    "label": "Barra Do Pirai-RJ"
+  },
+  {
+    "cidade": "Barra Dos Coqueiros",
+    "uf": "SE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Barra Dos Coqueiros-SE"
   },
   {
     "cidade": "Barra Mansa",
     "uf": "RJ",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Barra Mansa-RJ"
@@ -951,12 +444,12 @@
   {
     "cidade": "Beberibe",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Beberibe-CE"
@@ -964,25 +457,12 @@
   {
     "cidade": "Bertioga",
     "uf": "SP",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Bertioga-SP"
-  },
-  {
-    "cidade": "Bertioga",
-    "uf": "SP",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Bertioga-SP"
@@ -991,36 +471,49 @@
     "cidade": "Boa Esperanca",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Boa Esperanca-MG"
   },
   {
-    "cidade": "Bom Jesus das Selvas",
-    "uf": "MA",
+    "cidade": "Bom Jardim",
+    "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Bom Jesus das Selvas-MA"
+    "label": "Bom Jardim-RJ"
+  },
+  {
+    "cidade": "Bom Jesus Das Selvas",
+    "uf": "MA",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Bom Jesus Das Selvas-MA"
   },
   {
     "cidade": "Brasilia",
     "uf": "DF",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1029,12 +522,12 @@
   {
     "cidade": "Brejo Santo",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Brejo Santo-CE"
@@ -1042,12 +535,12 @@
   {
     "cidade": "Buriticupu",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Buriticupu-MA"
@@ -1055,51 +548,64 @@
   {
     "cidade": "Cabo Frio",
     "uf": "RJ",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Cabo Frio-RJ"
   },
   {
-    "cidade": "Cachoeiras de Macacu",
-    "uf": "RJ",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "cidade": "Cacapava",
+    "uf": "SP",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
-    "label": "Cachoeiras de Macacu-RJ"
+    "label": "Cacapava-SP"
   },
   {
-    "cidade": "Cachoeiro de Itapemirim",
-    "uf": "ES",
+    "cidade": "Cachoeiras De Macacu",
+    "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Cachoeiro de Itapemirim-ES"
+    "label": "Cachoeiras De Macacu-RJ"
+  },
+  {
+    "cidade": "Cachoeiro De Itapemirim",
+    "uf": "ES",
+    "grupo": "G2",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 99.99,
+      "p600": 99.99,
+      "p800": 109.99,
+      "p1gb": 139.99
+    },
+    "label": "Cachoeiro De Itapemirim-ES"
   },
   {
     "cidade": "Cajari",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Cajari-MA"
@@ -1108,10 +614,10 @@
     "cidade": "Cambuci",
     "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1120,38 +626,38 @@
   {
     "cidade": "Camocim",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Camocim-CE"
   },
   {
-    "cidade": "Campo do Meio",
+    "cidade": "Campo Do Meio",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Campo do Meio-MG"
+    "label": "Campo Do Meio-MG"
   },
   {
     "cidade": "Campo Grande",
     "uf": "MS",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Campo Grande-MS"
@@ -1160,10 +666,10 @@
     "cidade": "Campo Mourao",
     "uf": "PR",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1173,36 +679,36 @@
     "cidade": "Campos Altos",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Campos Altos-MG"
   },
   {
-    "cidade": "Campos dos Goytacazes",
+    "cidade": "Campos Dos Goytacazes",
     "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Campos dos Goytacazes-RJ"
+    "label": "Campos Dos Goytacazes-RJ"
   },
   {
     "cidade": "Campos Gerais",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1211,12 +717,12 @@
   {
     "cidade": "Campos Sales",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Campos Sales-CE"
@@ -1225,10 +731,10 @@
     "cidade": "Cantagalo",
     "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1237,25 +743,38 @@
   {
     "cidade": "Caraguatatuba",
     "uf": "SP",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Caraguatatuba-SP"
   },
   {
+    "cidade": "Cariacica",
+    "uf": "ES",
+    "grupo": "G2",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 99.99,
+      "p600": 99.99,
+      "p800": 109.99,
+      "p1gb": 139.99
+    },
+    "label": "Cariacica-ES"
+  },
+  {
     "cidade": "Carius",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Carius-CE"
@@ -1264,37 +783,37 @@
     "cidade": "Carmo",
     "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Carmo-RJ"
   },
   {
-    "cidade": "Carmo do Rio Claro",
+    "cidade": "Carmo Do Rio Claro",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Carmo do Rio Claro-MG"
+    "label": "Carmo Do Rio Claro-MG"
   },
   {
     "cidade": "Carnaiba",
     "uf": "PE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Carnaiba-PE"
@@ -1302,12 +821,12 @@
   {
     "cidade": "Carpina",
     "uf": "PE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Carpina-PE"
@@ -1315,12 +834,12 @@
   {
     "cidade": "Caruaru",
     "uf": "PE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Caruaru-PE"
@@ -1328,37 +847,37 @@
   {
     "cidade": "Cascavel",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Cascavel-CE"
   },
   {
-    "cidade": "Casimiro de Abreu",
+    "cidade": "Casimiro De Abreu",
     "uf": "RJ",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
-    "label": "Casimiro de Abreu-RJ"
+    "label": "Casimiro De Abreu-RJ"
   },
   {
     "cidade": "Cataguases",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1367,25 +886,90 @@
   {
     "cidade": "Catarina",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Catarina-CE"
   },
   {
+    "cidade": "Caucaia",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Caucaia-CE"
+  },
+  {
+    "cidade": "Caxias",
+    "uf": "MA",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Caxias-MA"
+  },
+  {
+    "cidade": "Cedro",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Cedro-CE"
+  },
+  {
+    "cidade": "Cedro De Sao Joao",
+    "uf": "SE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Cedro De Sao Joao-SE"
+  },
+  {
+    "cidade": "Cianorte",
+    "uf": "PR",
+    "grupo": "G2",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 99.99,
+      "p600": 99.99,
+      "p800": 109.99,
+      "p1gb": 139.99
+    },
+    "label": "Cianorte-PR"
+  },
+  {
     "cidade": "Codo",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Codo-MA"
@@ -1394,23 +978,36 @@
     "cidade": "Comendador Levy Gasparian",
     "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Comendador Levy Gasparian-RJ"
   },
   {
+    "cidade": "Conquista",
+    "uf": "MG",
+    "grupo": "G2",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 99.99,
+      "p600": 99.99,
+      "p800": 109.99,
+      "p1gb": 139.99
+    },
+    "label": "Conquista-MG"
+  },
+  {
     "cidade": "Coqueiral",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1420,10 +1017,10 @@
     "cidade": "Cordeiro",
     "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1433,10 +1030,10 @@
     "cidade": "Coromandel",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1445,24 +1042,37 @@
   {
     "cidade": "Crateus",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Crateus-CE"
   },
   {
+    "cidade": "Crato",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Crato-CE"
+  },
+  {
     "cidade": "Cristais",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1471,24 +1081,37 @@
   {
     "cidade": "Cruz",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Cruz-CE"
   },
   {
+    "cidade": "Cubatao",
+    "uf": "SP",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
+      "p1gb": 139.99
+    },
+    "label": "Cubatao-SP"
+  },
+  {
     "cidade": "Delta",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1498,23 +1121,49 @@
     "cidade": "Diadema",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Diadema-SP"
   },
   {
+    "cidade": "Divina Pastora",
+    "uf": "SE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Divina Pastora-SE"
+  },
+  {
+    "cidade": "Dourados",
+    "uf": "MS",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
+      "p1gb": 139.99
+    },
+    "label": "Dourados-MS"
+  },
+  {
     "cidade": "Doutor Camargo",
     "uf": "PR",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1524,10 +1173,10 @@
     "cidade": "Duas Barras",
     "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1537,37 +1186,76 @@
     "cidade": "Engenheiro Beltrao",
     "uf": "PR",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Engenheiro Beltrao-PR"
   },
   {
+    "cidade": "Estreito",
+    "uf": "MA",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Estreito-MA"
+  },
+  {
+    "cidade": "Eusebio",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Eusebio-CE"
+  },
+  {
     "cidade": "Farias Brito",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Farias Brito-CE"
   },
   {
+    "cidade": "Ferraz De Vasconcelos",
+    "uf": "SP",
+    "grupo": "G2",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 99.99,
+      "p600": 99.99,
+      "p800": 109.99,
+      "p1gb": 139.99
+    },
+    "label": "Ferraz De Vasconcelos-SP"
+  },
+  {
     "cidade": "Flores",
     "uf": "PE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Flores-PE"
@@ -1575,38 +1263,38 @@
   {
     "cidade": "Fortaleza",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Fortaleza-CE"
   },
   {
-    "cidade": "Fortaleza de Minas",
+    "cidade": "Fortaleza De Minas",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Fortaleza de Minas-MG"
+    "label": "Fortaleza De Minas-MG"
   },
   {
     "cidade": "Fortim",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Fortim-CE"
@@ -1615,10 +1303,10 @@
     "cidade": "Franca",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1627,25 +1315,38 @@
   {
     "cidade": "Frecheirinha",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Frecheirinha-CE"
   },
   {
+    "cidade": "Goiana",
+    "uf": "PE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Goiana-PE"
+  },
+  {
     "cidade": "Graca",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Graca-CE"
@@ -1653,12 +1354,12 @@
   {
     "cidade": "Grajau",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Grajau-MA"
@@ -1666,12 +1367,12 @@
   {
     "cidade": "Granja",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Granja-CE"
@@ -1680,10 +1381,10 @@
     "cidade": "Guape",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1693,10 +1394,10 @@
     "cidade": "Guapimirim",
     "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1706,10 +1407,10 @@
     "cidade": "Guara",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1719,10 +1420,10 @@
     "cidade": "Guaranesia",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1732,10 +1433,10 @@
     "cidade": "Guarapari",
     "uf": "ES",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1744,12 +1445,12 @@
   {
     "cidade": "Guaruja",
     "uf": "SP",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Guaruja-SP"
@@ -1758,10 +1459,10 @@
     "cidade": "Guarulhos",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1771,10 +1472,10 @@
     "cidade": "Guaxupe",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1784,10 +1485,10 @@
     "cidade": "Ibia",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1796,12 +1497,12 @@
   {
     "cidade": "Ibiapina",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Ibiapina-CE"
@@ -1809,12 +1510,12 @@
   {
     "cidade": "Ico",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Ico-CE"
@@ -1823,24 +1524,76 @@
     "cidade": "Igarapava",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Igarapava-SP"
   },
   {
+    "cidade": "Iguaba Grande",
+    "uf": "RJ",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
+      "p1gb": 139.99
+    },
+    "label": "Iguaba Grande-RJ"
+  },
+  {
+    "cidade": "Iguatu",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Iguatu-CE"
+  },
+  {
+    "cidade": "Ilha Bela",
+    "uf": "SP",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
+      "p1gb": 139.99
+    },
+    "label": "Ilha Bela-SP"
+  },
+  {
+    "cidade": "Ilha De Itamaraca",
+    "uf": "PE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Ilha De Itamaraca-PE"
+  },
+  {
     "cidade": "Ilhabela",
     "uf": "SP",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Ilhabela-SP"
@@ -1849,10 +1602,10 @@
     "cidade": "Ilicinea",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1861,12 +1614,12 @@
   {
     "cidade": "Imperatriz",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Imperatriz-MA"
@@ -1874,63 +1627,76 @@
   {
     "cidade": "Independencia",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Independencia-CE"
   },
   {
+    "cidade": "Ipojuca",
+    "uf": "PE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Ipojuca-PE"
+  },
+  {
     "cidade": "Ipua",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Ipua-SP"
   },
   {
-    "cidade": "Itaipava",
-    "uf": "RJ",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Itaipava-RJ"
-  },
-  {
     "cidade": "Itaitinga",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Itaitinga-CE"
   },
   {
+    "cidade": "Itanhaem",
+    "uf": "SP",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
+      "p1gb": 139.99
+    },
+    "label": "Itanhaem-SP"
+  },
+  {
     "cidade": "Itaocara",
     "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -1940,37 +1706,76 @@
     "cidade": "Itapemirim",
     "uf": "ES",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Itapemirim-ES"
   },
   {
-    "cidade": "Itaquaquecetuba",
-    "uf": "SP",
+    "cidade": "Itaperuna",
+    "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Itaquaquecetuba-SP"
+    "label": "Itaperuna-RJ"
+  },
+  {
+    "cidade": "Itapipoca",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Itapipoca-CE"
+  },
+  {
+    "cidade": "Itapissuma",
+    "uf": "PE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Itapissuma-PE"
+  },
+  {
+    "cidade": "Itaporanga D'ajuda",
+    "uf": "SE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Itaporanga D'ajuda-SE"
   },
   {
     "cidade": "Itarema",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Itarema-CE"
@@ -1978,37 +1783,37 @@
   {
     "cidade": "Itatiaia",
     "uf": "RJ",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Itatiaia-RJ"
   },
   {
-    "cidade": "Itau de Minas",
+    "cidade": "Itau De Minas",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Itau de Minas-MG"
+    "label": "Itau De Minas-MG"
   },
   {
     "cidade": "Itirapua",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -2018,76 +1823,115 @@
     "cidade": "Ituverava",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Ituverava-SP"
   },
   {
+    "cidade": "Jacarei",
+    "uf": "SP",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
+      "p1gb": 139.99
+    },
+    "label": "Jacarei-SP"
+  },
+  {
     "cidade": "Jacui",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Jacui-MG"
   },
   {
-    "cidade": "Jandaia do Sul",
+    "cidade": "Jandaia Do Sul",
     "uf": "PR",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Jandaia do Sul-PR"
+    "label": "Jandaia Do Sul-PR"
   },
   {
-    "cidade": "Jijoca de Jericoacoara",
-    "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "cidade": "Japoata",
+    "uf": "SE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
-    "label": "Jijoca de Jericoacoara-CE"
+    "label": "Japoata-SE"
   },
   {
-    "cidade": "Juazeiro do Norte",
+    "cidade": "Jati",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
-    "label": "Juazeiro do Norte-CE"
+    "label": "Jati-CE"
+  },
+  {
+    "cidade": "Jijoca De Jericoacoara",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Jijoca De Jericoacoara-CE"
+  },
+  {
+    "cidade": "Juazeiro Do Norte",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Juazeiro Do Norte-CE"
   },
   {
     "cidade": "Jucas",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Jucas-CE"
@@ -2096,89 +1940,102 @@
     "cidade": "Jussara",
     "uf": "PR",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Jussara-PR"
   },
   {
-    "cidade": "Laje do Muriae",
+    "cidade": "Lagarto",
+    "uf": "SE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Lagarto-SE"
+  },
+  {
+    "cidade": "Laje Do Muriae",
     "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Laje do Muriae-RJ"
+    "label": "Laje Do Muriae-RJ"
   },
   {
     "cidade": "Laranjeiras",
     "uf": "SE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Laranjeiras-SE"
   },
   {
-    "cidade": "Lavras da Mangabeira",
+    "cidade": "Lavras Da Mangabeira",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
-    "label": "Lavras da Mangabeira-CE"
+    "label": "Lavras Da Mangabeira-CE"
   },
   {
     "cidade": "Limoeiro",
     "uf": "PE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Limoeiro-PE"
   },
   {
-    "cidade": "Limoeiro do Norte",
+    "cidade": "Limoeiro Do Norte",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
-    "label": "Limoeiro do Norte-CE"
+    "label": "Limoeiro Do Norte-CE"
   },
   {
     "cidade": "Macae",
     "uf": "RJ",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Macae-RJ"
@@ -2187,36 +2044,75 @@
     "cidade": "Macuco",
     "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Macuco-RJ"
   },
   {
+    "cidade": "Mage",
+    "uf": "RJ",
+    "grupo": "G2",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 99.99,
+      "p600": 99.99,
+      "p800": 109.99,
+      "p1gb": 139.99
+    },
+    "label": "Mage-RJ"
+  },
+  {
     "cidade": "Mandaguari",
     "uf": "PR",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Mandaguari-PR"
   },
   {
+    "cidade": "Maracanau",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Maracanau-CE"
+  },
+  {
+    "cidade": "Maranguape",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Maranguape-CE"
+  },
+  {
     "cidade": "Marataizes",
     "uf": "ES",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -2226,10 +2122,10 @@
     "cidade": "Marialva",
     "uf": "PR",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -2239,10 +2135,10 @@
     "cidade": "Maringa",
     "uf": "PR",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -2251,12 +2147,12 @@
   {
     "cidade": "Matinha",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Matinha-MA"
@@ -2264,12 +2160,12 @@
   {
     "cidade": "Matoes",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Matoes-MA"
@@ -2278,10 +2174,10 @@
     "cidade": "Maua",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -2290,12 +2186,12 @@
   {
     "cidade": "Mauriti",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Mauriti-CE"
@@ -2303,25 +2199,38 @@
   {
     "cidade": "Miguel Pereira",
     "uf": "RJ",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Miguel Pereira-RJ"
   },
   {
+    "cidade": "Miracema",
+    "uf": "RJ",
+    "grupo": "G2",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 99.99,
+      "p600": 99.99,
+      "p800": 109.99,
+      "p1gb": 139.99
+    },
+    "label": "Miracema-RJ"
+  },
+  {
     "cidade": "Mirandiba",
     "uf": "PE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Mirandiba-PE"
@@ -2329,64 +2238,103 @@
   {
     "cidade": "Missao Velha",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Missao Velha-CE"
   },
   {
+    "cidade": "Mogi Das Cruzes",
+    "uf": "SP",
+    "grupo": "G2",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 99.99,
+      "p600": 99.99,
+      "p800": 109.99,
+      "p1gb": 139.99
+    },
+    "label": "Mogi Das Cruzes-SP"
+  },
+  {
     "cidade": "Mombaca",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Mombaca-CE"
   },
   {
-    "cidade": "Monte Santo de Minas",
+    "cidade": "Mongagua",
+    "uf": "SP",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
+      "p1gb": 139.99
+    },
+    "label": "Mongagua-SP"
+  },
+  {
+    "cidade": "Monte Santo De Minas",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Monte Santo de Minas-MG"
+    "label": "Monte Santo De Minas-MG"
   },
   {
     "cidade": "Morada Nova",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Morada Nova-CE"
   },
   {
+    "cidade": "Morro Agudo",
+    "uf": "SP",
+    "grupo": "G2",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 99.99,
+      "p600": 99.99,
+      "p800": 109.99,
+      "p1gb": 139.99
+    },
+    "label": "Morro Agudo-SP"
+  },
+  {
     "cidade": "Mucambo",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Mucambo-CE"
@@ -2395,115 +2343,271 @@
     "cidade": "Muriae",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Muriae-MG"
   },
   {
+    "cidade": "Nazare Da Mata",
+    "uf": "PE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Nazare Da Mata-PE"
+  },
+  {
     "cidade": "Nepomuceno",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Nepomuceno-MG"
   },
   {
+    "cidade": "Nossa Senhora Do Socorro",
+    "uf": "SE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Nossa Senhora Do Socorro-SE"
+  },
+  {
+    "cidade": "Nova Friburgo",
+    "uf": "RJ",
+    "grupo": "G2",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 99.99,
+      "p600": 99.99,
+      "p800": 109.99,
+      "p1gb": 139.99
+    },
+    "label": "Nova Friburgo-RJ"
+  },
+  {
     "cidade": "Nova Ponte",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Nova Ponte-MG"
   },
   {
-    "cidade": "Olinda Nova",
-    "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "cidade": "Olinda",
+    "uf": "PE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
-    "label": "Olinda Nova-MA"
+    "label": "Olinda-PE"
+  },
+  {
+    "cidade": "Olinda Nova Do Maranhao",
+    "uf": "MA",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Olinda Nova Do Maranhao-MA"
   },
   {
     "cidade": "Orlandia",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Orlandia-SP"
   },
   {
-    "cidade": "Paco do Lumiar",
-    "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "cidade": "Oros",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
-    "label": "Paco do Lumiar-MA"
+    "label": "Oros-CE"
+  },
+  {
+    "cidade": "Pacajus",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Pacajus-CE"
+  },
+  {
+    "cidade": "Pacatuba",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Pacatuba-CE"
+  },
+  {
+    "cidade": "Pacatuba",
+    "uf": "SE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Pacatuba-SE"
+  },
+  {
+    "cidade": "Paco Do Lumiar",
+    "uf": "MA",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Paco Do Lumiar-MA"
   },
   {
     "cidade": "Pacuja",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Pacuja-CE"
   },
   {
-    "cidade": "Paraiba do Sul",
-    "uf": "RJ",
+    "cidade": "Paicandu",
+    "uf": "PR",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Paraiba do Sul-RJ"
+    "label": "Paicandu-PR"
+  },
+  {
+    "cidade": "Paracuru",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Paracuru-CE"
+  },
+  {
+    "cidade": "Paraiba Do Sul",
+    "uf": "RJ",
+    "grupo": "G2",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 99.99,
+      "p600": 99.99,
+      "p800": 109.99,
+      "p1gb": 139.99
+    },
+    "label": "Paraiba Do Sul-RJ"
+  },
+  {
+    "cidade": "Paraipaba",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Paraipaba-CE"
+  },
+  {
+    "cidade": "Parambu",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Parambu-CE"
   },
   {
     "cidade": "Parauapebas",
     "uf": "PA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Parauapebas-PA"
@@ -2511,12 +2615,12 @@
   {
     "cidade": "Parnaiba",
     "uf": "PI",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Parnaiba-PI"
@@ -2524,12 +2628,12 @@
   {
     "cidade": "Parnamirim",
     "uf": "PE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Parnamirim-PE"
@@ -2537,12 +2641,12 @@
   {
     "cidade": "Parnarama",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Parnarama-MA"
@@ -2551,10 +2655,10 @@
     "cidade": "Passos",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -2564,49 +2668,62 @@
     "cidade": "Patrocinio Paulista",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Patrocinio Paulista-SP"
   },
   {
-    "cidade": "Paty do Alferes",
+    "cidade": "Paty Do Alferes",
     "uf": "RJ",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
-    "label": "Paty do Alferes-RJ"
+    "label": "Paty Do Alferes-RJ"
   },
   {
     "cidade": "Paudalho",
     "uf": "PE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Paudalho-PE"
   },
   {
+    "cidade": "Paulista",
+    "uf": "PE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Paulista-PE"
+  },
+  {
     "cidade": "Peabiru",
     "uf": "PR",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -2616,10 +2733,10 @@
     "cidade": "Pedrinopolis",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -2628,24 +2745,37 @@
   {
     "cidade": "Penalva",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Penalva-MA"
   },
   {
+    "cidade": "Pentecoste",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Pentecoste-CE"
+  },
+  {
     "cidade": "Perdizes",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -2654,12 +2784,12 @@
   {
     "cidade": "Peruibe",
     "uf": "SP",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Peruibe-SP"
@@ -2668,10 +2798,10 @@
     "cidade": "Petropolis",
     "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -2680,25 +2810,38 @@
   {
     "cidade": "Pindare Mirim",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Pindare Mirim-MA"
   },
   {
+    "cidade": "Pindoretama",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Pindoretama-CE"
+  },
+  {
     "cidade": "Pinheiral",
     "uf": "RJ",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Pinheiral-RJ"
@@ -2706,12 +2849,12 @@
   {
     "cidade": "Piquet Carneiro",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Piquet Carneiro-CE"
@@ -2720,37 +2863,24 @@
     "cidade": "Piuma",
     "uf": "ES",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Piuma-ES"
   },
   {
-    "cidade": "Poa",
-    "uf": "SP",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
-    "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
-      "p1gb": 139.99
-    },
-    "label": "Poa-SP"
-  },
-  {
     "cidade": "Porteiras",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Porteiras-CE"
@@ -2758,24 +2888,37 @@
   {
     "cidade": "Porto Real",
     "uf": "RJ",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Porto Real-RJ"
   },
   {
+    "cidade": "Praia Grande",
+    "uf": "SP",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
+      "p1gb": 139.99
+    },
+    "label": "Praia Grande-SP"
+  },
+  {
     "cidade": "Pratapolis",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -2785,10 +2928,10 @@
     "cidade": "Pratinha",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -2797,12 +2940,12 @@
   {
     "cidade": "Presidente Dutra",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Presidente Dutra-MA"
@@ -2810,12 +2953,12 @@
   {
     "cidade": "Propria",
     "uf": "SE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Propria-SE"
@@ -2823,12 +2966,12 @@
   {
     "cidade": "Quixada",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Quixada-CE"
@@ -2836,12 +2979,12 @@
   {
     "cidade": "Quixelo",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Quixelo-CE"
@@ -2849,12 +2992,12 @@
   {
     "cidade": "Resende",
     "uf": "RJ",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Resende-RJ"
@@ -2863,10 +3006,10 @@
     "cidade": "Ribeirao Pires",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -2876,76 +3019,76 @@
     "cidade": "Ribeirao Preto",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Ribeirao Preto-SP"
   },
   {
-    "cidade": "Rio das Ostras",
+    "cidade": "Rio Das Ostras",
     "uf": "RJ",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
-    "label": "Rio das Ostras-RJ"
+    "label": "Rio Das Ostras-RJ"
   },
   {
-    "cidade": "Rio Grande da Serra",
+    "cidade": "Rio Grande Da Serra",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Rio Grande da Serra-SP"
+    "label": "Rio Grande Da Serra-SP"
   },
   {
     "cidade": "Rolandia",
     "uf": "PR",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Rolandia-PR"
   },
   {
-    "cidade": "Rosario do Catete",
+    "cidade": "Rosario Do Catete",
     "uf": "SE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
-    "label": "Rosario do Catete-SE"
+    "label": "Rosario Do Catete-SE"
   },
   {
     "cidade": "Russas",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Russas-CE"
@@ -2954,36 +3097,75 @@
     "cidade": "Sacramento",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Sacramento-MG"
   },
   {
+    "cidade": "Salgueiro",
+    "uf": "PE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Salgueiro-PE"
+  },
+  {
     "cidade": "Salitre",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Salitre-CE"
   },
   {
+    "cidade": "Santa Cruz Do Capibaribe",
+    "uf": "PE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Santa Cruz Do Capibaribe-PE"
+  },
+  {
+    "cidade": "Santa Ines",
+    "uf": "MA",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Santa Ines-MA"
+  },
+  {
     "cidade": "Santa Juliana",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -2992,51 +3174,51 @@
   {
     "cidade": "Santa Luzia",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Santa Luzia-MA"
   },
   {
-    "cidade": "Santana da Vargem",
+    "cidade": "Santana Da Vargem",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Santana da Vargem-MG"
+    "label": "Santana Da Vargem-MG"
   },
   {
-    "cidade": "Santo Andre",
-    "uf": "SP",
+    "cidade": "Santo Antonio De Padua",
+    "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Santo Andre-SP"
+    "label": "Santo Antonio De Padua-RJ"
   },
   {
     "cidade": "Santos",
     "uf": "SP",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Santos-SP"
@@ -3044,271 +3226,297 @@
   {
     "cidade": "Sao Benedito",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Sao Benedito-CE"
   },
   {
-    "cidade": "Sao Bernardo do Campo",
+    "cidade": "Sao Bernardo Do Campo",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Sao Bernardo do Campo-SP"
+    "label": "Sao Bernardo Do Campo-SP"
   },
   {
     "cidade": "Sao Cristovao",
     "uf": "SE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Sao Cristovao-SE"
   },
   {
-    "cidade": "Sao Goncalo do Amarante",
-    "uf": "CE",
+    "cidade": "Sao Fidelis",
+    "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Sao Goncalo do Amarante-CE"
+    "label": "Sao Fidelis-RJ"
+  },
+  {
+    "cidade": "Sao Goncalo Do Amarante",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Sao Goncalo Do Amarante-CE"
   },
   {
     "cidade": "Sao Gotardo",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Sao Gotardo-MG"
   },
   {
-    "cidade": "Sao Joao Batista do Gloria",
+    "cidade": "Sao Joao Batista Do Gloria",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Sao Joao Batista do Gloria-MG"
+    "label": "Sao Joao Batista Do Gloria-MG"
   },
   {
-    "cidade": "Sao Joaquim da Barra",
+    "cidade": "Sao Joaquim Da Barra",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Sao Joaquim da Barra-SP"
+    "label": "Sao Joaquim Da Barra-SP"
   },
   {
-    "cidade": "Sao Jose da Barra",
+    "cidade": "Sao Jose Da Barra",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Sao Jose da Barra-MG"
+    "label": "Sao Jose Da Barra-MG"
   },
   {
-    "cidade": "Sao Jose da Bela Vista",
+    "cidade": "Sao Jose Da Bela Vista",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Sao Jose da Bela Vista-SP"
+    "label": "Sao Jose Da Bela Vista-SP"
   },
   {
-    "cidade": "Sao Jose de Ribamar",
+    "cidade": "Sao Jose De Ribamar",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
-    "label": "Sao Jose de Ribamar-MA"
+    "label": "Sao Jose De Ribamar-MA"
   },
   {
-    "cidade": "Sao Jose de Uba",
+    "cidade": "Sao Jose De Uba",
     "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Sao Jose de Uba-RJ"
+    "label": "Sao Jose De Uba-RJ"
   },
   {
-    "cidade": "Sao Jose dos Campos",
+    "cidade": "Sao Jose Dos Campos",
     "uf": "SP",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
-    "label": "Sao Jose dos Campos-SP"
+    "label": "Sao Jose Dos Campos-SP"
   },
   {
     "cidade": "Sao Luis",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Sao Luis-MA"
   },
   {
-    "cidade": "Sao Luis do Curu",
+    "cidade": "Sao Luis Do Curu",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
-    "label": "Sao Luis do Curu-CE"
+    "label": "Sao Luis Do Curu-CE"
   },
   {
-    "cidade": "Sao Mateus",
+    "cidade": "Sao Mateus Do Maranhao",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
-    "label": "Sao Mateus-MA"
+    "label": "Sao Mateus Do Maranhao-MA"
   },
   {
     "cidade": "Sao Paulo",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Sao Paulo-SP"
   },
   {
-    "cidade": "Sao Pedro da Aldeia",
+    "cidade": "Sao Pedro Da Aldeia",
     "uf": "RJ",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
-    "label": "Sao Pedro da Aldeia-RJ"
+    "label": "Sao Pedro Da Aldeia-RJ"
   },
   {
     "cidade": "Sao Sebastiao",
     "uf": "SP",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Sao Sebastiao-SP"
   },
   {
-    "cidade": "Sao Sebastiao do Paraiso",
+    "cidade": "Sao Sebastiao Do Paraiso",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Sao Sebastiao do Paraiso-MG"
+    "label": "Sao Sebastiao Do Paraiso-MG"
   },
   {
-    "cidade": "Sao Tomas de Aquino",
+    "cidade": "Sao Tomas De Aquino",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
-    "label": "Sao Tomas de Aquino-MG"
+    "label": "Sao Tomas De Aquino-MG"
+  },
+  {
+    "cidade": "Sao Vicente",
+    "uf": "SP",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
+      "p1gb": 139.99
+    },
+    "label": "Sao Vicente-SP"
   },
   {
     "cidade": "Sapucaia",
     "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -3317,12 +3525,12 @@
   {
     "cidade": "Saquarema",
     "uf": "RJ",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Saquarema-RJ"
@@ -3331,23 +3539,49 @@
     "cidade": "Serra",
     "uf": "ES",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Serra-ES"
   },
   {
+    "cidade": "Serra Do Salitre",
+    "uf": "MG",
+    "grupo": "G2",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 99.99,
+      "p600": 99.99,
+      "p800": 109.99,
+      "p1gb": 139.99
+    },
+    "label": "Serra Do Salitre-MG"
+  },
+  {
+    "cidade": "Serra Talhada",
+    "uf": "PE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Serra Talhada-PE"
+  },
+  {
     "cidade": "Silva Jardim",
     "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -3356,24 +3590,37 @@
   {
     "cidade": "Siriri",
     "uf": "SE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Siriri-SE"
   },
   {
+    "cidade": "Sobral",
+    "uf": "CE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Sobral-CE"
+  },
+  {
     "cidade": "Sumidouro",
     "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -3382,12 +3629,12 @@
   {
     "cidade": "Surubim",
     "uf": "PE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Surubim-PE"
@@ -3396,36 +3643,36 @@
     "cidade": "Suzano",
     "uf": "SP",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Suzano-SP"
   },
   {
-    "cidade": "Tabuleiro do Norte",
+    "cidade": "Tabuleiro Do Norte",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
-    "label": "Tabuleiro do Norte-CE"
+    "label": "Tabuleiro Do Norte-CE"
   },
   {
     "cidade": "Tapira",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -3434,12 +3681,12 @@
   {
     "cidade": "Tarrafas",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Tarrafas-CE"
@@ -3447,38 +3694,64 @@
   {
     "cidade": "Taua",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Taua-CE"
   },
   {
+    "cidade": "Taubate",
+    "uf": "SP",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
+      "p1gb": 139.99
+    },
+    "label": "Taubate-SP"
+  },
+  {
     "cidade": "Telemaco Borba",
     "uf": "PR",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Telemaco Borba-PR"
   },
   {
+    "cidade": "Telha",
+    "uf": "SE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Telha-SE"
+  },
+  {
     "cidade": "Teresina",
     "uf": "PI",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Teresina-PI"
@@ -3487,10 +3760,10 @@
     "cidade": "Teresopolis",
     "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -3499,12 +3772,12 @@
   {
     "cidade": "Terra Nova",
     "uf": "PE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Terra Nova-PE"
@@ -3512,25 +3785,64 @@
   {
     "cidade": "Tiangua",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Tiangua-CE"
   },
   {
+    "cidade": "Timbauba",
+    "uf": "PE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Timbauba-PE"
+  },
+  {
+    "cidade": "Timon",
+    "uf": "MA",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Timon-MA"
+  },
+  {
+    "cidade": "Toritama",
+    "uf": "PE",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
+      "p1gb": 139.99
+    },
+    "label": "Toritama-PE"
+  },
+  {
     "cidade": "Trairi",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Trairi-CE"
@@ -3538,12 +3850,12 @@
   {
     "cidade": "Tremembe",
     "uf": "SP",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Tremembe-SP"
@@ -3552,10 +3864,10 @@
     "cidade": "Tres Rios",
     "uf": "RJ",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -3564,12 +3876,12 @@
   {
     "cidade": "Ubajara",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Ubajara-CE"
@@ -3578,23 +3890,36 @@
     "cidade": "Uberaba",
     "uf": "MG",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Uberaba-MG"
   },
   {
+    "cidade": "Uberlandia",
+    "uf": "MG",
+    "grupo": "G2",
+    "condicao": "Valor fixo por 12 meses.",
+    "precos": {
+      "p400": 99.99,
+      "p600": 99.99,
+      "p800": 109.99,
+      "p1gb": 139.99
+    },
+    "label": "Uberlandia-MG"
+  },
+  {
     "cidade": "Ubirata",
     "uf": "PR",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -3603,12 +3928,12 @@
   {
     "cidade": "Valenca",
     "uf": "RJ",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Valenca-RJ"
@@ -3616,12 +3941,12 @@
   {
     "cidade": "Varzea Alegre",
     "uf": "CE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Varzea Alegre-CE"
@@ -3629,12 +3954,12 @@
   {
     "cidade": "Vassouras",
     "uf": "RJ",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Vassouras-RJ"
@@ -3642,12 +3967,12 @@
   {
     "cidade": "Verdejante",
     "uf": "PE",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Verdejante-PE"
@@ -3655,12 +3980,12 @@
   {
     "cidade": "Viana",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Viana-MA"
@@ -3669,10 +3994,10 @@
     "cidade": "Vila Velha",
     "uf": "ES",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
@@ -3682,37 +4007,37 @@
     "cidade": "Vitoria",
     "uf": "ES",
     "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
+      "p400": 99.99,
+      "p600": 99.99,
       "p800": 109.99,
       "p1gb": 139.99
     },
     "label": "Vitoria-ES"
   },
   {
-    "cidade": "Vitoria do Mearim",
+    "cidade": "Vitoria Do Mearim",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
-    "label": "Vitoria do Mearim-MA"
+    "label": "Vitoria Do Mearim-MA"
   },
   {
     "cidade": "Volta Redonda",
     "uf": "RJ",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G3",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 109.99,
+      "p600": 109.99,
+      "p800": 119.99,
       "p1gb": 139.99
     },
     "label": "Volta Redonda-RJ"
@@ -3720,391 +4045,14 @@
   {
     "cidade": "Ze Doca",
     "uf": "MA",
-    "grupo": "G2",
-    "condicao": "Valor válido por 3 meses, após acréscimo de R$ 20.",
+    "grupo": "G1",
+    "condicao": "Valor fixo por 12 meses.",
     "precos": {
-      "p400": 69.99,
-      "p600": 89.99,
-      "p800": 109.99,
+      "p400": 94.99,
+      "p600": 94.99,
+      "p800": 99.99,
       "p1gb": 139.99
     },
     "label": "Ze Doca-MA"
-  },
-  {
-    "cidade": "Araxa",
-    "uf": "MG",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Araxa-MG"
-  },
-  {
-    "cidade": "Armacao dos Buzios",
-    "uf": "RJ",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Armacao dos Buzios-RJ"
-  },
-  {
-    "cidade": "Barra do Pirai",
-    "uf": "RJ",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Barra do Pirai-RJ"
-  },
-  {
-    "cidade": "Bom Jardim",
-    "uf": "RJ",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Bom Jardim-RJ"
-  },
-  {
-    "cidade": "Cacapava",
-    "uf": "SP",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Cacapava-SP"
-  },
-  {
-    "cidade": "Cariacica",
-    "uf": "ES",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Cariacica-ES"
-  },
-  {
-    "cidade": "Cianorte",
-    "uf": "PR",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Cianorte-PR"
-  },
-  {
-    "cidade": "Conquista",
-    "uf": "MG",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Conquista-MG"
-  },
-  {
-    "cidade": "Cubatao",
-    "uf": "SP",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Cubatao-SP"
-  },
-  {
-    "cidade": "Dourados",
-    "uf": "MS",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Dourados-MS"
-  },
-  {
-    "cidade": "Ferraz de Vasconcelos",
-    "uf": "SP",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Ferraz de Vasconcelos-SP"
-  },
-  {
-    "cidade": "Iguaba Grande",
-    "uf": "RJ",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Iguaba Grande-RJ"
-  },
-  {
-    "cidade": "Itanhaem",
-    "uf": "SP",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Itanhaem-SP"
-  },
-  {
-    "cidade": "Itaperuna",
-    "uf": "RJ",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Itaperuna-RJ"
-  },
-  {
-    "cidade": "Jacarei",
-    "uf": "SP",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Jacarei-SP"
-  },
-  {
-    "cidade": "Mage",
-    "uf": "RJ",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Mage-RJ"
-  },
-  {
-    "cidade": "Miracema",
-    "uf": "RJ",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Miracema-RJ"
-  },
-  {
-    "cidade": "Mogi das Cruzes",
-    "uf": "SP",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Mogi das Cruzes-SP"
-  },
-  {
-    "cidade": "Mongagua",
-    "uf": "SP",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Mongagua-SP"
-  },
-  {
-    "cidade": "Morro Agudo",
-    "uf": "SP",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Morro Agudo-SP"
-  },
-  {
-    "cidade": "Nova Friburgo",
-    "uf": "RJ",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Nova Friburgo-RJ"
-  },
-  {
-    "cidade": "Paicandu",
-    "uf": "PR",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Paicandu-PR"
-  },
-  {
-    "cidade": "Praia Grande",
-    "uf": "SP",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Praia Grande-SP"
-  },
-  {
-    "cidade": "Santo Antonio de Padua",
-    "uf": "RJ",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Santo Antonio de Padua-RJ"
-  },
-  {
-    "cidade": "Sao Fidelis",
-    "uf": "RJ",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Sao Fidelis-RJ"
-  },
-  {
-    "cidade": "Sao Vicente",
-    "uf": "SP",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Sao Vicente-SP"
-  },
-  {
-    "cidade": "Serra do Salitre",
-    "uf": "MG",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Serra do Salitre-MG"
-  },
-  {
-    "cidade": "Taubate",
-    "uf": "SP",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Taubate-SP"
-  },
-  {
-    "cidade": "Uberlandia",
-    "uf": "MG",
-    "grupo": "G3",
-    "condicao": "Preço fixo 12 meses.",
-    "precos": {
-      "p400": 79.99,
-      "p600": 99.99,
-      "p800": 119.99,
-      "p1gb": 139.99
-    },
-    "label": "Uberlandia-MG"
   }
 ]
