@@ -187,7 +187,7 @@
 
   // ── Helpers ───────────────────────────────────────────────────────────────────
   function formatarPreco(valor: number): string {
-    return 'R$' + valor.toFixed(2).replace('.', ',');
+    return 'R$' + valor.toFixed(2).replace('.', ',') + '*';
   }
 
   function normalizar(str: string): string {
