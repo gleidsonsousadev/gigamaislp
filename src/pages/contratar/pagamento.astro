@@ -163,7 +163,7 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
               border-radius: 50%;
               display: flex; align-items: center; justify-content: center;
             "></div>
-            <span style="font-size: 18px; font-weight: 500; color: #010180; line-height: 1.5;">Boleto Bancário</span>
+            <span style="font-size: 18px; font-weight: 500; color: #010180; line-height: 1.5;">Boleto Bancário <span style="font-size: 16px; font-weight: 400;">(Acréscimo de R$10)</span></span>
           </div>
           <!-- Ícone de código de barras -->
           <svg width="47" height="25" viewBox="0 0 47 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -607,6 +607,17 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
   var radioDebito  = document.getElementById('radio-debito')
   var formCartao   = document.getElementById('form-cartao')
 
+  // Lê o preço base da URL (sem o *) e guarda para cálculos
+  var precoBase = (new URLSearchParams(window.location.search).get('preco') || '').replace('*', '')
+
+  function calcularPrecoBoleto(precoStr) {
+    // Extrai número do formato "R$94,99" e soma 10
+    var num = parseFloat(precoStr.replace('R$', '').replace(',', '.'))
+    if (isNaN(num)) return precoStr
+    var novo = (num + 10).toFixed(2).replace('.', ',')
+    return 'R$' + novo + '*'
+  }
+
   function selecionarMetodo(metodo) {
     metodoPagamento = metodo
 
@@ -618,18 +629,27 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
     radioCartao.innerHTML  = ''
     radioCartao.style.borderColor = '#C2C2C2'
 
+    var elPreco   = document.getElementById('plano-preco')
+    var elLegenda = document.querySelector('#plano-condicao + p')
+
     if (metodo === 'boleto') {
       radioBoleto.style.borderColor = '#0939CF'
       radioBoleto.innerHTML = '<div style="width:12px;height:12px;background:#0939CF;border-radius:50%;"></div>'
       formCartao.style.display = 'none'
+      if (elPreco) elPreco.textContent = calcularPrecoBoleto(precoBase)
+      if (elLegenda) elLegenda.textContent = '*Valor no Boleto.'
     } else if (metodo === 'cartao') {
       radioCartao.style.borderColor = '#0939CF'
       radioCartao.innerHTML = '<div style="width:12px;height:12px;background:#0939CF;border-radius:50%;"></div>'
       formCartao.style.display = 'flex'
+      if (elPreco) elPreco.textContent = precoBase + '*'
+      if (elLegenda) elLegenda.textContent = '*Valor Exclusivo no Cartão de Crédito.'
     } else if (metodo === 'debito') {
       radioDebito.style.borderColor = '#0939CF'
       radioDebito.innerHTML = '<div style="width:12px;height:12px;background:#0939CF;border-radius:50%;"></div>'
       formCartao.style.display = 'none'
+      if (elPreco) elPreco.textContent = precoBase + '*'
+      if (elLegenda) elLegenda.textContent = '*Valor Exclusivo no Cartão de Crédito.'
     }
   }
 
