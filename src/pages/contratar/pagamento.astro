@@ -219,125 +219,22 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
             </div>
           </div>
 
-          <!-- Formulário de cartão (expandido) -->
+          <!-- Mensagem de segurança (sem coleta de dados do cartão) -->
           <div id="form-cartao" style="
             border-top: 1px solid #E0E0E0;
-            padding: 16px 24px 24px;
+            padding: 20px 24px 24px;
             display: flex;
-            flex-direction: column;
-            gap: 20px;
+            align-items: flex-start;
+            gap: 14px;
           ">
-            <p style="font-size: 14px; font-weight: 400; color: #666; margin: 0; line-height: 1.5;">
-              Pague com segurança usando Visa, Mastercard, American Express, Elo ou Hipercard.
+            <svg style="flex-shrink: 0; margin-top: 2px;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L3 7V12C3 16.418 7.03 20.564 12 22C16.97 20.564 21 16.418 21 12V7L12 2Z" stroke="#0939CF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9 12L11 14L15 10" stroke="#0939CF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p style="font-size: 15px; font-weight: 400; color: #444; margin: 0; line-height: 1.6;">
+              <span style="color: #010180; font-size: 16px; font-weight: 600;">Para sua segurança, os dados do cartão não são coletados nesta página.</span><br>
+              Após confirmar sua solicitação, você receberá um link de pagamento seguro para concluir a transação em ambiente protegido.
             </p>
-
-            <!-- Número do cartão -->
-            <div style="display: flex; flex-direction: column; gap: 4px;">
-              <label for="num-cartao" style="font-size: 16px; font-weight: 500; color: #010180; line-height: 1.5;">Número do Cartão</label>
-              <input
-                id="num-cartao"
-                name="numCartao"
-                type="text"
-                placeholder="1234 1234 1234 1234"
-                maxlength="19"
-                style="
-                  height: 56px;
-                  width: 100%;
-                  border: 0.8px solid #010180;
-                  border-radius: 8px;
-                  padding: 0 16px;
-                  font-size: 16px;
-                  font-weight: 400;
-                  color: #0D0B26;
-                  font-family: inherit;
-                  outline: none;
-                  background: #fff;
-                  box-sizing: border-box;
-                "
-              />
-            </div>
-
-            <!-- Nome + Validade + CVV -->
-            <div class="campos-inline" style="display: flex; gap: 12px; align-items: flex-start;">
-
-              <!-- Nome no cartão -->
-              <div style="display: flex; flex-direction: column; gap: 4px; flex: 1;">
-                <label for="nome-cartao" style="font-size: 16px; font-weight: 500; color: #010180; line-height: 1.5;">Nome no Cartão</label>
-                <input
-                  id="nome-cartao"
-                  name="nomeCartao"
-                  type="text"
-                  placeholder="Nome completo"
-                  style="
-                    height: 56px;
-                    width: 100%;
-                    border: 0.8px solid #010180;
-                    border-radius: 8px;
-                    padding: 0 16px;
-                    font-size: 16px;
-                    font-weight: 400;
-                    color: #0D0B26;
-                    font-family: inherit;
-                    outline: none;
-                    background: #fff;
-                    box-sizing: border-box;
-                  "
-                />
-              </div>
-
-              <!-- Validade -->
-              <div class="campo-pequeno" style="display: flex; flex-direction: column; gap: 4px; width: 140px; flex-shrink: 0;">
-                <label for="validade" style="font-size: 16px; font-weight: 500; color: #010180; line-height: 1.5;">Validade</label>
-                <input
-                  id="validade"
-                  name="validade"
-                  type="text"
-                  placeholder="MM / AA"
-                  maxlength="7"
-                  style="
-                    height: 56px;
-                    width: 100%;
-                    border: 0.8px solid #010180;
-                    border-radius: 8px;
-                    padding: 0 16px;
-                    font-size: 16px;
-                    font-weight: 400;
-                    color: #0D0B26;
-                    font-family: inherit;
-                    outline: none;
-                    background: #fff;
-                    box-sizing: border-box;
-                  "
-                />
-              </div>
-
-              <!-- CVV -->
-              <div class="campo-pequeno" style="display: flex; flex-direction: column; gap: 4px; width: 100px; flex-shrink: 0;">
-                <label for="cvv" style="font-size: 16px; font-weight: 500; color: #010180; line-height: 1.5;">CVV</label>
-                <input
-                  id="cvv"
-                  name="cvv"
-                  type="text"
-                  placeholder="123"
-                  maxlength="4"
-                  style="
-                    height: 56px;
-                    width: 100%;
-                    border: 0.8px solid #010180;
-                    border-radius: 8px;
-                    padding: 0 16px;
-                    font-size: 16px;
-                    font-weight: 400;
-                    color: #0D0B26;
-                    font-family: inherit;
-                    outline: none;
-                    background: #fff;
-                    box-sizing: border-box;
-                  "
-                />
-              </div>
-
-            </div>
           </div>
         </div>
 
@@ -545,20 +442,6 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
       font-size: 24px !important;
     }
 
-    /* Campos em linha: viram coluna, filhos full width */
-    .campos-inline {
-      flex-direction: column !important;
-      align-items: stretch !important;
-    }
-    .campos-inline > div {
-      width: 100% !important;
-      flex-shrink: unset !important;
-    }
-    .campo-pequeno {
-      width: 100% !important;
-      flex-shrink: unset !important;
-    }
-
     /* Botões de navegação: coluna invertida, full width */
     .contratar-nav {
       flex-direction: column-reverse !important;
@@ -657,23 +540,6 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
   opcaoCartao.addEventListener('click', function () { selecionarMetodo('cartao') })
   opcaoDebito.addEventListener('click', function () { selecionarMetodo('debito') })
 
-  // ── Máscaras ───────────────────────────────────────────────
-  document.getElementById('num-cartao').addEventListener('input', function (e) {
-    var v = e.target.value.replace(/\D/g, '').slice(0, 16)
-    v = v.replace(/(\d{4})(?=\d)/g, '$1 ')
-    e.target.value = v
-  })
-
-  document.getElementById('validade').addEventListener('input', function (e) {
-    var v = e.target.value.replace(/\D/g, '').slice(0, 4)
-    if (v.length > 2) v = v.slice(0, 2) + ' / ' + v.slice(2)
-    e.target.value = v
-  })
-
-  document.getElementById('cvv').addEventListener('input', function (e) {
-    e.target.value = e.target.value.replace(/\D/g, '').slice(0, 4)
-  })
-
   // ── Voltar ─────────────────────────────────────────────────
   document.getElementById('btn-voltar').addEventListener('click', function () {
     var params = new URLSearchParams(window.location.search)
@@ -682,26 +548,6 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
 
   // ── Confirmar Pagamento ────────────────────────────────────
   document.getElementById('btn-confirmar').addEventListener('click', function () {
-    if (metodoPagamento === 'cartao') {
-      var numCartao   = document.getElementById('num-cartao')
-      var nomeCartao  = document.getElementById('nome-cartao')
-      var validade    = document.getElementById('validade')
-      var cvv         = document.getElementById('cvv')
-      var campos = [numCartao, nomeCartao, validade, cvv]
-      var valid = true
-
-      campos.forEach(function (c) {
-        if (!c.value.trim()) {
-          c.style.borderColor = '#EF0000'
-          valid = false
-        } else {
-          c.style.borderColor = '#010180'
-        }
-      })
-
-      if (!valid) return
-    }
-
     // Persiste no banco (etapa 3 = UPDATE)
     var btnConfirmar = document.getElementById('btn-confirmar')
     btnConfirmar.disabled = true
@@ -712,10 +558,6 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
       etapa: 3,
       id: formId,
       metodoPagamento: metodoPagamento,
-      numCartao: document.getElementById('num-cartao').value,
-      nomeCartao: document.getElementById('nome-cartao').value,
-      validade: document.getElementById('validade').value,
-      cvv: document.getElementById('cvv').value,
     }
 
     fetch('/contratar/salvar.php', {
