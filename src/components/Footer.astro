@@ -23,6 +23,7 @@
           PARCEIRO AUTORIZADO
         </p>
 
+
       </div>
 
       <!-- Direita: botões de contato -->
@@ -83,10 +84,12 @@
         <a href="#" style="font-size: 16px; font-weight: 400; color: #fff; text-decoration: none; line-height: 24px; white-space: nowrap;">Termos de Uso</a>
       </div>
 
-      <!-- Copyright -->
-      <p class="footer-copy" style="font-size: 16px; font-weight: 400; color: #fff; line-height: 24px; margin: 0; text-align: right; white-space: nowrap;">
-        © 2026 Giga+ Fibra. MF PROMOCOES E VENDAS LTDA - CNPJ  61.625.911/0001-07
-      </p>
+      <!-- Parceiro comercial + empresa (direita) -->
+      <div class="footer-empresa-block" style="display: flex; flex-direction: column; gap: 2px; align-items: flex-end; text-align: right;">
+        <p class="footer-parceiro-comercial" style="font-size: 16px; font-weight: 600; color: #00EF52; line-height: 24px; margin: 0; letter-spacing: 0.04em;">PARCEIRO COMERCIAL AUTORIZADO</p>
+        <p style="font-size: 16px; font-weight: 400; color: #fff; line-height: 24px; margin: 0;">MF Promocoes e Vendas Ltda</p>
+        <p style="font-size: 16px; font-weight: 400; color: #fff; line-height: 24px; margin: 0;">CNPJ: 61.625.911/0001-07</p>
+      </div>
 
     </div>
 
@@ -120,10 +123,12 @@
       width: 277px !important;
     }
 
-    /* Slogan e parceiro: centralizados */
+    /* Slogan, parceiro e empresa: centralizados */
     .footer-slogan,
-    .footer-parceiro {
+    .footer-parceiro,
+    .footer-empresa {
       text-align: center !important;
+      align-items: center !important;
     }
 
     /* Botões: coluna, width 342px, gap 14px */
@@ -179,12 +184,10 @@
       gap: 0 !important;
     }
 
-    /* Copyright: centralizado, 3 linhas */
-    .footer-copy {
-      white-space: normal !important;
+    /* Parceiro comercial block: centralizado no mobile */
+    .footer-empresa-block {
+      align-items: center !important;
       text-align: center !important;
-      font-size: 16px !important;
-      line-height: 24px !important;
     }
   }
 </style>
