@@ -623,7 +623,26 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
     }
     sessionStorage.setItem('giga_etapa2', JSON.stringify(data))
 
+    // Persiste no banco (etapa 2 = UPDATE)
+    var btn = document.getElementById('btn-avancar')
+    btn.disabled = true
+    btn.style.opacity = '0.6'
+
+    var formId = sessionStorage.getItem('giga_form_id')
+    var payload = Object.assign({}, data, { etapa: 2, id: formId })
     var params = new URLSearchParams(window.location.search)
-    window.location.href = '/contratar/pagamento?' + params.toString()
+
+    fetch('/contratar/salvar.php', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    })
+      .then(function (r) { return r.json() })
+      .then(function () {
+        window.location.href = '/contratar/pagamento?' + params.toString()
+      })
+      .catch(function () {
+        window.location.href = '/contratar/pagamento?' + params.toString()
+      })
   })
 </script>

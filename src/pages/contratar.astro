@@ -340,6 +340,11 @@ import StickyBarMobile from '../components/StickyBarMobile.astro'
             />
           </div>
 
+          <input type="hidden" name="plano" id="h-plano" value="" />
+          <input type="hidden" name="cidade" id="h-cidade" value="" />
+          <input type="hidden" name="preco" id="h-preco" value="" />
+          <input type="hidden" name="condicao" id="h-condicao" value="" />
+
         </form>
 
       </div>
@@ -551,6 +556,12 @@ import StickyBarMobile from '../components/StickyBarMobile.astro'
     var elTxt = document.getElementById('plano-mega-txt')
     if (elNum) elNum.textContent = megaNum
     if (elTxt) elTxt.textContent = megaTxt
+    // Popula campos hidden
+    document.getElementById('h-plano').value    = plano
+    document.getElementById('h-cidade').value   = cidade
+    document.getElementById('h-preco').value    = preco
+    document.getElementById('h-condicao').value = condicao
+
     document.getElementById('plano-cidade').textContent  = cidade
     document.getElementById('plano-preco').textContent   = preco
     document.getElementById('plano-condicao').textContent = condicao
@@ -637,8 +648,32 @@ import StickyBarMobile from '../components/StickyBarMobile.astro'
     }
     sessionStorage.setItem('giga_etapa1', JSON.stringify(data))
 
-    // Preserva query params do plano ao avançar
+    // Persiste no banco (etapa 1 = INSERT)
+    var btn = document.getElementById('btn-avancar')
+    btn.disabled = true
+    btn.style.opacity = '0.6'
+
+    var payload = Object.assign({}, data, {
+      etapa: 1,
+      plano: document.getElementById('h-plano').value,
+      cidade: document.getElementById('h-cidade').value,
+      preco: document.getElementById('h-preco').value,
+      condicao: document.getElementById('h-condicao').value,
+    })
     const params = new URLSearchParams(window.location.search)
-    window.location.href = '/contratar/endereco?' + params.toString()
+
+    fetch('/contratar/salvar.php', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    })
+      .then(function (r) { return r.json() })
+      .then(function (res) {
+        if (res.id) sessionStorage.setItem('giga_form_id', res.id)
+        window.location.href = '/contratar/endereco?' + params.toString()
+      })
+      .catch(function () {
+        window.location.href = '/contratar/endereco?' + params.toString()
+      })
   })
 </script>

