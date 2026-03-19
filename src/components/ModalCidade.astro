@@ -336,5 +336,42 @@
           if (match) atualizarCards(match);
         });
     } catch (_) {}
+  } else {
+    // ── Detecção automática de cidade por IP ──────────────────────────────
+    // Só roda se o usuário ainda não escolheu uma cidade manualmente
+    fetch('https://ipapi.co/json/')
+      .then(r => r.json())
+      .then((geo: { city?: string }) => {
+        if (!geo.city) return;
+        const cidadeGeo = geo.city
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .toLowerCase()
+          .trim();
+        const tentarMatch = (lista: Cidade[]) => {
+          const match = lista.find(c =>
+            c.cidade.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase() === cidadeGeo
+          );
+          if (match) {
+            cidadeSelecionada = match;
+            if (cidadeLabel) cidadeLabel.textContent = match.label;
+            atualizarCards(match);
+            sessionStorage.setItem('giga_cidade', JSON.stringify(match));
+          }
+        };
+        if (cidades.length > 0) {
+          tentarMatch(cidades);
+        } else {
+          fetch('/data/cidades.json')
+            .then(r => r.json())
+            .then((data: Cidade[]) => {
+              cidades = data;
+              tentarMatch(data);
+            });
+        }
+      })
+      .catch(() => {
+        // Falha silenciosa: mantém cidade padrão
+      });
   }
 </script>
