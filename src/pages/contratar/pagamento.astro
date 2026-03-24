@@ -79,7 +79,6 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
               <span class="plano-preco-mes" style="font-size: 24px; font-weight: 400; color: #fff; line-height: normal;">/mês</span>
             </div>
             <p id="plano-condicao" style="font-size: 18px; font-weight: 400; color: #fff; margin: 0; line-height: normal;"></p>
-            <p style="font-size: 14px; font-weight: 400; color: #fff; margin: 0; line-height: normal;">*Valor Exclusivo no Cartão de Crédito.</p>
           </div>
         </div>
       </div>
@@ -512,27 +511,23 @@ import StickyBarMobile from '../../components/StickyBarMobile.astro'
     radioCartao.innerHTML  = ''
     radioCartao.style.borderColor = '#C2C2C2'
 
-    var elPreco   = document.getElementById('plano-preco')
-    var elLegenda = document.querySelector('#plano-condicao + p')
+    var elPreco = document.getElementById('plano-preco')
 
     if (metodo === 'boleto') {
       radioBoleto.style.borderColor = '#0939CF'
       radioBoleto.innerHTML = '<div style="width:12px;height:12px;background:#0939CF;border-radius:50%;"></div>'
       formCartao.style.display = 'none'
       if (elPreco) elPreco.textContent = calcularPrecoBoleto(precoBase)
-      if (elLegenda) elLegenda.textContent = '*Valor no Boleto.'
     } else if (metodo === 'cartao') {
       radioCartao.style.borderColor = '#0939CF'
       radioCartao.innerHTML = '<div style="width:12px;height:12px;background:#0939CF;border-radius:50%;"></div>'
       formCartao.style.display = 'flex'
-      if (elPreco) elPreco.textContent = precoBase + '*'
-      if (elLegenda) elLegenda.textContent = '*Valor Exclusivo no Cartão de Crédito.'
+      if (elPreco) elPreco.textContent = precoBase
     } else if (metodo === 'debito') {
       radioDebito.style.borderColor = '#0939CF'
       radioDebito.innerHTML = '<div style="width:12px;height:12px;background:#0939CF;border-radius:50%;"></div>'
       formCartao.style.display = 'none'
-      if (elPreco) elPreco.textContent = precoBase + '*'
-      if (elLegenda) elLegenda.textContent = '*Valor Exclusivo no Cartão de Crédito.'
+      if (elPreco) elPreco.textContent = precoBase
     }
   }
 
