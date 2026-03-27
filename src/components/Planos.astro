@@ -67,9 +67,6 @@
               <span style="font-size: 18px; font-weight: 400; color: #fff; line-height: normal;">Wi-Fi 6</span>
             </div>
           </div>
-          <a id="btn-contratar-600" data-plano="600 Mega" data-chave="p600" href="/contratar?plano=600+Mega&cidade=Acailandia-MA&preco=R%2494%2C99&condicao=Valor+fixo+por+12+meses." style="display: flex; align-items: center; justify-content: center; background: #00EF52; color: #010180; font-size: 18px; font-weight: 600; padding: 12px 36px; border-radius: 999px; text-decoration: none; white-space: nowrap; height: 48px;">
-            Contratar Online
-          </a>
         </div>
       </div>
 
@@ -94,9 +91,6 @@
             <span style="font-size: 18px; font-weight: 400; color: #fff; line-height: normal;">Wi-Fi 6</span>
           </div>
         </div>
-        <a id="btn-contratar-800" data-plano="800 Mega" data-chave="p800" href="/contratar?plano=800+Mega&cidade=Acailandia-MA&preco=R%2499%2C99&condicao=Valor+fixo+por+12+meses." style="display: flex; align-items: center; justify-content: center; background: #00EF52; color: #010180; font-size: 18px; font-weight: 600; padding: 12px 36px; border-radius: 999px; text-decoration: none; white-space: nowrap; height: 48px;">
-          Contratar Online
-        </a>
       </div>
 
       <!-- Card GIGA -->
@@ -120,9 +114,6 @@
             <span style="font-size: 18px; font-weight: 400; color: #fff; line-height: normal;">Wi-Fi 6</span>
           </div>
         </div>
-        <a id="btn-contratar-1gb" data-plano="GIGA" data-chave="p1gb" href="/contratar?plano=GIGA&cidade=Acailandia-MA&preco=R%24139%2C99&condicao=Valor+fixo+por+12+meses." style="display: flex; align-items: center; justify-content: center; background: #00EF52; color: #010180; font-size: 18px; font-weight: 600; padding: 12px 36px; border-radius: 999px; text-decoration: none; white-space: nowrap; height: 48px;">
-          Contratar Online
-        </a>
       </div>
 
     </div>
@@ -227,39 +218,6 @@
       width: 100% !important;
     }
 
-    /* Botão Contratar Online: full width */
-    .planos-cards a[style*="border-radius: 999px"] {
-      width: 100% !important;
-      box-sizing: border-box !important;
-      height: 48px !important;
-    }
   }
 </style>
 
-<script>
-  // Ao clicar em "Contratar Online", monta a URL lendo os valores atuais do DOM
-  document.querySelectorAll<HTMLAnchorElement>('[data-plano][data-chave]').forEach(btn => {
-    btn.addEventListener('click', function (e) {
-      e.preventDefault()
-
-      const chave = btn.dataset.chave!   // p600, p800, p1gb
-      const plano = btn.dataset.plano!
-
-      // Mapeia chave para o sufixo do ID do elemento
-      const sufixo: Record<string, string> = { p600: '600', p800: '800', p1gb: '1gb' }
-      const id = sufixo[chave] || chave.replace('p', '')
-
-      // Lê preço e condição atuais do DOM (já atualizados pelo switcher de cidade)
-      const precoEl = document.getElementById('card-preco-' + id)
-      const condicaoEl = document.getElementById('card-condicao-' + id)
-      const cidadeEl = document.getElementById('cidade-label')
-
-      const preco = precoEl?.textContent?.trim() || ''
-      const condicao = condicaoEl?.textContent?.trim() || ''
-      const cidade = cidadeEl?.textContent?.trim() || 'Acailandia-MA'
-
-      const params = new URLSearchParams({ plano, cidade, preco, condicao })
-      window.location.href = '/contratar?' + params.toString()
-    })
-  })
-</script>

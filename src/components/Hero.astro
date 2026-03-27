@@ -76,93 +76,11 @@
 
     </div>
 
-    <!-- Badges com glassmorphism -->
-    <!-- Melhor Provedor: Figma x=1009, y=184 → no container 1440: x=1009-((1920-1440)/2)=769, y=184 -->
-    <div class="badge-glass badge-float-1 hero-badge" style="position: absolute; z-index: 20; left: 740px; top: 130px;">
-      <img src="/images/icon-melhor-provedor.svg" alt="" width="22" height="22" style="display:block;" />
-      <div style="text-align: center; font-size: 12.6px; line-height: 1.4; font-weight: 500; white-space: nowrap;">
-        <p style="color: #fff; margin: 0;">Melhor</p>
-        <p style="color: #00EF52; margin: 0;">Provedor</p>
-      </div>
-    </div>
-
-    <!-- Melhor Velocidade -->
-    <div class="badge-glass badge-float-2 hero-badge" style="position: absolute; z-index: 20; left: 710px; top: 355px;">
-      <img src="/images/icon-melhor-velocidade.svg" alt="" width="22" height="22" style="display:block;" />
-      <div style="text-align: center; font-size: 12.6px; line-height: 1.4; font-weight: 500; white-space: nowrap;">
-        <p style="color: #fff; margin: 0;">Melhor</p>
-        <p style="color: #00EF52; margin: 0;">Velocidade</p>
-      </div>
-    </div>
-
-    <!-- 4.9 No Google -->
-    <div class="badge-glass badge-float-3 hero-badge" style="position: absolute; z-index: 20; left: 1175px; top: 250px;">
-      <img src="/images/icon-avaliacao-google.svg" alt="" width="22" height="22" style="display:block;" />
-      <div style="text-align: center; font-size: 12.6px; line-height: 1.4; font-weight: 500; white-space: nowrap;">
-        <p style="color: #fff; margin: 0;">4.9</p>
-        <p style="color: #00EF52; margin: 0;">No Google</p>
-      </div>
-    </div>
-
-    <!-- Melhor Estabilidade: Figma x=1312, y=466 → container: x=1072, y=466 -->
-    <div class="badge-glass badge-float-4 hero-badge" style="position: absolute; z-index: 20; left: 1042px; top: 412px;">
-      <img src="/images/icon-melhor-estabilidade.svg" alt="" width="22" height="22" style="display:block;" />
-      <div style="text-align: center; font-size: 12.6px; line-height: 1.4; font-weight: 500; white-space: nowrap;">
-        <p style="color: #fff; margin: 0;">Melhor</p>
-        <p style="color: #00EF52; margin: 0;">Estabilidade</p>
-      </div>
-    </div>
-
   </div>
 
 </section>
 
 <style>
-  .badge-glass {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5.6px;
-    padding: 8.4px;
-    border-radius: 7.7px;
-    border: 0.7px solid rgba(255, 255, 255, 0.11);
-    background: linear-gradient(to bottom, rgba(255,255,255,0.16), rgba(255,255,255,0.02));
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    animation: float 4s ease-in-out infinite;
-  }
-
-  /* Cada badge com animação própria — direção, amplitude e duração distintas */
-  .badge-float-1 { animation: float1 4.2s ease-in-out infinite; }
-  .badge-float-2 { animation: float2 5.8s ease-in-out infinite; }
-  .badge-float-3 { animation: float3 3.7s ease-in-out infinite; }
-  .badge-float-4 { animation: float4 6.3s ease-in-out infinite; }
-
-  /* Badge 1: sobe levemente */
-  @keyframes float1 {
-    0%   { transform: translateY(0px); }
-    55%  { transform: translateY(-7px); }
-    100% { transform: translateY(0px); }
-  }
-  /* Badge 2: desce e sobe mais lentamente */
-  @keyframes float2 {
-    0%   { transform: translateY(0px); }
-    40%  { transform: translateY(5px); }
-    100% { transform: translateY(0px); }
-  }
-  /* Badge 3: movimento diagonal sutil */
-  @keyframes float3 {
-    0%   { transform: translate(0px, 0px); }
-    50%  { transform: translate(3px, -6px); }
-    100% { transform: translate(0px, 0px); }
-  }
-  /* Badge 4: amplitude menor, mais lento */
-  @keyframes float4 {
-    0%   { transform: translateY(0px); }
-    60%  { transform: translateY(-4px); }
-    100% { transform: translateY(0px); }
-  }
-
   /* ── MOBILE ── */
   @media (max-width: 768px) {
     /* Seção: altura fixa 910px como no Figma, sem padding-top (header é fixed) */
@@ -252,11 +170,6 @@
       box-sizing: border-box !important;
     }
 
-    /* Badges: visíveis no mobile com posições do Figma */
-    .hero-badge {
-      display: flex !important;
-    }
-
     /* Degradê azul mobile: topo esquerdo, atrás do título */
     .hero-degrade-azul {
       left: -36px !important;
@@ -277,29 +190,5 @@
       opacity: 0.5 !important;
     }
 
-    /* Posições dos badges: coordenadas diretas do Figma (frame 910px) */
-    .badge-float-1 {
-      /* Melhor Provedor: left=40, top=525 */
-      left: 40px !important;
-      top: 525px !important;
-    }
-
-    .badge-float-2 {
-      /* Melhor Velocidade: left=44, top=781 */
-      left: 44px !important;
-      top: 781px !important;
-    }
-
-    .badge-float-3 {
-      /* 4.9 No Google: left=266, top=573 */
-      left: 266px !important;
-      top: 573px !important;
-    }
-
-    .badge-float-4 {
-      /* Melhor Estabilidade: left=235, top=754 */
-      left: 235px !important;
-      top: 754px !important;
-    }
   }
 </style>
